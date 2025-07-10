@@ -1,7 +1,9 @@
+import React from 'react';
 import styles from './MegaMenu.module.css';
 
 export default function MegaMenu({ open, closing }) {
   if (!open && !closing) return null;
+
   return (
     <div className={`${styles.megaMenu} ${closing ? styles.closing : ''}`}>
       <div className={styles.left}>

@@ -142,4 +142,15 @@
   .nav a:hover {
     background: #f8f9fa;
   }
+
+  /* 모바일에서 메가메뉴가 모바일 메뉴 위에 나타나도록 */
+  .nav [data-mega-menu] {
+    position: relative;
+    z-index: 25;
+  }
+
+  /* 모바일에서 메가메뉴 컨테이너 위치 조정 */
+  .nav [data-mega-menu] > div {
+    position: relative;
+  }
 }

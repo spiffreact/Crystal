@@ -22,6 +22,15 @@ export default function Header() {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+    // 모바일 메뉴를 열 때는 메가메뉴를 닫음
+    if (!mobileMenuOpen) {
+      setMegaOpen(false);
+    }
+  };
+
+  const handleIntroClick = (e) => {
+    e.preventDefault();
+    setMegaOpen(!megaOpen);
   };
 
   return (
@@ -57,11 +66,7 @@ export default function Header() {
             href="/intro#"
             style={{ zIndex: 101, position: 'relative' }}
             data-mega-menu
-            onClick={(e) => {
-              e.preventDefault();
-              setMegaOpen(!megaOpen);
-              setMobileMenuOpen(false);
-            }}
+            onClick={handleIntroClick}
           >
             소개합니다
           </a>
