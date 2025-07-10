@@ -113,7 +113,7 @@
 }
 @media (max-width: 600px) {
   .megaMenu {
-    padding: 16px 2vw;
+    padding: 20px 16px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -126,18 +126,60 @@
     max-height: 80vh;
     overflow-y: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    gap: 24px;
   }
+
   .left {
     min-width: 0;
     max-width: 100%;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
+
+  .left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .illust {
+    width: 80px;
+    height: auto;
+    margin: 0 auto 1rem;
+  }
+
   .cols {
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
+    width: 100%;
   }
+
   .cols > div {
     min-width: 0;
+    width: 100%;
+  }
+
+  .cols h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .cols ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .cols li {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .cols li:last-child {
+    border-bottom: none;
   }
 }
