@@ -4,6 +4,7 @@ import MegaMenu from './MegaMenu';
 
 export default function Header() {
   const [megaOpen, setMegaOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleClickOutside = (e) => {
     // 소개합니다 메뉴 영역을 클릭한 경우는 제외
@@ -19,6 +20,10 @@ export default function Header() {
     };
   }, []);
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logoBox}>
@@ -28,8 +33,22 @@ export default function Header() {
           className={styles.logo}
         />
       </div>
-      <nav className={styles.nav}>
-        <a href="/">환영합니다</a>
+
+      {/* 햄버거 메뉴 버튼 */}
+      <button
+        className={styles.hamburger}
+        onClick={toggleMobileMenu}
+        aria-label="메뉴 열기"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav className={`${styles.nav} ${mobileMenuOpen ? styles.navOpen : ''}`}>
+        <a href="/" onClick={() => setMobileMenuOpen(false)}>
+          환영합니다
+        </a>
         <div
           style={{ position: 'relative', display: 'inline-block' }}
           data-mega-menu
@@ -41,15 +60,22 @@ export default function Header() {
             onClick={(e) => {
               e.preventDefault();
               setMegaOpen(!megaOpen);
+              setMobileMenuOpen(false);
             }}
           >
             소개합니다
           </a>
           <MegaMenu open={megaOpen} closing={false} />
         </div>
-        <a href="#">예배와 말씀</a>
-        <a href="#">공동체와 양육</a>
-        <a href="#">선교와 사역</a>
+        <a href="#" onClick={() => setMobileMenuOpen(false)}>
+          예배와 말씀
+        </a>
+        <a href="#" onClick={() => setMobileMenuOpen(false)}>
+          공동체와 양육
+        </a>
+        <a href="#" onClick={() => setMobileMenuOpen(false)}>
+          선교와 사역
+        </a>
       </nav>
     </header>
   );

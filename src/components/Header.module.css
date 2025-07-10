@@ -7,6 +7,7 @@
   min-height: 70px;
   padding: 0 2rem;
   z-index: 10;
+  position: relative;
 }
 
 .logoBox {
@@ -46,34 +47,99 @@
   color: #0056b3;
 }
 
+/* 햄버거 메뉴 버튼 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 20;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #222;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover span {
+  background: #0056b3;
+}
+
 @media (max-width: 800px) {
   .header {
     flex-direction: row;
     min-height: 60px;
     padding: 0.5rem 1rem;
     gap: 1rem;
+    justify-content: space-between;
   }
+
   .logoBox {
     margin-bottom: 0;
     border-radius: 8px;
     padding: 0.3rem 0.8rem;
     flex-shrink: 0;
   }
+
   .logo {
     height: 40px;
   }
-  .nav {
-    gap: 0.8rem;
-    margin-left: 0;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex: 1;
-    overflow-x: auto;
-    padding: 0.5rem 0;
+
+  /* 햄버거 메뉴 표시 */
+  .hamburger {
+    display: flex;
   }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: row;
+    gap: 0;
+    margin-left: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 15;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .navOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
   .nav a {
-    font-size: 1.1rem;
-    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.4rem;
+    text-align: center;
+    border-bottom: none;
+    border-right: 1px solid #f0f0f0;
     white-space: nowrap;
+    flex: 1;
+    min-width: auto;
+  }
+
+  .nav a:last-child {
+    border-right: none;
+  }
+
+  .nav a:hover {
+    background: #f8f9fa;
   }
 }
