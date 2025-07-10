@@ -8,7 +8,7 @@ export default function Footer() {
         {/* 좌측: 로고 */}
         <div className={styles.left}>
           <img
-            src="/public/crystal-logo.png"
+            src="/public/crystal-logo2.png"
             alt="수정교회 로고"
             className={styles.logo}
           />
