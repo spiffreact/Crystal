@@ -1,0 +1,141 @@
+.footer {
+  background: #666;
+  color: #fff;
+  padding: 1.2rem 0 0.7rem 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.left {
+  flex: 0 0 220px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+}
+
+.right {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.langs {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.05rem;
+  color: #fff;
+  opacity: 0.95;
+  margin-bottom: 0.1rem;
+  justify-content: flex-start;
+}
+
+.langs span {
+  font-weight: 400;
+}
+
+.addressSnsRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  color: #eaeaea;
+  font-size: 1rem;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #fff;
+}
+
+.tel {
+  margin-left: 1.2rem;
+  color: #fff;
+  font-size: 0.98rem;
+}
+
+.sns {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  /* justify-content: flex-end; */
+  min-width: 80px;
+  margin-left: 23%;
+}
+
+.snsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: none;
+  transition: background 0.2s;
+}
+
+.snsIcon:hover {
+  background: #444;
+}
+
+.copyright {
+  color: #ccc;
+  font-size: 0.75rem;
+  margin-top: 0.7rem;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .right {
+    align-items: center;
+    text-align: center;
+  }
+  .addressSnsRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .addresses {
+    align-items: center;
+  }
+  .sns {
+    justify-content: center;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
