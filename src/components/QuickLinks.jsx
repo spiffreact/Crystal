@@ -1,15 +1,18 @@
+import { FaCross } from 'react-icons/fa';
+import { FaBookBible } from 'react-icons/fa6';
+import { TbCircleLetterNFilled } from 'react-icons/tb';
 import styles from './QuickLinks.module.css';
 
 const links = [
   {
     title: '주보 · 수정신문',
-    icon: '/icon-news.svg',
+    icon: TbCircleLetterNFilled, // React 아이콘 컴포넌트
     href: '#',
     bg: '#0a2a5c',
   },
   {
     title: '헌금 안내',
-    icon: '/icon-heart.svg',
+    icon: FaCross,
     href: '#',
     bg: '#0a2a5c',
   },
@@ -20,8 +23,8 @@ const links = [
     bg: 'url(/youtube.png) center/cover',
   },
   {
-    title: '기독교 OTT 플랫폼 퐁당',
-    icon: '/icon-ott.svg',
+    title: '매일 아침 만나는 QT',
+    icon: FaBookBible,
     href: '#',
     bg: '#1a1a3c',
   },
@@ -37,7 +40,13 @@ export default function QuickLinks() {
           className={styles.card}
           style={{ background: link.bg }}
         >
-          {link.icon && <img src={link.icon} alt="" className={styles.icon} />}
+          {/* React 아이콘 컴포넌트면 JSX로, 문자열이면 <img>로 */}
+          {typeof link.icon === 'function' && (
+            <link.icon className={styles.icon} />
+          )}
+          {typeof link.icon === 'string' && link.icon && (
+            <img src={link.icon} alt="" className={styles.icon} />
+          )}
           <span className={styles.title}>{link.title}</span>
         </a>
       ))}

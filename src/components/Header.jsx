@@ -1,7 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Header.module.css';
+import MegaMenu from './MegaMenu';
 
 export default function Header() {
+  const [megaOpen, setMegaOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
+
+  useEffect(() => {
+    if (closing) {
+      const timer = setTimeout(() => {
+        setClosing(false);
+        setMegaOpen(false);
+      }, 700);
+      return () => clearTimeout(timer);
+    }
+  }, [closing]);
+
+  const handleClickOutside = (e) => {
+    // 소개합니다 메뉴 영역을 클릭한 경우는 제외
+    if (!e.target.closest('[data-mega-menu]')) {
+      setClosing(true);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className={styles.header}>
       <div className={styles.logoBox}>
@@ -12,8 +40,29 @@ export default function Header() {
         />
       </div>
       <nav className={styles.nav}>
-        <a href="#">환영합니다</a>
-        <a href="#">소개합니다</a>
+        <a href="/">환영합니다</a>
+        <div
+          style={{ position: 'relative', display: 'inline-block' }}
+          data-mega-menu
+        >
+          <a
+            href="/intro#"
+            style={{ zIndex: 101, position: 'relative' }}
+            data-mega-menu
+            onClick={(e) => {
+              e.preventDefault();
+              if (megaOpen) {
+                setClosing(true);
+              } else {
+                setClosing(false);
+                setMegaOpen(true);
+              }
+            }}
+          >
+            소개합니다
+          </a>
+          <MegaMenu open={megaOpen} closing={closing} />
+        </div>
         <a href="#">예배와 말씀</a>
         <a href="#">공동체와 양육</a>
         <a href="#">선교와 사역</a>

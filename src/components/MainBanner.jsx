@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './MainBanner.module.css';
 import { Carousel } from './ui/carousel';
 
-const images = ['/banner1.jpg', '/banner2.jpg', '/banner3.jpg'];
+const images = ['/banner1.jpg', '/banner2.jpg'];
 
 export default function MainBanner() {
   return (

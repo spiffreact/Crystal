@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import MainBanner from '../components/MainBanner';
 import QuickLinks from '../components/QuickLinks';
 import SectionCard from '../components/SectionCard';
@@ -16,7 +17,7 @@ function Home() {
         <SectionCard
           title="교회 소개"
           description="수정침례교회는 하나님의 사랑을 전하는 교회입니다."
-          linkText="교회 소개 보기"
+          linkText={<Link to="/intro">교회 소개 보기</Link>}
         />
         <SectionCard
           title="연락처"

@@ -1,10 +1,22 @@
 .card {
   background: white;
-
-  padding: 2rem;
+  border-radius: 10px;
+  padding: 1.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #e1e8ed;
+  min-width: 0;
+  word-break: keep-all;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 0.7rem;
+    font-size: 0.97rem;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
 }
 
 .card:hover {
@@ -23,6 +35,21 @@
   color: #7f8c8d;
   line-height: 1.6;
   margin-bottom: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.table td {
+  padding: 0.3rem 0.7rem;
+  border-bottom: 1px solid #e1e8ed;
+  color: #34495e;
+}
+.table tr:last-child td {
+  border-bottom: none;
 }
 
 .link {
