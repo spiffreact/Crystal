@@ -17,8 +17,9 @@ export default function MainBanner() {
                 height: '60vh', // 화면의 70% 높이
                 minHeight: '400px',
                 backgroundImage: `url(${src})`,
-                backgroundSize: 'cover',
+                backgroundSize: 'contain',
                 backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
                 borderRadius: '0',
                 display: 'flex',
                 alignItems: 'center',

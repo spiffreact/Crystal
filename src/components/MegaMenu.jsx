@@ -6,9 +6,9 @@ export default function MegaMenu({ open, closing }) {
     <div className={`${styles.megaMenu} ${closing ? styles.closing : ''}`}>
       <div className={styles.left}>
         <h2>소개합니다</h2>
-        <p>수정교회의 역사, 비전, 예배시간, 사역 등 교회에 대한 모든 것!</p>
+
         <img
-          src="/church-illust.svg"
+          src="/public/crystal-logo.png"
           alt="교회 일러스트"
           className={styles.illust}
         />
@@ -38,8 +38,7 @@ export default function MegaMenu({ open, closing }) {
             <li>담임목사</li>
             <li>협동목사</li>
             <li>전도사</li>
-            <li>장로</li>
-            <li>권사</li>
+            <li>장로・권사</li>
           </ul>
         </div>
         <div>

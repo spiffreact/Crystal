@@ -7,7 +7,7 @@ export default function ChurchIntro() {
       <p className={styles.slogan}>“예수님의 사랑을 실천하는 교회”</p>
       <section className={styles.section}>
         <h2>
-          🏠 <b>수정침례교회 소개</b>
+          <b>수정침례교회 소개</b>
         </h2>
         <ul>
           <li>
@@ -26,7 +26,7 @@ export default function ChurchIntro() {
       </section>
       <section className={styles.section}>
         <h2>
-          📖 <b>비전 및 사역 방향</b>
+          <b>비전 및 사역 방향</b>
         </h2>
         <ul>
           <li>
@@ -43,7 +43,7 @@ export default function ChurchIntro() {
       </section>
       <section className={styles.section}>
         <h2>
-          🗓 <b>주요 프로그램 및 모임</b>
+          <b>주요 프로그램 및 모임</b>
         </h2>
         <ul>
           <li>
@@ -61,7 +61,7 @@ export default function ChurchIntro() {
       </section>
       <section className={styles.section}>
         <h2>
-          📝 <b>교회의 핵심 메시지</b>
+          <b>교회의 핵심 메시지</b>
         </h2>
         <blockquote className={styles.quote}>
           “이는 성도를 온전하게 하여 봉사의 일을 하게 하며 그리스도의 몸을

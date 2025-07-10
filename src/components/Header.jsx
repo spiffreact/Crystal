@@ -4,22 +4,11 @@ import MegaMenu from './MegaMenu';
 
 export default function Header() {
   const [megaOpen, setMegaOpen] = useState(false);
-  const [closing, setClosing] = useState(false);
-
-  useEffect(() => {
-    if (closing) {
-      const timer = setTimeout(() => {
-        setClosing(false);
-        setMegaOpen(false);
-      }, 700);
-      return () => clearTimeout(timer);
-    }
-  }, [closing]);
 
   const handleClickOutside = (e) => {
     // 소개합니다 메뉴 영역을 클릭한 경우는 제외
     if (!e.target.closest('[data-mega-menu]')) {
-      setClosing(true);
+      setMegaOpen(false);
     }
   };
 
@@ -51,17 +40,12 @@ export default function Header() {
             data-mega-menu
             onClick={(e) => {
               e.preventDefault();
-              if (megaOpen) {
-                setClosing(true);
-              } else {
-                setClosing(false);
-                setMegaOpen(true);
-              }
+              setMegaOpen(!megaOpen);
             }}
           >
             소개합니다
           </a>
-          <MegaMenu open={megaOpen} closing={closing} />
+          <MegaMenu open={megaOpen} closing={false} />
         </div>
         <a href="#">예배와 말씀</a>
         <a href="#">공동체와 양육</a>

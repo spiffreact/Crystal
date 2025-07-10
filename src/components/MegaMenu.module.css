@@ -65,8 +65,9 @@
 }
 .illust {
   width: 100%;
-  max-width: 180px;
-  margin-top: 12px;
+  max-width: 100px;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .cols {
