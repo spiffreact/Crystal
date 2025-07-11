@@ -31,11 +31,11 @@ export default function MegaMenuWorship({ open, closing }) {
         <div>
           <h3>예배 영상</h3>
           <ul>
-            <li><a href="#">주일 예배</a></li>
-            <li><a href="#">수요 예배</a></li>
-            <li><a href="#">금요 예배</a></li>
-            <li><a href="#">새벽기도회</a></li>
-            <li><a href="#">영어 예배</a></li>
+            <li><a href="/worship/videos">주일 예배</a></li>
+            <li><a href="/worship/wednesday">수요 예배</a></li>
+            <li><a href="/worship/friday">금요 예배</a></li>
+            <li><a href="/worship/dawn">새벽기도회</a></li>
+            <li><a href="/worship/english">영어 예배</a></li>
           </ul>
         </div>
         {/* 설교 */}
