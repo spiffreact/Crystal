@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './MegaMenu.module.css';
 
 /**
@@ -31,7 +32,7 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>교회소개</h3>
           <ul>
-            <li><a href="/intro/pastor">위임목사 인사말</a></li>
+            <li><Link to="/intro/pastor">위임목사 인사말</Link></li>
             <li><a href="#">목회계획</a></li>
             <li><a href="#">교회 비전</a></li>
             <li><a href="#">교회 철학</a></li>
