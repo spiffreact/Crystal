@@ -10,6 +10,21 @@ export default function MegaMenu({ open, closing }) {
   // 메뉴가 닫혀있고 닫히는 애니메이션도 아닌 경우 렌더링하지 않음
   if (!open && !closing) return null;
 
+  /**
+   * 링크 클릭 시 모바일 메뉴를 닫는 핸들러
+   */
+  const handleLinkClick = () => {
+    // 모바일 메뉴가 열려있다면 닫기
+    const mobileMenu = document.querySelector('[class*="navOpen"]');
+    if (mobileMenu) {
+      // 모바일 메뉴 닫기 이벤트를 트리거
+      const hamburgerButton = document.querySelector('[class*="hamburger"]');
+      if (hamburgerButton) {
+        hamburgerButton.click();
+      }
+    }
+  };
+
   return (
     <div className={`${styles.megaMenu} ${closing ? styles.closing : ''}`}>
       {/* 왼쪽 설명 영역 */}
@@ -32,7 +47,7 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>교회소개</h3>
           <ul>
-            <li><Link to="/intro/pastor">위임목사 인사말</Link></li>
+            <li><Link to="/intro/pastor" onClick={handleLinkClick}>위임목사 인사말</Link></li>
             <li><a href="#">목회계획</a></li>
             <li><a href="#">교회 비전</a></li>
             <li><a href="#">교회 철학</a></li>
