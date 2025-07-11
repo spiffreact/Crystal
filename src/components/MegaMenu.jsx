@@ -31,10 +31,10 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>교회소개</h3>
           <ul>
-            <li>위임목사 인사말</li>
-            <li>목회계획</li>
-            <li>교회 비전</li>
-            <li>교회 철학</li>
+            <li><a href="#">위임목사 인사말</a></li>
+            <li><a href="#">목회계획</a></li>
+            <li><a href="#">교회 비전</a></li>
+            <li><a href="#">교회 철학</a></li>
           </ul>
         </div>
         
@@ -42,10 +42,11 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>예배시간</h3>
           <ul>
-            <li>주일예배</li>
-            <li>수요예배</li>
-            <li>금요기도회</li>
-            <li>새벽기도회</li>
+            <li><a href="#">주일예배</a></li>
+            <li><a href="#">수요예배</a></li>
+            <li><a href="#">금요기도회</a></li>
+            <li><a href="#">새벽기도회</a></li>
+            <li><a href="https://thecrystalchurch.netlify.app/">영어예배</a></li>
           </ul>
         </div>
         
@@ -53,10 +54,10 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>섬기는 사람들</h3>
           <ul>
-            <li>담임목사</li>
-            <li>협동목사</li>
-            <li>전도사</li>
-            <li>장로・권사</li>
+            <li><a href="#">담임목사</a></li>
+            <li><a href="#">협동목사</a></li>
+            <li><a href="#">전도사</a></li>
+            <li><a href="#">장로・권사</a></li>
           </ul>
         </div>
         
@@ -64,9 +65,9 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>교회 시설</h3>
           <ul>
-            <li>본당</li>
-            <li>교육관</li>
-            <li>주차장</li>
+            <li><a href="#">본당</a></li>
+            <li><a href="#">교육관</a></li>
+            <li><a href="#">주차장</a></li>
           </ul>
         </div>
       </div>

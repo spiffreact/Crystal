@@ -1,0 +1,53 @@
+import React from 'react';
+import styles from './MegaMenuWorship.module.css';
+
+export default function MegaMenuWorship({ open, closing }) {
+  if (!open && !closing) return null;
+
+  return (
+    <div className={`${styles.megaMenu} ${closing ? styles.closing : ''}`}>
+      {/* 왼쪽 설명 영역 */}
+      <div className={styles.left}>
+        <h2>예배와 말씀</h2>
+        <p>
+          동영상으로 수정교회의 예배 말씀도 다시 보고, 
+          <br/>
+          예배에 참여하기 전에 예배 시간 정보도 알아보세요
+        </p>
+        <div className={styles.mobileLogo}>
+          {/* 성경책 아이콘 (SVG) */}
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="18" width="56" height="44" rx="8" fill="#1976d2"/>
+            <rect x="20" y="26" width="40" height="28" rx="4" fill="#fff"/>
+            <rect x="32" y="36" width="16" height="4" rx="2" fill="#1976d2"/>
+            <rect x="38" y="30" width="4" height="16" rx="2" fill="#1976d2"/>
+            <rect x="20" y="54" width="40" height="4" rx="2" fill="#ff7043"/>
+          </svg>
+        </div>
+      </div>
+      {/* 오른쪽 메뉴 컬럼들 */}
+      <div className={styles.cols}>
+        {/* 예배 영상 */}
+        <div>
+          <h3>예배 영상</h3>
+          <ul>
+            <li><a href="#">주일 예배</a></li>
+            <li><a href="#">수요 예배</a></li>
+            <li><a href="#">금요 예배</a></li>
+            <li><a href="#">새벽기도회</a></li>
+            <li><a href="#">영어 예배</a></li>
+          </ul>
+        </div>
+        {/* 설교 */}
+        <div>
+            <h3>설교</h3>
+            <ul>
+            <li><a href="#">책별 설교</a></li>
+            <li><a href="#">인물별 설교</a></li>
+            <li><a href="#">주제별 설교</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+} 

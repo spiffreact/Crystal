@@ -120,8 +120,18 @@
   transition: color 0.15s; /* 색상 변화 애니메이션 */
 }
 
+/* 메뉴 항목 내 a 태그도 동일한 폰트와 색상 적용 */
+.cols li a {
+  font-size: 1rem;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.15s;
+  display: block;
+}
+
 /* 메뉴 항목 호버 효과 */
-.cols li:hover {
+.cols li:hover,
+.cols li a:hover {
   color: #1976d2; /* 파란색으로 변경 */
   text-decoration: underline; /* 밑줄 표시 */
 }

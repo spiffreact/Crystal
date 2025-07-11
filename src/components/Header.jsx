@@ -3,6 +3,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import styles from './Header.module.css';
 import MegaMenu from './MegaMenu';
 import MegaMenuGroup from './MegaMenuGroup';
+import MegaMenuWorship from './MegaMenuWorship';
 
 /**
  * 헤더 컴포넌트 - 웹사이트의 상단 네비게이션 바
@@ -13,6 +14,8 @@ export default function Header() {
   const [introMegaOpen, setIntroMegaOpen] = useState(false);
   // 공동체와 양육 메가메뉴 열림/닫힘 상태 관리
   const [communityMegaOpen, setCommunityMegaOpen] = useState(false);
+  // 예배와 말씀 메가메뉴 열림/닫힘 상태 관리
+  const [worshipMegaOpen, setWorshipMegaOpen] = useState(false);
   // 모바일 메뉴 열림/닫힘 상태 관리
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -28,6 +31,9 @@ export default function Header() {
     // 공동체와 양육 메뉴 영역을 클릭한 경우는 제외
     if (!e.target.closest('[data-mega-menu="community"]')) {
       setCommunityMegaOpen(false);
+    }
+    if (!e.target.closest('[data-mega-menu="worship"]')) {
+      setWorshipMegaOpen(false);
     }
   };
 
@@ -49,6 +55,7 @@ export default function Header() {
     if (!mobileMenuOpen) {
       setIntroMegaOpen(false);
       setCommunityMegaOpen(false);
+      setWorshipMegaOpen(false);
     }
   };
 
@@ -63,6 +70,7 @@ export default function Header() {
     // 소개합니다 메뉴를 열 때는 공동체와 양육 메뉴를 닫음
     if (!introMegaOpen) {
       setCommunityMegaOpen(false);
+      setWorshipMegaOpen(false);
     }
   };
 
@@ -77,6 +85,19 @@ export default function Header() {
     // 공동체와 양육 메뉴를 열 때는 소개합니다 메뉴를 닫음
     if (!communityMegaOpen) {
       setIntroMegaOpen(false);
+      setWorshipMegaOpen(false);
+    }
+  };
+
+  /**
+   * '예배와 말씀' 메뉴 클릭 핸들러
+   */
+  const handleWorshipClick = (e) => {
+    e.preventDefault();
+    setWorshipMegaOpen(!worshipMegaOpen);
+    if (!worshipMegaOpen) {
+      setIntroMegaOpen(false);
+      setCommunityMegaOpen(false);
     }
   };
 
@@ -132,13 +153,25 @@ export default function Header() {
           <MegaMenu open={introMegaOpen} closing={false} />
         </div>
 
-        {/* 예배와 말씀 메뉴 */}
-        <a href="#" onClick={() => setMobileMenuOpen(false)}>
-          예배와 말씀
-          <span className={styles.arrow}>
-            <MdKeyboardArrowDown />
-          </span>
-        </a>
+        {/* 예배와 말씀 메뉴 - 예배와 말씀 메가메뉴가 연결됨 */}
+        <div
+          style={{ position: 'relative', display: 'inline-block' }}
+          data-mega-menu="worship"
+        >
+          <a
+            href="#"
+            style={{ zIndex: 101, position: 'relative' }}
+            data-mega-menu="worship"
+            onClick={handleWorshipClick}
+          >
+            예배와 말씀
+            <span className={styles.arrow}>
+              <MdKeyboardArrowDown />
+            </span>
+          </a>
+          {/* 예배와 말씀 메가메뉴 컴포넌트 */}
+          <MegaMenuWorship open={worshipMegaOpen} closing={false} />
+        </div>
 
         {/* 공동체와 양육 메뉴 - 공동체와 양육 메가메뉴가 연결됨 */}
         <div

@@ -27,38 +27,38 @@ export default function MegaMenuGroup({ open, closing }) {
         <div>
           <h3>부서별 공동체</h3>
           <ul>
-            <li>청년부</li>
-            <li>대학부</li>
-            <li>중고등부</li>
-            <li>초등부</li>
-            <li>유치부</li>
+            <li><a href="#">청년부</a></li>
+            <li><a href="#">대학부</a></li>
+            <li><a href="#">중고등부</a></li>
+            <li><a href="#">초등부</a></li>
+            <li><a href="#">유치부</a></li>
           </ul>
         </div>
         <div>
           <h3>양육 프로그램</h3>
           <ul>
-            <li>새신자 양육</li>
-            <li>성경공부</li>
-            <li>기도학교</li>
-            <li>제자훈련</li>
+            <li><a href="#">새신자 양육</a></li>
+            <li><a href="#">성경공부</a></li>
+            <li><a href="#">기도학교</a></li>
+            <li><a href="#">제자훈련</a></li>
           </ul>
         </div>
         <div>
           <h3>소그룹</h3>
           <ul>
-            <li>가정예배</li>
-            <li>기도모임</li>
-            <li>성경공부모임</li>
-            <li>전도모임</li>
+            <li><a href="#">가정예배</a></li>
+            <li><a href="#">기도모임</a></li>
+            <li><a href="#">성경공부모임</a></li>
+            <li><a href="#">전도모임</a></li>
           </ul>
         </div>
         <div>
           <h3>특별 공동체</h3>
           <ul>
-            <li>찬양팀</li>
-            <li>봉사팀</li>
-            <li>전도팀</li>
-            <li>교육팀</li>
+            <li><a href="#">찬양팀</a></li>
+            <li><a href="#">봉사팀</a></li>
+            <li><a href="#">전도팀</a></li>
+            <li><a href="#">교육팀</a></li>
           </ul>
         </div>
       </div>
