@@ -8,14 +8,14 @@ export default function MegaMenu({ open, closing }) {
     <div className={`${styles.megaMenu} ${closing ? styles.closing : ''}`}>
       <div className={styles.left}>
         <h2>소개합니다</h2>
+        <p>
+          수정교회의 역사를 비롯해 교회 시설,
+          <br />
+          주차안내, 수정교회에 대한 모든 것.
+        </p>
         <div className={styles.mobileLogo}>
-          <img src="/crystal-logo.png" alt="수정교회 로고" />
+          <img src="/public/church.png" alt="수정교회 로고" />
         </div>
-        {/* <img
-          src="/crystal-logo2.png"
-          alt="교회 일러스트"
-          className={styles.illust}
-        /> */}
       </div>
       <div className={styles.cols}>
         <div>

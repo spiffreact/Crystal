@@ -6,7 +6,7 @@
   width: 100vw;
   max-width: 1200px;
   margin: 0 auto;
-  background: #ffffff;
+  background: #e7d9d9;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
   display: flex;
   padding: 40px 40px;
@@ -20,6 +20,11 @@
 
 .megaMenu.closing {
   animation: fadeOut 0.7s;
+}
+
+.description {
+  font-size: 10px;
+  color: #a32626;
 }
 
 @keyframes fadeIn {
@@ -57,11 +62,10 @@
   font-size: 2rem;
   font-weight: 700;
   color: #1a237e;
-  margin-bottom: 0.5em;
 }
 .left p {
   color: #333;
-  font-size: 1.1rem;
+  font-size: 0.7rem; /* 또는 원하는 크기 */
 }
 .illust {
   width: 100%;
@@ -104,6 +108,7 @@
   height: 100px;
   width: auto;
   display: block;
+  margin-left: 10px;
 }
 
 @media (max-width: 900px) {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 import styles from './Header.module.css';
 import MegaMenu from './MegaMenu';
 
@@ -57,7 +58,11 @@ export default function Header() {
       <nav className={`${styles.nav} ${mobileMenuOpen ? styles.navOpen : ''}`}>
         <a href="/" onClick={() => setMobileMenuOpen(false)}>
           환영합니다
+          <span className={styles.arrow}>
+            <MdKeyboardArrowDown />
+          </span>
         </a>
+
         <div
           style={{ position: 'relative', display: 'inline-block' }}
           data-mega-menu
@@ -69,17 +74,29 @@ export default function Header() {
             onClick={handleIntroClick}
           >
             소개합니다
+            <span className={styles.arrow}>
+              <MdKeyboardArrowDown />
+            </span>
           </a>
           <MegaMenu open={megaOpen} closing={false} />
         </div>
         <a href="#" onClick={() => setMobileMenuOpen(false)}>
           예배와 말씀
+          <span className={styles.arrow}>
+            <MdKeyboardArrowDown />
+          </span>
         </a>
         <a href="#" onClick={() => setMobileMenuOpen(false)}>
           공동체와 양육
+          <span className={styles.arrow}>
+            <MdKeyboardArrowDown />
+          </span>
         </a>
         <a href="#" onClick={() => setMobileMenuOpen(false)}>
           선교와 사역
+          <span className={styles.arrow}>
+            <MdKeyboardArrowDown />
+          </span>
         </a>
       </nav>
     </header>

@@ -47,6 +47,18 @@
   color: #0056b3;
 }
 
+/* 화살표 아이콘을 50% 아래로 내리는 스타일 */
+.nav a span {
+  display: inline-block;
+  transform: translateY(10%);
+  margin-left: 2px;
+}
+
+.arrow {
+  color: #817c7c;
+  opacity: 0.5;
+}
+
 /* 햄버거 메뉴 버튼 */
 .hamburger {
   display: none;

@@ -16,6 +16,16 @@ export function Carousel({ children }) {
     });
   };
 
+  const goToPrevious = () => {
+    const newIndex = current === 0 ? length - 1 : current - 1;
+    goTo(newIndex);
+  };
+
+  const goToNext = () => {
+    const newIndex = current === length - 1 ? 0 : current + 1;
+    goTo(newIndex);
+  };
+
   return (
     <div className="carousel-root">
       <div className="carousel-track" ref={ref}>
@@ -25,6 +35,23 @@ export function Carousel({ children }) {
           </div>
         ))}
       </div>
+
+      {/* 좌우 화살표 버튼 */}
+      <button
+        className="carousel-arrow carousel-arrow-left"
+        onClick={goToPrevious}
+        aria-label="이전 슬라이드"
+      >
+        ‹
+      </button>
+      <button
+        className="carousel-arrow carousel-arrow-right"
+        onClick={goToNext}
+        aria-label="다음 슬라이드"
+      >
+        ›
+      </button>
+
       <div className="carousel-dots">
         {Array.from({ length }).map((_, idx) => (
           <button
