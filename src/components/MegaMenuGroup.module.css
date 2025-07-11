@@ -1,8 +1,8 @@
-/* 메가메뉴 컨테이너 - 드롭다운 메뉴의 기본 스타일 (화면 중앙, 100vw) */
+/* 공동체와 양육 메가메뉴 컨테이너 - 드롭다운 메뉴의 기본 스타일 (화면 중앙, 100vw) */
 .megaMenu {
   position: absolute;
   top: calc(100% + 20px); /* 헤더 아래 20px 간격 */
-  left: 90%; /* 화면 중앙 정렬 */
+  left: -145%; /* 화면 중앙 정렬 */
   transform: translateX(-50%); /* 중앙 정렬 */
   width: 100vw; /* 전체 뷰포트 너비 */
   margin: 0 auto;
