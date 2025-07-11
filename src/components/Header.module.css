@@ -87,11 +87,13 @@
 
 @media (max-width: 800px) {
   .header {
+    width: 100vw;
     flex-direction: row;
     min-height: 60px;
     padding: 0.5rem 1rem;
     gap: 1rem;
     justify-content: space-between;
+    box-sizing: border-box;
   }
 
   .logoBox {
@@ -115,6 +117,7 @@
     top: 100%;
     left: 0;
     right: 0;
+    width: 100vw;
     background: #fff;
     flex-direction: row;
     gap: 0;
@@ -128,6 +131,7 @@
     z-index: 15;
     flex-wrap: nowrap;
     justify-content: space-between;
+    box-sizing: border-box;
   }
 
   .navOpen {
