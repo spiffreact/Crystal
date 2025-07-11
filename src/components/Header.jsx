@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import styles from './Header.module.css';
 import MegaMenu from './MegaMenu';
@@ -126,12 +127,12 @@ export default function Header() {
       {/* 네비게이션 메뉴 영역 */}
       <nav className={`${styles.nav} ${mobileMenuOpen ? styles.navOpen : ''}`}>
         {/* 환영합니다 메뉴 */}
-        <a href="/" onClick={() => setMobileMenuOpen(false)}>
+        <Link to="/" onClick={() => setMobileMenuOpen(false)}>
           환영합니다
           <span className={styles.arrow}>
             <MdKeyboardArrowDown />
           </span>
-        </a>
+        </Link>
 
         {/* 소개합니다 메뉴 - 소개합니다 메가메뉴가 연결됨 */}
         <div
@@ -194,12 +195,12 @@ export default function Header() {
         </div>
 
         {/* 선교와 사역 메뉴 */}
-        <a href="#" onClick={() => setMobileMenuOpen(false)}>
+        <Link to="#" onClick={() => setMobileMenuOpen(false)}>
           선교와 사역
           <span className={styles.arrow}>
             <MdKeyboardArrowDown />
           </span>
-        </a>
+        </Link>
       </nav>
     </header>
   );

@@ -1,0 +1,20 @@
+.pastor-greeting-image {
+  width: 80vw;
+  height: 80vh;
+  object-fit: contain;
+  object-position: center;
+  max-width: 800px;
+  max-height: 800px;
+}
+
+/* 모바일 화면 (768px 이하) */
+@media (max-width: 768px) {
+  .pastor-greeting-image {
+    width: 95vw;
+    height: 95vh;
+    object-fit: cover;
+    object-position: center top;
+    max-width: 1200px;
+    max-height: 1200px;
+  }
+} 

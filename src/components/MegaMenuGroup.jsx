@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './MegaMenuGroup.module.css';
 
 /**
@@ -7,6 +8,21 @@ import styles from './MegaMenuGroup.module.css';
  */
 export default function MegaMenuGroup({ open, closing }) {
   if (!open && !closing) return null;
+
+  /**
+   * 링크 클릭 시 모바일 메뉴를 닫는 핸들러
+   */
+  const handleLinkClick = () => {
+    // 모바일 메뉴가 열려있다면 닫기
+    const mobileMenu = document.querySelector('[class*="navOpen"]');
+    if (mobileMenu) {
+      // 모바일 메뉴 닫기 이벤트를 트리거
+      const hamburgerButton = document.querySelector('[class*="hamburger"]');
+      if (hamburgerButton) {
+        hamburgerButton.click();
+      }
+    }
+  };
 
   return (
     <div className={`${styles.megaMenu} ${closing ? styles.closing : ''}`}>
@@ -27,38 +43,38 @@ export default function MegaMenuGroup({ open, closing }) {
         <div>
           <h3>부서별 공동체</h3>
           <ul>
-            <li><a href="#">청년부</a></li>
-            <li><a href="#">대학부</a></li>
-            <li><a href="#">중고등부</a></li>
-            <li><a href="#">초등부</a></li>
-            <li><a href="#">유치부</a></li>
+            <li><Link to="#" onClick={handleLinkClick}>청년부</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>대학부</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>중고등부</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>초등부</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>유치부</Link></li>
           </ul>
         </div>
         <div>
           <h3>양육 프로그램</h3>
           <ul>
-            <li><a href="#">새신자 양육</a></li>
-            <li><a href="#">성경공부</a></li>
-            <li><a href="#">기도학교</a></li>
-            <li><a href="#">제자훈련</a></li>
+            <li><Link to="#" onClick={handleLinkClick}>새신자 양육</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>성경공부</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>기도학교</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>제자훈련</Link></li>
           </ul>
         </div>
         <div>
           <h3>소그룹</h3>
           <ul>
-            <li><a href="#">가정예배</a></li>
-            <li><a href="#">기도모임</a></li>
-            <li><a href="#">성경공부모임</a></li>
-            <li><a href="#">전도모임</a></li>
+            <li><Link to="#" onClick={handleLinkClick}>가정예배</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>기도모임</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>성경공부모임</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>전도모임</Link></li>
           </ul>
         </div>
         <div>
           <h3>특별 공동체</h3>
           <ul>
-            <li><a href="#">찬양팀</a></li>
-            <li><a href="#">봉사팀</a></li>
-            <li><a href="#">전도팀</a></li>
-            <li><a href="#">교육팀</a></li>
+            <li><Link to="#" onClick={handleLinkClick}>찬양팀</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>봉사팀</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>전도팀</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>교육팀</Link></li>
           </ul>
         </div>
       </div>
