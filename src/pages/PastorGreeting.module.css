@@ -10,11 +10,11 @@
 /* 모바일 화면 (768px 이하) */
 @media (max-width: 768px) {
   .pastor-greeting-image {
-    width: 95vw;
-    height: 95vh;
-    object-fit: cover;
-    object-position: center top;
-    max-width: 1200px;
-    max-height: 1200px;
+    width: 70vw;
+    height: 70vh;
+    object-fit: contain;
+    object-position: center;
+    max-width: 600px;
+    max-height: 600px;
   }
 } 
