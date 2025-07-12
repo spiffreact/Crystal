@@ -25,7 +25,7 @@ const sampleVideos = [
     id: '3',
     title: '금요 예배 - 2025년 6월 27일',
     category: '금요',
-    preacher: '김광호',
+    preacher: 'Baringo Cha',
     date: '2025-06-27',
     youtubeId: '3JZ_D3ELwOQ',
     description: '2025년 6월 27일 금요 예배 영상입니다.'
