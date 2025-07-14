@@ -8,6 +8,8 @@ import Home from './pages/Home';
 import PastorGreeting from './pages/PastorGreeting';
 import WorshipVideos from './pages/WorshipVideos';
 import WorshipVideoDetail from './pages/WorshipVideoDetail';
+import YouthGroup from './pages/YouthGroup';
+import BibleReading from './pages/BibleReading';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/intro/pastor" element={<PastorGreeting />} />
           <Route path="/worship/videos" element={<WorshipVideos />} />
           <Route path="/worship/videos/:id" element={<WorshipVideoDetail />} />
+          <Route path="/community/youth" element={<YouthGroup />} />
+          <Route path="/community/bible" element={<BibleReading />} />
         </Routes>
         <Footer />
       </div>

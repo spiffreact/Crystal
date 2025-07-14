@@ -44,16 +44,16 @@ export default function MegaMenuWorship({ open, closing }) {
       {/* 오른쪽 메뉴 컬럼들 */}
       <div className={styles.cols}>
         {/* 예배 영상 */}
-        <div>
-          <h3>예배 영상</h3>
-          <ul>
-            <li><Link to="/worship/videos" onClick={handleLinkClick}>주일 예배</Link></li>
-            <li><Link to="/worship/wednesday" onClick={handleLinkClick}>수요 예배</Link></li>
-            <li><Link to="/worship/friday" onClick={handleLinkClick}>금요 예배</Link></li>
-            <li><Link to="/worship/dawn" onClick={handleLinkClick}>새벽기도회</Link></li>
-            <li><Link to="/worship/english" onClick={handleLinkClick}>영어 예배</Link></li>
-          </ul>
-        </div>
+          <div>
+            <h3>예배 영상</h3>
+            <ul>
+              <li><Link to="/worship/videos" onClick={handleLinkClick}>주일 예배</Link></li>
+              <li><Link to="/worship/wednesday" onClick={handleLinkClick}>수요 예배</Link></li>
+              <li><Link to="/worship/friday" onClick={handleLinkClick}>금요 예배</Link></li>
+              <li><Link to="/worship/dawn" onClick={handleLinkClick}>새벽기도회</Link></li>
+              <li><Link to="/worship/english" onClick={handleLinkClick}>영어 예배</Link></li>
+            </ul>
+          </div>
         {/* 설교 */}
         <div>
             <h3>설교</h3>
@@ -63,7 +63,19 @@ export default function MegaMenuWorship({ open, closing }) {
             <li><Link to="#" onClick={handleLinkClick}>주제별 설교</Link></li>
           </ul>
         </div>
+        {/* 특별 집회 */}
+        <div>
+          <h3>특별집회 영상</h3>
+          <ul>
+            <li><Link to="/worship/videos" onClick={handleLinkClick}>신년 예배</Link></li>
+            <li><Link to="/worship/wednesday" onClick={handleLinkClick}>맥추감사 예배</Link></li>
+            <li><Link to="/worship/friday" onClick={handleLinkClick}>성탄절 예배</Link></li>
+            <li><Link to="/worship/dawn" onClick={handleLinkClick}>특밤기도회</Link></li>
+            {/* <li><Link to="/worship/english" onClick={handleLinkClick}>영어 예배</Link></li> */}
+          </ul>
+        </div>
       </div>
     </div>
+    
   );
 } 
