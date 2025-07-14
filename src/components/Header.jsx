@@ -106,11 +106,17 @@ export default function Header() {
     <header className={styles.header}>
       {/* 로고 영역 */}
       <div className={styles.logoBox}>
-        <img
-          src="/crystal-logo2.png"
-          alt="수정침례교회 로고"
-          className={styles.logo}
-        />
+        <a
+          href="https://crystal-alpha.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/crystal-logo2.png"
+            alt="수정침례교회 로고"
+            className={styles.logo}
+          />
+        </a>
       </div>
 
       {/* 햄버거 메뉴 버튼 - 모바일에서만 표시 */}
