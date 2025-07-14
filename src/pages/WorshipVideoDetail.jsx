@@ -5,12 +5,12 @@ import { useParams, useNavigate } from 'react-router-dom';
 const sampleVideos = [
   {
     id: '1',
-    title: '주일 예배 - 2025년 7월 6일',
+    title: '주일 예배 - 2025년 7월 13일',
     category: '주일',
     preacher: '김광호',
-    date: '2025-07-06',
-    youtubeId: 'dQw4w9WgXcQ',
-    description: '2025년 7월 6일 주일 예배 영상입니다.'
+    date: '2025-07-13',
+    youtubeId: 'F1mw5Pe4CZA',
+    description: '2025년 7월 13일 주일 예배 영상입니다.'
   },
   {
     id: '2',
@@ -57,7 +57,7 @@ export default function WorshipVideoDetail() {
         <iframe
           width="100%"
           height="390"
-          // src={`https://www.youtube.com/embed/${video.youtubeId}`}
+          src={`https://www.youtube.com/embed/${video.youtubeId}`}
           title={video.title}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

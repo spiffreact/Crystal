@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 const sampleVideos = [
   {
     id: 1,
-    title: '주일 예배 - 2025년 7월 6일',
+    title: '주일 예배 - 2025년 7월 13일',
     category: '주일',
     preacher: '김광호',
-    date: '2025-07-06',
-    thumbnail: '',
+    date: '2025-07-13',
+    thumbnail: 'https://img.youtube.com/vi/F1mw5Pe4CZA/maxresdefault.jpg',
   },
   {
     id: 2,
@@ -23,6 +23,14 @@ const sampleVideos = [
     category: '금요',
     preacher: 'Baringo Cha',
     date: '2025-06-27',
+    thumbnail: '',
+  },
+  {
+    id: 4,
+    title: '주일 예배 - 2025년 1월 12일',
+    category: '주일',
+    preacher: '김광호',
+    date: '2025-01-12',
     thumbnail: '',
   },
   {
@@ -79,7 +87,18 @@ export default function WorshipVideos() {
         {filtered.map(video => (
           <div key={video.id} style={{ background: '#fff', borderRadius: 12, boxShadow: '0 2px 8px #0001', padding: 12 }}>
             <a href={`/worship/videos/${video.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-              <img src={video.thumbnail} alt={video.title} style={{ width: '100%', borderRadius: 8, marginBottom: 8 }} />
+              <img 
+                src={video.thumbnail || '/youtube.png'} 
+                alt={video.title} 
+                style={{ 
+                  width: '100%', 
+                  height: '120px', 
+                  borderRadius: 8, 
+                  marginBottom: 8,
+                  objectFit: 'cover',
+                  backgroundColor: '#f5f5f5'
+                }} 
+              />
               <div style={{ fontWeight: 600, fontSize: '1.1rem', marginBottom: 4 }}>{video.title}</div>
               <div style={{ color: '#1976d2', fontWeight: 500 }}>{video.preacher}</div>
               <div style={{ color: '#888', fontSize: '0.95rem' }}>{video.date}</div>
