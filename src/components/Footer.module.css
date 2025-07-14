@@ -11,16 +11,17 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 1rem;
 }
 
 .left {
-  flex: 0;
+  flex: 0 0 220px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .logo {
@@ -28,25 +29,25 @@
   height: 100px;
   object-fit: contain;
   background: transparent;
+  margin: 0 auto;
+  display: block;
 }
 
 .right {
-  flex: 1 1 0;
+  /* Footer 우측 전체 영역 스타일 */
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  gap: 0.6rem;
+  flex-direction: column; /* 세로로 쌓기 */
+  align-items: flex-start;     /* 가로 중앙 정렬 */
+  text-align: center;      /* 텍스트 중앙 정렬 */
+  gap: 0.6rem;             /* 각 줄 사이 간격 */
 }
 
 .langs {
+  /* 언어 선택 줄 스타일 */
   display: flex;
-  gap: 1rem;
-  font-size: 1.05rem;
-  color: #fff;
-  opacity: 0.95;
-  margin-bottom: 0.1rem;
-  justify-content: flex-start;
+  gap: 1rem;               /* 언어 사이 간격 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  margin-bottom: 0.1rem;   /* 아래 여백 */
 }
 
 .langs span {
@@ -54,20 +55,21 @@
 }
 
 .addressSnsRow {
+  /* 주소/전화번호 + 소셜미디어 한 줄 배치 */
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 2.5rem;
+  justify-content: flex-start; /* 가로 중앙 정렬 */
+  gap: 2rem;               /* 주소와 소셜미디어 사이 간격 */
   width: 100%;
+  margin: 0.3rem 0 0.2rem 0; /* 위아래 여백 */
 }
 
 .addresses {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  color: #eaeaea;
-  font-size: 1rem;
+  /* 주소/전화번호 줄 스타일 */
+  align-items: flex-end;   /* 오른쪽 정렬(좌측에 붙이고 싶으면 flex-start) */
+  text-align: right;       /* 텍스트 오른쪽 정렬(가운데로 하고 싶으면 center) */
+  margin: 0;
 }
 
 .label {
@@ -111,7 +113,39 @@
   font-size: 0.75rem;
   margin-top: 0.7rem;
   letter-spacing: 0.01em;
-  text-align: left;
+  text-align: center;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.socialLink:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.socialLink svg {
+  width: 18px;
+  height: 18px;
 }
 
 @media (max-width: 800px) {
@@ -131,9 +165,15 @@
   }
   .addresses {
     align-items: center;
+    text-align: center;
   }
   .sns {
     justify-content: center;
+  }
+  .socialLinks {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 0.5rem;
   }
   .copyright {
     text-align: center;

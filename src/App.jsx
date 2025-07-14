@@ -6,6 +6,8 @@ import Header from './components/Header';
 import ChurchIntro from './pages/ChurchIntro';
 import Home from './pages/Home';
 import PastorGreeting from './pages/PastorGreeting';
+import WorshipVideos from './pages/WorshipVideos';
+import WorshipVideoDetail from './pages/WorshipVideoDetail';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/intro" element={<ChurchIntro />} />
           <Route path="/intro/pastor" element={<PastorGreeting />} />
+          <Route path="/worship/videos" element={<WorshipVideos />} />
+          <Route path="/worship/videos/:id" element={<WorshipVideoDetail />} />
         </Routes>
         <Footer />
       </div>
