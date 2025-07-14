@@ -37,7 +37,7 @@ export default function MegaMenu({ open, closing }) {
         </p>
         {/* 모바일에서만 표시되는 로고 */}
         <div className={styles.mobileLogo}>
-          <img src="/public/church.png" alt="수정교회 로고" />
+          <img src="/church.png" alt="수정교회 로고" />
         </div>
       </div>
       

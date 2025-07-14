@@ -36,7 +36,7 @@ export default function MegaMenuGroup({ open, closing }) {
           공동체별 양육 프로그램
         </p>
         <div className={styles.mobileLogo}>
-          <img src="/public/church.png" alt="수정교회 로고" />
+          <img src="/church.png" alt="수정교회 로고" />
         </div>
       </div>
       <div className={styles.cols}>
