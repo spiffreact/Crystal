@@ -47,7 +47,7 @@ export default function ChurchIntro() {
         </h2>
         <ul>
           <li>
-            <b>정기 예배</b>: 주일 예배, 수요예배, 금요기도회, 새벽기도회
+            <b>정기 예배</b>: 주일 예배, 수요예배, 금요기도회, 새벽기도회 , 영어예배
           </li>
           <li>
             <b>청년부</b>: 주일 오후 1시
@@ -81,8 +81,8 @@ export default function ChurchIntro() {
           <p><strong>전화:</strong> 031-212-0091</p>
           <p><strong>교통:</strong></p>
           <ul>
-            <li><strong>지하철:</strong> 1호선 수원역 1번 출구에서 도보 10분</li>
-            <li><strong>버스:</strong> 수원역 정류장 하차 후 도보 10분</li>
+            <li><strong>지하철:</strong> 수인분당선 수원시청역 8번 출구에서 도보 30분</li>
+            <li><strong>버스:</strong> 수원월드컵경기장 하차 후 도보 10분 ・ 월드메르디앙 하차 후 도보 3분</li>
             <li><strong>자가용:</strong> 네비게이션에 "수정침례교회" 검색</li>
           </ul>
         </div>
