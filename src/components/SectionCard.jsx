@@ -31,6 +31,11 @@ export default function SectionCard({ title, description, linkText }) {
               <td>청년부 모임</td>
               <td>주일 오후 1:00</td>
             </tr>
+            <tr>
+              <td>English Service</td>
+              <td>주일 오전 9:00</td>
+            </tr>
+
           </tbody>
         </table>
       )}
