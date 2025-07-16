@@ -10,6 +10,7 @@ import WorshipVideos from './pages/WorshipVideos';
 import WorshipVideoDetail from './pages/WorshipVideoDetail';
 import YouthGroup from './pages/YouthGroup';
 import BibleReading from './pages/BibleReading';
+import OfferingGuide from './pages/OfferingGuide';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/worship/videos/:id" element={<WorshipVideoDetail />} />
           <Route path="/community/youth" element={<YouthGroup />} />
           <Route path="/community/bible" element={<BibleReading />} />
+          <Route path="/offering" element={<OfferingGuide />} />
         </Routes>
         <Footer />
       </div>
