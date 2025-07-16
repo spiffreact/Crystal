@@ -3,7 +3,7 @@ import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="footer">
       <div className={styles.inner}>
         {/* 좌측: 로고 */}
         <div className={styles.left}>
@@ -27,7 +27,7 @@ export default function Footer() {
           <div className={styles.addressSnsRow}>
             <div className={styles.addresses}>
               <div style={{whiteSpace: 'nowrap'}}>
-                <span>16240 경기도 수원시 팔달구 팔달문로150번길 13&nbsp;&nbsp;T 031)212-0091</span>
+                <span>16240 경기도 수원시 팔달구 팔달문로150번길 13&nbsp;&nbsp;<span id="phone-number">T 031)212-0091</span></span>
               </div>
             </div>
             <div className={styles.socialLinks}>

@@ -25,12 +25,29 @@ function Home() {
           <SectionCard
             title="교회 소개"
             description="수정침례교회는 하나님의 사랑을 전하는 교회입니다."
-            linkText={<Link to="/intro">교회 소개 보기</Link>}
+            linkText={<Link to="/intro" style={{ color: '#3498db', textDecoration: 'none', fontWeight: '500' }}>교회 소개 보기</Link>}
           />
           <SectionCard
             title="연락처"
             description="궁금한 점이 있으시면 언제든 연락해 주세요."
-            linkText="연락처 보기"
+            linkText={
+              <a 
+                href="#phone-number" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  const phoneNumber = document.getElementById('phone-number');
+                  if (phoneNumber) {
+                    phoneNumber.scrollIntoView({ 
+                      behavior: 'smooth',
+                      block: 'center'
+                    });
+                  }
+                }}
+                style={{ color: '#3498db', textDecoration: 'none', fontWeight: '500' }}
+              >
+                연락처 보기
+              </a>
+            }
           />
         </section>
       </main>
