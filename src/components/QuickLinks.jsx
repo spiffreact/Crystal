@@ -29,7 +29,7 @@ const links = [
   {
     title: '매일 아침 만나는 QT',
     icon: FaBookBible,
-    href: '/quick-links',
+    href: '',
     bg: '#1a1a3c',
     external: false,
   },
@@ -38,7 +38,7 @@ const links = [
 export default function QuickLinks() {
   return (
     <div className={styles.grid}>
-      {links.map((link, idx) => (
+      {links.map((link, idx) =>
         link.external ? (
           <a
             key={idx}
@@ -55,14 +55,20 @@ export default function QuickLinks() {
             {typeof link.icon === 'string' && link.icon && (
               <img src={link.icon} alt="" className={styles.icon} />
             )}
-            <span className={styles.title} style={{ color: '#fff' }}>{link.title}</span>
+            <span className={styles.title} style={{ color: '#fff' }}>
+              {link.title}
+            </span>
           </a>
         ) : (
           <Link
             key={idx}
             to={link.href}
             className={styles.card}
-            style={{ background: link.bg, textDecoration: 'none', color: 'inherit' }}
+            style={{
+              background: link.bg,
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
           >
             {/* React 아이콘 컴포넌트면 JSX로, 문자열이면 <img>로 */}
             {typeof link.icon === 'function' && (
@@ -71,10 +77,12 @@ export default function QuickLinks() {
             {typeof link.icon === 'string' && link.icon && (
               <img src={link.icon} alt="" className={styles.icon} />
             )}
-            <span className={styles.title} style={{ color: '#fff' }}>{link.title}</span>
+            <span className={styles.title} style={{ color: '#fff' }}>
+              {link.title}
+            </span>
           </Link>
         )
-      ))}
+      )}
     </div>
   );
 }
