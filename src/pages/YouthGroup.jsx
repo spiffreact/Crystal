@@ -5,7 +5,7 @@ const cards = [
   {
     title: 'Instagram',
     image: '/banner1.jpg',
-    link: 'https://example.com/news',
+    link: '#',
     description: '인스타그램',
     external: true,
   },

@@ -14,13 +14,13 @@ export default function MainBanner() {
               key={idx}
               style={{
                 width: '100vw',
-                height: '60vh',
+                height: '70vh',
                 minHeight: '400px',
                 backgroundImage: `url(${src})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                borderRadius: '0',
+                borderRadius: '10px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

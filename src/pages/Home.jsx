@@ -11,7 +11,7 @@ function Home() {
         <title>수정침례교회 - 예수님의 사랑을 실천하는 교회</title>
         <meta name="description" content="수정침례교회는 1991년 창립된 경기도 수원시 팔달구에 위치한 교회입니다. 주일예배 오전 11시, 수요예배, 금요기도회, 새벽기도회를 통해 하나님의 말씀을 전하고 있습니다." />
         <meta name="keywords" content="수정침례교회, 수원교회, 침례교회, 기독교, 예배, 설교, 김광호목사, 수원시교회" />
-        <link rel="canonical" href="https://crystal-church.netlify.app/" />
+        <link rel="canonical" href="https://crystal-alpha.vercel.app/" />
       </Helmet>
       <main>
         <MainBanner />
