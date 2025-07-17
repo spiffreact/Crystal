@@ -55,7 +55,7 @@ export default function QuickLinks() {
             {typeof link.icon === 'string' && link.icon && (
               <img src={link.icon} alt="" className={styles.icon} />
             )}
-            <span className={styles.title}>{link.title}</span>
+            <span className={styles.title} style={{ color: '#fff' }}>{link.title}</span>
           </a>
         ) : (
           <Link
@@ -71,7 +71,7 @@ export default function QuickLinks() {
             {typeof link.icon === 'string' && link.icon && (
               <img src={link.icon} alt="" className={styles.icon} />
             )}
-            <span className={styles.title}>{link.title}</span>
+            <span className={styles.title} style={{ color: '#fff' }}>{link.title}</span>
           </Link>
         )
       ))}
