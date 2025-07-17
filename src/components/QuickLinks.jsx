@@ -29,9 +29,9 @@ const links = [
   {
     title: '매일 아침 만나는 QT',
     icon: FaBookBible,
-    href: 'https://www.duranno.com/',
+    href: '/quick-links',
     bg: '#1a1a3c',
-    external: true,
+    external: false,
   },
 ];
 
