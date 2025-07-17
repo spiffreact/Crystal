@@ -12,12 +12,13 @@ export default function MainBanner() {
           {images.map((src, idx) => (
             <div
               key={idx}
+              className={styles.bannerImage}
               style={{
                 width: '100vw',
                 height: '70vh',
                 minHeight: '400px',
                 backgroundImage: `url(${src})`,
-                backgroundSize: 'cover',
+                backgroundSize: 'contain',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 borderRadius: '10px',
