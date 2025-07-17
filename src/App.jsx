@@ -1,16 +1,17 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import BibleReading from './pages/BibleReading';
 import ChurchIntro from './pages/ChurchIntro';
 import Home from './pages/Home';
-import PastorGreeting from './pages/PastorGreeting';
-import WorshipVideos from './pages/WorshipVideos';
-import WorshipVideoDetail from './pages/WorshipVideoDetail';
-import YouthGroup from './pages/YouthGroup';
-import BibleReading from './pages/BibleReading';
 import OfferingGuide from './pages/OfferingGuide';
+import PastorGreeting from './pages/PastorGreeting';
+import QuickLinksGridPage from './pages/QuickLinksGridPage';
+import WorshipVideoDetail from './pages/WorshipVideoDetail';
+import WorshipVideos from './pages/WorshipVideos';
+import YouthGroup from './pages/YouthGroup';
 
 function App() {
   return (
@@ -23,10 +24,14 @@ function App() {
             <Route path="/intro" element={<ChurchIntro />} />
             <Route path="/intro/pastor" element={<PastorGreeting />} />
             <Route path="/worship/videos" element={<WorshipVideos />} />
-            <Route path="/worship/videos/:id" element={<WorshipVideoDetail />} />
+            <Route
+              path="/worship/videos/:id"
+              element={<WorshipVideoDetail />}
+            />
             <Route path="/community/youth" element={<YouthGroup />} />
             <Route path="/community/bible" element={<BibleReading />} />
             <Route path="/offering" element={<OfferingGuide />} />
+            <Route path="/quick-links" element={<QuickLinksGridPage />} />
           </Routes>
           <Footer />
         </div>

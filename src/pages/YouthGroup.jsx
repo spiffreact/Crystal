@@ -10,11 +10,11 @@ const cards = [
     external: true,
   },
   {
-    title: '생명의 삶',
+    title: 'QT',
     image: '/banner2.jpg',
-    link: 'https://www.duranno.com/qt/',
+    link: '/quick-links',
     description: '매일 아침 만나는 큐티',
-    external: true,
+    external: false,
   },
   {
     title: '유튜브 채널',
