@@ -9,14 +9,14 @@ const links = [
     title: '주보 · 수정신문',
     icon: TbCircleLetterNFilled, // React 아이콘 컴포넌트
     href: '#',
-    bg: '#0a2a5c',
+    bg: '#1a1a3c',
     external: false,
   },
   {
     title: '헌금 안내',
     icon: FaCross,
     href: '/offering',
-    bg: '#0a2a5c',
+    bg: '#1a1a3c',
     external: false,
   },
   {
