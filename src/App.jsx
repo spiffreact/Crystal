@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import Footer from './components/Footer';
@@ -14,22 +14,24 @@ import OfferingGuide from './pages/OfferingGuide';
 
 function App() {
   return (
-    <HelmetProvider>
-      <div className="app">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/intro" element={<ChurchIntro />} />
-          <Route path="/intro/pastor" element={<PastorGreeting />} />
-          <Route path="/worship/videos" element={<WorshipVideos />} />
-          <Route path="/worship/videos/:id" element={<WorshipVideoDetail />} />
-          <Route path="/community/youth" element={<YouthGroup />} />
-          <Route path="/community/bible" element={<BibleReading />} />
-          <Route path="/offering" element={<OfferingGuide />} />
-        </Routes>
-        <Footer />
-      </div>
-    </HelmetProvider>
+    <BrowserRouter>
+      <HelmetProvider>
+        <div className="app">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/intro" element={<ChurchIntro />} />
+            <Route path="/intro/pastor" element={<PastorGreeting />} />
+            <Route path="/worship/videos" element={<WorshipVideos />} />
+            <Route path="/worship/videos/:id" element={<WorshipVideoDetail />} />
+            <Route path="/community/youth" element={<YouthGroup />} />
+            <Route path="/community/bible" element={<BibleReading />} />
+            <Route path="/offering" element={<OfferingGuide />} />
+          </Routes>
+          <Footer />
+        </div>
+      </HelmetProvider>
+    </BrowserRouter>
   );
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const cards = [
   {
@@ -6,24 +7,28 @@ const cards = [
     image: '/banner1.jpg',
     link: 'https://example.com/news',
     description: '인스타그램',
+    external: true,
   },
   {
     title: '생명의 삶',
     image: '/banner2.jpg',
     link: 'https://www.duranno.com/qt/',
     description: '매일 아침 만나는 큐티',
+    external: true,
   },
   {
     title: '유튜브 채널',
     image: '/youtube.png',
     link: 'https://www.youtube.com/',
     description: '청년부 공식 유튜브 채널',
+    external: true,
   },
   {
     title: '성경 읽기',
     image: '/banner1.jpg',
     link: '/community/bible',
     description: '공동체 성경 읽기',
+    external: false,
   }
 ];
 
@@ -50,18 +55,33 @@ export default function YouthGroup() {
           <div style={{ padding: '20px', flex: 1 }}>
             <h3 style={{ fontSize: '1.2rem', margin: '0 0 0.5em 0' }}>{card.title}</h3>
             <p style={{ color: '#555', marginBottom: '1em' }}>{card.description}</p>
-            <a href={card.link} target="_blank" rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                padding: '10px 24px',
-                background: '#1976d2',
-                color: '#fff',
-                borderRadius: '8px',
-                textDecoration: 'none',
-                fontWeight: 600
-              }}>
-              바로가기
-            </a>
+            {card.external ? (
+              <a href={card.link} target="_blank" rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  padding: '10px 24px',
+                  background: '#1976d2',
+                  color: '#fff',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  fontWeight: 600
+                }}>
+                바로가기
+              </a>
+            ) : (
+              <Link to={card.link}
+                style={{
+                  display: 'inline-block',
+                  padding: '10px 24px',
+                  background: '#1976d2',
+                  color: '#fff',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  fontWeight: 600
+                }}>
+                바로가기
+              </Link>
+            )}
           </div>
         </div>
       ))}

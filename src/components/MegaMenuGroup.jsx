@@ -55,6 +55,7 @@ export default function MegaMenuGroup({ open, closing }) {
           <ul>
             <li><Link to="#" onClick={handleLinkClick}>새신자 양육</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>성경공부</Link></li>
+            <li><Link to="/community/bible" onClick={handleLinkClick}>성경읽기</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>기도학교</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>제자훈련</Link></li>
           </ul>
