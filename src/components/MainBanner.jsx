@@ -14,10 +14,10 @@ export default function MainBanner() {
               key={idx}
               style={{
                 width: '100vw',
-                height: '60vh', // 화면의 70% 높이
+                height: '60vh',
                 minHeight: '400px',
                 backgroundImage: `url(${src})`,
-                backgroundSize: 'contain',
+                backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 borderRadius: '0',
