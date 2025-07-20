@@ -44,10 +44,10 @@ export default function MegaMenuGroup({ open, closing }) {
           <h3>부서별 공동체</h3>
           <ul>
             <li><Link to="/community/youth" onClick={handleLinkClick}>청년부</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>대학부</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>중고등부</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>초등부</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>유치부</Link></li>
+            {/* <li><Link to="#" onClick={handleLinkClick}>대학부</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>중고등부</Link></li> */}
+            <li><Link to="/community/elementary" onClick={handleLinkClick}>다음세대</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>장년부</Link></li>
           </ul>
         </div>
         <div>

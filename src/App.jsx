@@ -5,7 +5,10 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import BibleReading from './pages/BibleReading';
 import ChurchIntro from './pages/ChurchIntro';
+import ElementaryBibleStudy from './pages/ElementaryBibleStudy';
+import ElementaryGroup from './pages/ElementaryGroup';
 import Home from './pages/Home';
+import Notice from './pages/Notice';
 import OfferingGuide from './pages/OfferingGuide';
 import PastorGreeting from './pages/PastorGreeting';
 import QuickLinksGridPage from './pages/QuickLinksGridPage';
@@ -29,6 +32,9 @@ function App() {
               element={<WorshipVideoDetail />}
             />
             <Route path="/community/youth" element={<YouthGroup />} />
+            <Route path="/community/elementary" element={<ElementaryGroup />} />
+            <Route path="/elementary-bible-study" element={<ElementaryBibleStudy />} />
+            <Route path="/notice" element={<Notice />} />
             <Route path="/community/bible" element={<BibleReading />} />
             <Route path="/offering" element={<OfferingGuide />} />
             <Route path="/quick-links" element={<QuickLinksGridPage />} />
