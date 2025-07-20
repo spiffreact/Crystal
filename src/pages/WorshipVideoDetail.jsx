@@ -12,15 +12,15 @@ const sampleVideos = [
     youtubeId: 'F1mw5Pe4CZA',
     description: '2025년 7월 13일 주일 예배 영상입니다.'
   },
-  // {
-  //   id: '2',
-  //   title: '수요 예배 - 2025년 7월 2일',
-  //   category: '수요',
-  //   preacher: '김모세',
-  //   date: '2025-07-02',
-  //   youtubeId: '',
-  //   description: '2025년 7월 2일 수요 예배 영상입니다.'
-  // },
+  {
+    id: '2',
+    title: '주일 예배 - 2025년 7월 20일',
+    category: '주일',
+    preacher: '바링고차',
+    date: '2025-07-20',
+    youtubeId: '34QobpblN20',
+    description: '2025년 7월 20일 주일 예배 영상입니다.'
+  },
   {
     id: '3',
     title: '금요 예배 - 2025년 6월 27일',

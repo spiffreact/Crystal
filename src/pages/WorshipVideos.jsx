@@ -10,14 +10,14 @@ const sampleVideos = [
     date: '2025-07-13',
     thumbnail: 'https://img.youtube.com/vi/F1mw5Pe4CZA/maxresdefault.jpg',
   },
-  // {
-  //   id: "2",
-  //   title: '수요 예배 - 2025년 7월 2일',
-  //   category: '수요',
-  //   preacher: '김모세',
-  //   date: '2025-07-02',
-  //   thumbnail: '',
-  // },
+  {
+    id: "2",
+    title: '주일 예배 - 2025년 7월 20일',
+    category: '주일',
+    preacher: '바링고차',
+    date: '2025-07-20',
+    thumbnail: 'https://img.youtube.com/vi/34QobpblN20/maxresdefault.jpg',
+  },
   {
     id: "3",
     title: '금요 예배 - 2025년 6월 27일',
