@@ -3,22 +3,21 @@ import { Link } from 'react-router-dom';
 import styles from './QuickLinksGridPage.module.css';
 
 const links = [
-
   {
     title: '7월20일 바이블스터디',
     description: '바이블스터디 자료',
     image: '/bible2.jpg',
     href: 'https://accurate-spinach-48b.notion.site/14-1-12-212e40ba5bcd805a93dbc4fc0c333c1d',
-    external: false,
+    external: true,
   },
   {
     title: '7월27일 바이블스터디',
     description: '바이블스터디 자료',
     image: '/bible2.jpg',
     href: 'https://www.notion.so/14-13-16-212e40ba5bcd8089b934e3019950363e',
-    external: false,
+    external: true,
   },
-    {
+  {
     title: '8월3일 바이블스터디',
     description: '바이블스터디 자료',
     image: '/bible2.jpg',
