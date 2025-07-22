@@ -2,7 +2,7 @@
 .megaMenu {
   position: absolute;
   top: calc(100% + 20px); /* 헤더 아래 20px 간격 */
-  left: -200%; /* 왼쪽 라인에 맞춘 정렬 */
+  left: -302%; /* 왼쪽 라인에 맞춘 정렬 */
   transform: translateX(-50%); /* 중앙 정렬 */
   width: 100vw; /* 전체 뷰포트 너비 */
   margin: 0 auto;
@@ -184,7 +184,7 @@
   .megaMenu {
     position: fixed; /* 고정 위치 */
     top: 0;
-    left: 0;
+    left: -30%;
     right: 0;
     bottom: 0;
     width: 70vw;
