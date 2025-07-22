@@ -2,7 +2,7 @@
 .megaMenu {
   position: absolute;
   top: calc(100% + 20px); /* 헤더 아래 20px 간격 */
-  left: -302%; /* 화면 중앙 정렬 */
+  left: 50%; /* 화면 중앙 정렬 */
   transform: translateX(-50%); /* 중앙 정렬 */
   width: 100vw; /* 전체 뷰포트 너비 */
   margin: 0 auto;
@@ -149,6 +149,8 @@
   .megaMenu {
     left: 50%; /* 화면 중앙 위치 */
     transform: translateX(-50%);
+    width: 95vw; /* 화면에 맞는 너비 */
+    max-width: 500px; /* 최대 너비 제한 */
     flex-direction: column; /* 세로 배치로 변경 */
     padding: 32px 4vw;
     gap: 32px;
@@ -189,8 +191,8 @@
     left: 50%; /* 화면 중앙 */
     right: auto;
     bottom: 0;
-    width: 70vw;
-    max-width: 95vw;
+    width: 90vw; /* 화면의 90% 너비 */
+    max-width: 400px; /* 최대 너비 제한 */
     height: 100vh; /* 전체 화면 높이 */
     margin: 0;
     transform: translateX(-50%); /* 중앙 정렬 */
