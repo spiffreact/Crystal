@@ -1,0 +1,548 @@
+/**
+ * 해외 아웃리치 페이지 스타일
+ */
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.header {
+  background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%);
+  color: white;
+  padding: 80px 0 60px;
+  text-align: center;
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/banner.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.headerContent {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.headerContent h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.content {
+  padding: 80px 0;
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 섹션 공통 스타일 */
+section {
+  margin-bottom: 80px;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  border-radius: 2px;
+}
+
+/* 소개 섹션 */
+.introSection p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4b5563;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 주요 활동 섹션 */
+.activitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.activityCard {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid #3b82f6;
+}
+
+.activityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.activityCard h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 15px;
+}
+
+.activityCard p {
+  color: #6b7280;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* 참여 방법 섹션 */
+.participationContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.participationItem {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border-left: 5px solid #10b981;
+}
+
+.participationItem h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #059669;
+  margin-bottom: 15px;
+}
+
+.participationItem p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* 갤러리 섹션 */
+.gallerySection {
+  margin-bottom: 80px;
+}
+
+.galleryDescription {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #6b7280;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.carouselContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.carouselSlide {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 40px;
+}
+
+.slideContent {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+}
+
+.slideContent h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slideContent p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 유튜브 영상 섹션 */
+.videosSection {
+  margin-bottom: 80px;
+}
+
+.videosDescription {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #6b7280;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.videosGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videoCard {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.videoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.videoThumbnail {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.videoThumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.videoCard:hover .videoThumbnail img {
+  transform: scale(1.05);
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.videoCard:hover .playButton {
+  background: rgba(255, 0, 0, 0.8);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.videoInfo {
+  padding: 20px;
+}
+
+.videoInfo h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1e40af;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.videoDescription {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.videoDate {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+
+.watchButton {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.watchButton:hover {
+  background: linear-gradient(135deg, #cc0000, #990000);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+/* 연락처 섹션 */
+.contactSection {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contactInfo p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.contactDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contactItem {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+}
+
+.contactItem strong {
+  color: #1e40af;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .headerContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .headerContent p {
+    font-size: 1.1rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .activitiesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .participationContent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contactDetails {
+    grid-template-columns: 1fr;
+  }
+
+  .activityCard,
+  .participationItem {
+    padding: 25px 20px;
+  }
+
+  .contactSection {
+    padding: 40px 20px;
+  }
+
+  /* 캐러셀 모바일 스타일 */
+  .carouselSlide {
+    height: 350px;
+  }
+
+  .slideOverlay {
+    padding: 20px;
+  }
+
+  .slideContent h3 {
+    font-size: 1.5rem;
+  }
+
+  .slideContent p {
+    font-size: 1rem;
+  }
+
+  /* 유튜브 영상 모바일 스타일 */
+  .videosGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .videoThumbnail {
+    height: 150px;
+  }
+
+  .videoInfo {
+    padding: 15px;
+  }
+
+  .videoInfo h3 {
+    font-size: 1.1rem;
+  }
+
+  .playButton {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 60px 0 40px;
+  }
+
+  .headerContent h1 {
+    font-size: 2rem;
+  }
+
+  .headerContent p {
+    font-size: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    padding: 60px 0;
+  }
+
+  section {
+    margin-bottom: 60px;
+  }
+
+  /* 캐러셀 초소형 화면 스타일 */
+  .carouselSlide {
+    height: 280px;
+  }
+
+  .slideOverlay {
+    padding: 15px;
+  }
+
+  .slideContent h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .slideContent p {
+    font-size: 0.9rem;
+  }
+
+  .carouselContainer {
+    border-radius: 12px;
+  }
+
+  /* 유튜브 영상 초소형 화면 스타일 */
+  .videosGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .videoThumbnail {
+    height: 180px;
+  }
+
+  .videoInfo {
+    padding: 12px;
+  }
+
+  .videoInfo h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .videoDescription {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .playButton {
+    width: 45px;
+    height: 45px;
+  }
+
+  .playButton svg {
+    width: 35px;
+    height: 35px;
+  }
+} 

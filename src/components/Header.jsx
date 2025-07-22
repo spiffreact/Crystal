@@ -5,6 +5,7 @@ import styles from './Header.module.css';
 import MegaMenu from './MegaMenu';
 import MegaMenuGroup from './MegaMenuGroup';
 import MegaMenuWorship from './MegaMenuWorship';
+import MegaMenuMission from './MegaMenuMission';
 
 /**
  * 헤더 컴포넌트 - 웹사이트의 상단 네비게이션 바
@@ -17,6 +18,8 @@ export default function Header() {
   const [communityMegaOpen, setCommunityMegaOpen] = useState(false);
   // 예배와 말씀 메가메뉴 열림/닫힘 상태 관리
   const [worshipMegaOpen, setWorshipMegaOpen] = useState(false);
+  // 선교와 사역 메가메뉴 열림/닫힘 상태 관리
+  const [missionMegaOpen, setMissionMegaOpen] = useState(false);
   // 모바일 메뉴 열림/닫힘 상태 관리
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -35,6 +38,10 @@ export default function Header() {
     }
     if (!e.target.closest('[data-mega-menu="worship"]')) {
       setWorshipMegaOpen(false);
+    }
+    // 선교와 사역 메뉴 영역을 클릭한 경우는 제외
+    if (!e.target.closest('[data-mega-menu="mission"]')) {
+      setMissionMegaOpen(false);
     }
   };
 
@@ -57,6 +64,7 @@ export default function Header() {
       setIntroMegaOpen(false);
       setCommunityMegaOpen(false);
       setWorshipMegaOpen(false);
+      setMissionMegaOpen(false);
     }
   };
 
@@ -68,10 +76,11 @@ export default function Header() {
   const handleIntroClick = (e) => {
     e.preventDefault();
     setIntroMegaOpen(!introMegaOpen);
-    // 소개합니다 메뉴를 열 때는 공동체와 양육 메뉴를 닫음
+    // 소개합니다 메뉴를 열 때는 다른 메뉴들을 닫음
     if (!introMegaOpen) {
       setCommunityMegaOpen(false);
       setWorshipMegaOpen(false);
+      setMissionMegaOpen(false);
     }
   };
 
@@ -83,10 +92,11 @@ export default function Header() {
   const handleCommunityClick = (e) => {
     e.preventDefault();
     setCommunityMegaOpen(!communityMegaOpen);
-    // 공동체와 양육 메뉴를 열 때는 소개합니다 메뉴를 닫음
+    // 공동체와 양육 메뉴를 열 때는 다른 메뉴들을 닫음
     if (!communityMegaOpen) {
       setIntroMegaOpen(false);
       setWorshipMegaOpen(false);
+      setMissionMegaOpen(false);
     }
   };
 
@@ -99,6 +109,20 @@ export default function Header() {
     if (!worshipMegaOpen) {
       setIntroMegaOpen(false);
       setCommunityMegaOpen(false);
+      setMissionMegaOpen(false);
+    }
+  };
+
+  /**
+   * '선교와 사역' 메뉴 클릭 핸들러
+   */
+  const handleMissionClick = (e) => {
+    e.preventDefault();
+    setMissionMegaOpen(!missionMegaOpen);
+    if (!missionMegaOpen) {
+      setIntroMegaOpen(false);
+      setCommunityMegaOpen(false);
+      setWorshipMegaOpen(false);
     }
   };
 
@@ -200,13 +224,25 @@ export default function Header() {
           <MegaMenuGroup open={communityMegaOpen} closing={false} />
         </div>
 
-        {/* 선교와 사역 메뉴 */}
-        <Link to="#" onClick={() => setMobileMenuOpen(false)}>
-          선교와 사역
-          <span className={styles.arrow}>
-            <MdKeyboardArrowDown />
-          </span>
-        </Link>
+        {/* 선교와 사역 메뉴 - 선교와 사역 메가메뉴가 연결됨 */}
+        <div
+          style={{ position: 'relative', display: 'inline-block' }}
+          data-mega-menu="mission"
+        >
+          <a
+            href="#"
+            style={{ zIndex: 101, position: 'relative' }}
+            data-mega-menu="mission"
+            onClick={handleMissionClick}
+          >
+            선교와 사역
+            <span className={styles.arrow}>
+              <MdKeyboardArrowDown />
+            </span>
+          </a>
+          {/* 선교와 사역 메가메뉴 컴포넌트 */}
+          <MegaMenuMission open={missionMegaOpen} closing={false} />
+        </div>
       </nav>
     </header>
   );

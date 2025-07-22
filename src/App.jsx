@@ -8,6 +8,7 @@ import ChurchIntro from './pages/ChurchIntro';
 import ElementaryBibleStudy from './pages/ElementaryBibleStudy';
 import ElementaryGroup from './pages/ElementaryGroup';
 import Home from './pages/Home';
+import OverseasOutreach from './pages/OverseasOutreach';
 import Notice from './pages/Notice';
 import OfferingGuide from './pages/OfferingGuide';
 import PastorGreeting from './pages/PastorGreeting';
@@ -38,6 +39,7 @@ function App() {
             <Route path="/community/bible" element={<BibleReading />} />
             <Route path="/offering" element={<OfferingGuide />} />
             <Route path="/quick-links" element={<QuickLinksGridPage />} />
+            <Route path="/mission/overseas-outreach" element={<OverseasOutreach />} />
           </Routes>
           <Footer />
         </div>
