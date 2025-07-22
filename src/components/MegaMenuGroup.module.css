@@ -184,7 +184,7 @@
   .megaMenu {
     position: fixed; /* 고정 위치 */
     top: 0;
-    left: 0;
+    left: -10%;
     right: 0;
     bottom: 0;
     width: 70vw;
