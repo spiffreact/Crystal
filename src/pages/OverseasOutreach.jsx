@@ -36,7 +36,7 @@ const outreachVideos = [
   {
     id: '',
     title: '2025 탄자니아 선교 영상',
-    description: '수정교회 탄자니아 선교팀의 현지 활동 모습과 간증',
+    description: '탄자니아 현지 활동 모습과 간증',
     date: '2025.07.20'
   },
   {
