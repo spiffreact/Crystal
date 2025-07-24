@@ -39,10 +39,10 @@ const links = [
     external: false,
   },
   {
-    title: '토요일 QT',
+    title: '7월24일 QT',
     description: '하루 묵상 - 생명의 말씀',
     image: '/bible.jpg',
-    href: '#',
+    href: 'https://accurate-spinach-48b.notion.site/7-24-QT-239e40ba5bcd8000a49be873ad866bab?source=copy_link',
     external: false,
   },
   {
