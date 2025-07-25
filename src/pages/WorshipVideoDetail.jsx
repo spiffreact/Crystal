@@ -23,12 +23,12 @@ const sampleVideos = [
   },
   {
     id: '3',
-    title: '금요 예배 - 2025년 6월 27일',
-    category: '금요',
-    preacher: 'Baringo Cha',
-    date: '2025-06-27',
-    youtubeId: '',
-    description: '2025년 6월 27일 금요 예배 영상입니다.'
+    title: '수요 예배 - 2025년 7월 23일',
+    category: '수요',
+    preacher: '김모세',
+    date: '2025-07-23',
+    youtubeId: 'MEQ3G8H8k6A',
+    description: '2025년 7월 23일 수요 예배 영상입니다.'
   },
   {
     id: '4',
