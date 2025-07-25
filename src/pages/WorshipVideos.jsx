@@ -24,7 +24,7 @@ const sampleVideos = [
     category: '금요',
     preacher: '김모세',
     date: '2025-07-23',
-    thumbnail: '',
+    thumbnail: 'https://img.youtube.com/vi/34QobpblN20/maxresdefault.jpg',
   },
   {
     id: "4",
