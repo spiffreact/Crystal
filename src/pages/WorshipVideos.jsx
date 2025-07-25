@@ -21,10 +21,10 @@ const sampleVideos = [
   {
     id: "3",
     title: '수요 예배 - 2025년 7월 23일',
-    category: '금요',
+    category: '수요',
     preacher: '김모세',
     date: '2025-07-23',
-    thumbnail: 'https://img.youtube.com/vi/34QobpblN20/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/MEQ3G8H8k6A/maxresdefault.jpg',
   },
   {
     id: "4",
