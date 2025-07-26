@@ -1,0 +1,286 @@
+/* 메가메뉴 컨테이너 - 드롭다운 메뉴의 기본 스타일 (화면 중앙, 100vw) */
+.megaMenu {
+  position: absolute;
+  top: calc(100% + 20px); /* 헤더 아래 20px 간격 */
+  left: 220%; /* 화면 중앙 정렬 */
+  transform: translateX(-50%); /* 중앙 정렬 */
+  width: 100vw; /* 전체 뷰포트 너비 */
+  margin: 0 auto;
+  background: #e7d9d9; /* 베이지색 배경 */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12); /* 그림자 효과 */
+  display: flex;
+  padding: 40px 40px;
+  z-index: 1000; /* 다른 요소들 위에 표시 */
+  gap: 48px; /* 요소들 간 간격 */
+  animation: fadeIn 0.7s; /* 페이드인 애니메이션 */
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); /* 강한 그림자 */
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* 메가메뉴 닫힐 때 애니메이션 */
+.megaMenu.closing {
+  animation: fadeOut 0.7s;
+}
+
+/* 설명 텍스트 스타일 */
+.description {
+  font-size: 10px;
+  color: #a32626;
+}
+
+/* 페이드인 애니메이션 - 메뉴가 열릴 때 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-16px); /* 위에서 아래로 슬라이드 */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* 페이드아웃 애니메이션 - 메뉴가 닫힐 때 */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-16px); /* 위로 사라짐 */
+  }
+}
+
+/* 왼쪽 설명 영역 스타일 */
+.left {
+  min-width: 260px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px; /* 요소들 간 간격 */
+}
+
+/* 왼쪽 영역 제목 스타일 */
+.left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e; /* 진한 파란색 */
+}
+
+/* 왼쪽 영역 설명 텍스트 스타일 */
+.left p {
+  color: #333;
+  font-size: 0.7rem; /* 작은 글씨 */
+}
+
+/* 일러스트레이션 이미지 스타일 */
+.illust {
+  width: 100%;
+  max-width: 100px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+/* 오른쪽 메뉴 컬럼들 컨테이너 */
+.cols {
+  display: flex;
+  gap: 48px; /* 컬럼 간 간격 */
+}
+
+/* 각 메뉴 컬럼 스타일 */
+.cols > div {
+  min-width: 160px; /* 최소 너비 보장 */
+}
+
+/* 메뉴 컬럼 제목 스타일 */
+.cols h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1976d2; /* 파란색 */
+  margin-bottom: 0.7em;
+}
+
+/* 메뉴 리스트 스타일 */
+.cols ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 메뉴 항목 스타일 */
+.cols li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5em;
+  cursor: pointer; /* 마우스 포인터 */
+  transition: color 0.15s; /* 색상 변화 애니메이션 */
+}
+
+/* 메뉴 항목 내 a 태그도 동일한 폰트와 색상 적용 */
+.cols li a {
+  font-size: 1rem;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.15s;
+  display: block;
+}
+
+/* 메뉴 항목 호버 효과 */
+.cols li:hover,
+.cols li a:hover {
+  color: #1976d2; /* 파란색으로 변경 */
+  text-decoration: underline; /* 밑줄 표시 */
+}
+
+/* 모바일 로고 이미지 스타일 */
+.mobileLogo img {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin-left: 10px;
+}
+
+/* 태블릿 반응형 스타일 (900px 이하) */
+@media (max-width: 900px) {
+  .megaMenu {
+    flex-direction: column; /* 세로 배치로 변경 */
+    padding: 32px 4vw;
+    gap: 32px;
+    top: calc(100% + 10px);
+  }
+  .cols {
+    gap: 24px; /* 간격 줄임 */
+  }
+  .mobileLogo img {
+    height: 50px; /* 로고 크기 줄임 */
+    width: auto;
+    display: block;
+  }
+}
+
+/* 모바일 반응형 스타일 (600px 이하) */
+@media (max-width: 600px) {
+  /* 모바일 로고 영역 */
+  .mobileLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 0 12px 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .mobileLogo img {
+    height: 40px; /* 더 작은 로고 */
+    width: auto;
+    display: block;
+  }
+  
+  /* 모바일에서 인라인 메뉴로 변경 */
+  .megaMenu {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transform: none;
+    background: #f8f9fa;
+    z-index: auto;
+    overflow: visible;
+    padding: 0;
+    box-shadow: none;
+    display: block;
+    animation: none;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  /* 모바일에서는 왼쪽 영역 숨김 */
+  .left {
+    display: none;
+  }
+  
+  /* 모바일 메뉴 컬럼 스타일 */
+  .cols {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  
+  /* 모바일 메뉴 섹션 스타일 */
+  .cols > div {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  /* 모바일 메뉴 제목 숨김 */
+  .cols h3 {
+    display: none;
+  }
+  
+  /* 모바일 메뉴 리스트 스타일 */
+  .cols ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* 모바일 메뉴 항목 스타일 */
+  .cols li {
+    border-bottom: 1px solid #f8f9fa;
+  }
+  
+  .cols li a {
+    font-size: 0.9rem;
+    color: #6b7280;
+    padding: 12px 24px 12px 40px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 3px solid transparent;
+    position: relative;
+    font-weight: 400;
+  }
+  
+  .cols li a:hover {
+    background: #e9ecef;
+    color: #1e40af;
+    border-left-color: #3b82f6;
+    padding-left: 44px;
+  }
+  
+  .cols li a::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #d1d5db;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .cols li a:hover::before {
+    background: #3b82f6;
+    transform: translateY(-50%) scale(1.2);
+  }
+  
+  .cols li:last-child {
+    border-bottom: none;
+  }
+}
+
+/* 모바일 전용 페이드인 애니메이션 */
+@keyframes fadeInMobile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} 

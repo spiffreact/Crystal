@@ -6,12 +6,15 @@ import MegaMenu from './MegaMenu';
 import MegaMenuGroup from './MegaMenuGroup';
 import MegaMenuWorship from './MegaMenuWorship';
 import MegaMenuMission from './MegaMenuMission';
+import MegaMenuWelcome from './MegaMenuWelcome';
 
 /**
  * 헤더 컴포넌트 - 웹사이트의 상단 네비게이션 바
  * 로고, 메뉴 항목들, 모바일 햄버거 메뉴를 포함
  */
 export default function Header() {
+  // 환영합니다 메가메뉴 열림/닫힘 상태 관리
+  const [welcomeMegaOpen, setWelcomeMegaOpen] = useState(false);
   // 소개합니다 메가메뉴 열림/닫힘 상태 관리
   const [introMegaOpen, setIntroMegaOpen] = useState(false);
   // 공동체와 양육 메가메뉴 열림/닫힘 상태 관리
@@ -28,6 +31,10 @@ export default function Header() {
    * @param {Event} e - 클릭 이벤트 객체
    */
   const handleClickOutside = (e) => {
+    // 환영합니다 메뉴 영역을 클릭한 경우는 제외
+    if (!e.target.closest('[data-mega-menu="welcome"]')) {
+      setWelcomeMegaOpen(false);
+    }
     // 소개합니다 메뉴 영역을 클릭한 경우는 제외
     if (!e.target.closest('[data-mega-menu="intro"]')) {
       setIntroMegaOpen(false);
@@ -61,6 +68,24 @@ export default function Header() {
     setMobileMenuOpen(!mobileMenuOpen);
     // 모바일 메뉴를 열 때는 모든 메가메뉴를 닫음
     if (!mobileMenuOpen) {
+      setWelcomeMegaOpen(false);
+      setIntroMegaOpen(false);
+      setCommunityMegaOpen(false);
+      setWorshipMegaOpen(false);
+      setMissionMegaOpen(false);
+    }
+  };
+
+  /**
+   * '환영합니다' 메뉴 클릭 핸들러
+   * 기본 링크 동작을 막고 환영합니다 메가메뉴를 토글
+   * @param {Event} e - 클릭 이벤트 객체
+   */
+  const handleWelcomeClick = (e) => {
+    e.preventDefault();
+    setWelcomeMegaOpen(!welcomeMegaOpen);
+    // 환영합니다 메뉴를 열 때는 다른 메뉴들을 닫음
+    if (!welcomeMegaOpen) {
       setIntroMegaOpen(false);
       setCommunityMegaOpen(false);
       setWorshipMegaOpen(false);
@@ -156,13 +181,25 @@ export default function Header() {
 
       {/* 네비게이션 메뉴 영역 */}
       <nav className={`${styles.nav} ${mobileMenuOpen ? styles.navOpen : ''}`}>
-        {/* 환영합니다 메뉴 */}
-        <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-          환영합니다
-          <span className={styles.arrow}>
-            <MdKeyboardArrowDown />
-          </span>
-        </Link>
+        {/* 환영합니다 메뉴 - 환영합니다 메가메뉴가 연결됨 */}
+        <div
+          style={{ position: 'relative', display: 'inline-block' }}
+          data-mega-menu="welcome"
+        >
+          <a
+            href="#"
+            style={{ zIndex: 101, position: 'relative' }}
+            data-mega-menu="welcome"
+            onClick={handleWelcomeClick}
+          >
+            환영합니다
+            <span className={styles.arrow}>
+              <MdKeyboardArrowDown />
+            </span>
+          </a>
+          {/* 환영합니다 메가메뉴 컴포넌트 */}
+          <MegaMenuWelcome open={welcomeMegaOpen} closing={false} />
+        </div>
 
         {/* 소개합니다 메뉴 - 소개합니다 메가메뉴가 연결됨 */}
         <div
