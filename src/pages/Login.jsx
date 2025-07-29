@@ -15,6 +15,18 @@ export default function Login() {
 
   // 로그인 후 이동할 페이지 (로그인 전에 접근하려던 페이지 또는 홈)
   const from = location.state?.from?.pathname || '/';
+  
+  // 접근하려는 페이지에 따라 표시할 팀 이름 결정
+  const getTeamName = () => {
+    if (from.includes('/community/education-team')) {
+      return '교육팀';
+    } else if (from.includes('/community/worship-team')) {
+      return '찬양팀';
+    }
+    return '관리자';
+  };
+
+  const teamName = getTeamName();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +54,7 @@ export default function Login() {
           <div className={styles.header}>
             <img src="/crystal-logo.png" alt="수정교회 로고" className={styles.logo} />
             <h1>로그인</h1>
-            <p>교육팀 페이지 접근을 위해 로그인해 주세요.</p>
+            <p>{teamName} 페이지 접근을 위해 로그인해 주세요.</p>
           </div>
 
           <form onSubmit={handleSubmit} className={styles.form}>

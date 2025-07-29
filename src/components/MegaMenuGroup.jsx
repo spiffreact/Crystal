@@ -72,7 +72,7 @@ export default function MegaMenuGroup({ open, closing }) {
         <div>
           <h3>특별 공동체</h3>
           <ul>
-            <li><Link to="#" onClick={handleLinkClick}>찬양팀</Link></li>
+            <li><Link to="/community/worship-team" onClick={handleLinkClick}>찬양팀</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>봉사팀</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>전도팀</Link></li>
             <li><Link to="/community/education-team" onClick={handleLinkClick}>교육팀</Link></li>

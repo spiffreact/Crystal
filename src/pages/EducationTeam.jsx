@@ -124,7 +124,12 @@ export default function EducationTeam() {
                   <div className={styles.toolCard}>
                     <h4>👥 새신자 명단</h4>
                     <p>새신자 등록 현황과 개인별 양육 진행 상태를 확인할 수 있습니다.</p>
-                    <button className={styles.toolButton}>명단 보기</button>
+                    <button 
+                    onClick={() => navigate('/community/education-team/newcomer-management')}
+                    className={styles.toolButton}
+                  >
+                    명단 보기
+                  </button>
                   </div>
 
                   <div className={styles.toolCard}>

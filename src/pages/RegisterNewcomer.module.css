@@ -1,0 +1,470 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* 헤더 섹션 */
+.header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.headerContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.headerContent p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 메인 콘텐츠 */
+.content {
+  padding: 3rem 2rem;
+}
+
+.infoSection,
+.formSection,
+.contactSection {
+  background: white;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.infoSection h2,
+.formSection h2,
+.contactSection h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 혜택 그리드 */
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefitCard {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.benefitIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefitCard h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.benefitCard p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* 등록 양식 */
+.registrationForm {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.formGroup:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.formGroup h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  padding-left: 10px;
+  border-left: 4px solid #28a745;
+}
+
+.inputGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+}
+
+.inputGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+/* 체크박스 그리드 */
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.checkboxLabel:hover {
+  background-color: #f8f9fa;
+}
+
+.checkboxLabel input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 16px;
+  height: 16px;
+}
+
+.checkboxLabel span {
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+/* 동의 섹션 */
+.agreementSection {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  margin-bottom: 2rem;
+}
+
+.agreementLabel {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.agreementLabel input[type="checkbox"] {
+  margin-right: 0.8rem;
+  margin-top: 0.2rem;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.agreementLabel span {
+  color: #495057;
+}
+
+.agreementLabel small {
+  display: block;
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+/* 제출 섹션 */
+.submitSection {
+  text-align: center;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+.submitNote {
+  margin-top: 1rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* 연락처 섹션 */
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactItem {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #28a745;
+}
+
+.contactItem strong {
+  color: #2c3e50;
+  margin-right: 0.5rem;
+}
+
+.contactNote {
+  color: #6c757d;
+  text-align: center;
+  font-style: italic;
+}
+
+/* 성공 페이지 */
+.successPage {
+  background: white;
+  margin: 2rem;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.successPage h1 {
+  font-size: 2.2rem;
+  color: #28a745;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.successPage > p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nextSteps {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.nextSteps h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nextSteps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nextSteps li {
+  padding: 0.8rem 0;
+  color: #495057;
+  font-size: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.nextSteps li:last-child {
+  border-bottom: none;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.adminNote {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.adminNote p {
+  margin: 0;
+  color: #6c757d;
+}
+
+.homeButton,
+.programButton {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.homeButton {
+  background: #6c757d;
+  color: white;
+}
+
+.homeButton:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+}
+
+.programButton {
+  background: #28a745;
+  color: white;
+}
+
+.programButton:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  
+  .header {
+    padding: 2rem 1rem;
+  }
+  
+  .headerContent h1 {
+    font-size: 2rem;
+  }
+  
+  .content {
+    padding: 2rem 1rem;
+  }
+  
+  .infoSection,
+  .formSection,
+  .contactSection {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .benefitCard {
+    padding: 1.5rem;
+  }
+  
+  .inputGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .checkboxGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .actionButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .homeButton,
+  .programButton {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .successPage {
+    margin: 1rem;
+    padding: 3rem 1.5rem;
+  }
+  
+  .nextSteps {
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+  }
+  
+  .submitButton {
+    width: 100%;
+    max-width: 300px;
+  }
+} 

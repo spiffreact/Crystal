@@ -17,6 +17,10 @@ import PastoralPlan from './pages/PastoralPlan';
 import Notice from './pages/Notice';
 import ChurchVisit from './pages/ChurchVisit';
 import NewcomerManagement from './pages/NewcomerManagement';
+import WorshipTeam from './pages/WorshipTeam';
+import Welcome from './pages/Welcome';
+import RegisterNewcomer from './pages/RegisterNewcomer';
+import AttendanceCheck from './pages/AttendanceCheck';
 import OfferingGuide from './pages/OfferingGuide';
 import PastorGreeting from './pages/PastorGreeting';
 import QuickLinksGridPage from './pages/QuickLinksGridPage';
@@ -59,14 +63,32 @@ function App() {
                 </ProtectedRoute>
               } 
             />
-            <Route 
-              path="/community/education-team/newcomer-management" 
+            <Route
+              path="/community/education-team/newcomer-management"
               element={
                 <ProtectedRoute>
                   <NewcomerManagement />
                 </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/community/education-team/attendance-check"
+              element={
+                <ProtectedRoute>
+                  <AttendanceCheck />
+                </ProtectedRoute>
+              }
+            />
+            <Route 
+              path="/community/worship-team" 
+              element={
+                <ProtectedRoute>
+                  <WorshipTeam />
+                </ProtectedRoute>
               } 
             />
+            <Route path="/welcome/greeting" element={<Welcome />} />
+            <Route path="/welcome/register" element={<RegisterNewcomer />} />
           </Routes>
           <Footer />
         </div>

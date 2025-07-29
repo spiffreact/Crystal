@@ -1,0 +1,398 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem 0;
+}
+
+.headerTop {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent h1 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.headerContent p {
+  color: #7f8c8d;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.backButton,
+.logoutButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.backButton {
+  background: #6c757d;
+  color: white;
+}
+
+.backButton:hover {
+  background: #5a6268;
+}
+
+.logoutButton {
+  background: #dc3545;
+  color: white;
+}
+
+.logoutButton:hover {
+  background: #c82333;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 제어 패널 */
+.controlPanel {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.dateSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dateSection label {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.dateInput {
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.statsSection {
+  display: flex;
+  gap: 1rem;
+}
+
+.statCard {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.statNumber {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+/* 출석체크 목록 */
+.attendanceList {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.listHeader h2 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.completeButton {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.completeButton:hover {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+.attendanceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.attendanceCard {
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.attendanceCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.newcomerInfo {
+  margin-bottom: 1rem;
+}
+
+.newcomerInfo h3 {
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.newcomerDetails {
+  color: #6c757d;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.phone {
+  color: #495057;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.attendanceControls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.attendanceButton {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.presentButton {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.presentButton:hover,
+.presentButton.active {
+  background: #28a745;
+  color: white;
+}
+
+.absentButton {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.absentButton:hover,
+.absentButton.active {
+  background: #dc3545;
+  color: white;
+}
+
+.statusIndicator {
+  text-align: center;
+}
+
+.statusPresent,
+.statusAbsent,
+.statusUnknown {
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.statusPresent {
+  background: #d4edda;
+  color: #155724;
+}
+
+.statusAbsent {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.statusUnknown {
+  background: #fff3cd;
+  color: #856404;
+}
+
+/* 요약 섹션 */
+.summarySection {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summarySection h3 {
+  color: #2c3e50;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.3rem;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.summaryCard {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.summaryCard h4 {
+  color: #495057;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.attendanceRate,
+.totalCount,
+.pendingCount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.summaryCard p {
+  color: #6c757d;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* 도움말 섹션 */
+.helpSection {
+  background: #e3f2fd;
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid #2196f3;
+}
+
+.helpSection h4 {
+  color: #1976d2;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.helpSection ul {
+  margin: 0;
+  color: #1565c0;
+}
+
+.helpSection li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .headerTop {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .headerContent h1 {
+    font-size: 2rem;
+  }
+  
+  .controlPanel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .statsSection {
+    justify-content: center;
+  }
+  
+  .attendanceGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .listHeader {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+} 

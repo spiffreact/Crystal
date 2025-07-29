@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import styles from './NewcomerManagement.module.css';
@@ -10,8 +10,9 @@ import styles from './NewcomerManagement.module.css';
 export default function NewcomerManagement() {
   const navigate = useNavigate();
   
-  // 새신자 목록 상태
-  const [newcomers, setNewcomers] = useState([
+  // 초기 샘플 데이터와 새가족 등록 데이터 합치기
+  const getInitialNewcomers = () => {
+    const sampleData = [
     {
       id: 1,
       name: '김○○',
@@ -76,7 +77,32 @@ export default function NewcomerManagement() {
         }
       ]
     }
-  ]);
+    ];
+
+    // localStorage에서 새가족 등록 데이터 가져오기
+    const registeredNewcomers = JSON.parse(localStorage.getItem('newcomerRegistrations') || '[]');
+    
+    // 등록된 데이터와 샘플 데이터 합치기 (등록된 데이터가 위에 표시)
+    return [...registeredNewcomers, ...sampleData];
+  };
+
+  // 새신자 목록 상태
+  const [newcomers, setNewcomers] = useState(getInitialNewcomers());
+
+  // 컴포넌트가 마운트될 때와 페이지에 다시 포커스될 때 데이터 새로고침
+  useEffect(() => {
+    const refreshData = () => {
+      setNewcomers(getInitialNewcomers());
+    };
+
+    // 페이지 포커스 시 데이터 새로고침 (다른 탭에서 등록 후 돌아왔을 때)
+    window.addEventListener('focus', refreshData);
+    
+    // 컴포넌트 언마운트 시 이벤트 리스너 제거
+    return () => {
+      window.removeEventListener('focus', refreshData);
+    };
+  }, []);
 
   // 선택된 새신자 상태
   const [selectedNewcomer, setSelectedNewcomer] = useState(null);
@@ -104,9 +130,20 @@ export default function NewcomerManagement() {
   };
 
   const handleSaveNewcomer = () => {
-    setNewcomers(newcomers.map(n => 
+    const updatedNewcomers = newcomers.map(n => 
       n.id === selectedNewcomer.id ? selectedNewcomer : n
-    ));
+    );
+    setNewcomers(updatedNewcomers);
+    
+    // 만약 편집된 새신자가 등록된 새가족 데이터라면 localStorage도 업데이트
+    const registeredNewcomers = JSON.parse(localStorage.getItem('newcomerRegistrations') || '[]');
+    const isRegisteredNewcomer = registeredNewcomers.find(r => r.id === selectedNewcomer.id);
+    
+    if (isRegisteredNewcomer) {
+      const updatedRegistrations = registeredNewcomers.map(r => r.id === selectedNewcomer.id ? selectedNewcomer : r);
+      localStorage.setItem('newcomerRegistrations', JSON.stringify(updatedRegistrations));
+    }
+    
     setIsEditing(false);
   };
 
@@ -170,7 +207,35 @@ export default function NewcomerManagement() {
           <div className={styles.mainLayout}>
             {/* 새신자 목록 */}
             <div className={styles.newcomerList}>
-              <h2>새신자 목록</h2>
+              <div className={styles.listHeader}>
+                <h2>새신자 목록</h2>
+                <button 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('✅ 출석체크 버튼 클릭됨!');
+                    console.log('🔄 페이지 이동 시작...');
+                    
+                    // 즉시 alert로 테스트
+                    const confirmed = window.confirm('출석체크 페이지로 이동하시겠습니까?');
+                    
+                    if (confirmed) {
+                      console.log('➡️ /community/education-team/attendance-check 로 이동');
+                      navigate('/community/education-team/attendance-check');
+                      
+                      // 백업 방법 - 3초 후에도 이동하지 않으면 강제 이동
+                      setTimeout(() => {
+                        console.log('⚠️ 백업 이동 시도');
+                        window.location.href = '/community/education-team/attendance-check';
+                      }, 3000);
+                    }
+                  }}
+                  className={styles.attendanceButton}
+                  type="button"
+                >
+                  📋 출석체크
+                </button>
+              </div>
               <div className={styles.listContainer}>
                 {newcomers.map(newcomer => (
                   <div 
