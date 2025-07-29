@@ -48,7 +48,7 @@ export default function MegaMenu({ open, closing }) {
           <h3>교회소개</h3>
           <ul>
             <li><Link to="/intro/pastor" onClick={handleLinkClick}>위임목사 인사말</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>목회계획</Link></li>
+            <li><Link to="/intro/pastoral-plan" onClick={handleLinkClick}>목회계획</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>교회 비전</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>교회 철학</Link></li>
           </ul>

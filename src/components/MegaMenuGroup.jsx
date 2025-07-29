@@ -53,7 +53,7 @@ export default function MegaMenuGroup({ open, closing }) {
         <div>
           <h3>양육 프로그램</h3>
           <ul>
-            <li><Link to="#" onClick={handleLinkClick}>새신자 양육</Link></li>
+            <li><Link to="/community/newcomer-care" onClick={handleLinkClick}>새신자 양육</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>성경공부</Link></li>
             <li><Link to="/community/bible" onClick={handleLinkClick}>성경읽기</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>기도학교</Link></li>
@@ -75,7 +75,7 @@ export default function MegaMenuGroup({ open, closing }) {
             <li><Link to="#" onClick={handleLinkClick}>찬양팀</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>봉사팀</Link></li>
             <li><Link to="#" onClick={handleLinkClick}>전도팀</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>교육팀</Link></li>
+            <li><Link to="/community/education-team" onClick={handleLinkClick}>교육팀</Link></li>
           </ul>
         </div>
       </div>

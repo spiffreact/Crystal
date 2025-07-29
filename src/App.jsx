@@ -3,13 +3,20 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import ProtectedRoute from './components/ProtectedRoute';
 import BibleReading from './pages/BibleReading';
 import ChurchIntro from './pages/ChurchIntro';
+import EducationTeam from './pages/EducationTeam';
 import ElementaryBibleStudy from './pages/ElementaryBibleStudy';
 import ElementaryGroup from './pages/ElementaryGroup';
 import Home from './pages/Home';
+import Login from './pages/Login';
+import NewcomerCare from './pages/NewcomerCare';
 import OverseasOutreach from './pages/OverseasOutreach';
+import PastoralPlan from './pages/PastoralPlan';
 import Notice from './pages/Notice';
+import ChurchVisit from './pages/ChurchVisit';
+import NewcomerManagement from './pages/NewcomerManagement';
 import OfferingGuide from './pages/OfferingGuide';
 import PastorGreeting from './pages/PastorGreeting';
 import QuickLinksGridPage from './pages/QuickLinksGridPage';
@@ -40,6 +47,26 @@ function App() {
             <Route path="/offering" element={<OfferingGuide />} />
             <Route path="/quick-links" element={<QuickLinksGridPage />} />
             <Route path="/mission/overseas-outreach" element={<OverseasOutreach />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/community/newcomer-care" element={<NewcomerCare />} />
+            <Route path="/intro/pastoral-plan" element={<PastoralPlan />} />
+            <Route path="/welcome/visit" element={<ChurchVisit />} />
+            <Route 
+              path="/community/education-team" 
+              element={
+                <ProtectedRoute>
+                  <EducationTeam />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/community/education-team/newcomer-management" 
+              element={
+                <ProtectedRoute>
+                  <NewcomerManagement />
+                </ProtectedRoute>
+              } 
+            />
           </Routes>
           <Footer />
         </div>

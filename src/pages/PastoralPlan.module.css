@@ -1,0 +1,315 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.section {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  border-bottom: 3px solid #6366F1;
+  padding-bottom: 0.8rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+/* 비전 카드 */
+.visionCard {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border-left: 6px solid #6366F1;
+  margin-top: 1rem;
+}
+
+.visionCard h3 {
+  font-size: 1.6rem;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.visionCard p {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
+}
+
+/* 계획 그리드 */
+.planGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.planCard {
+  background: #fafafa;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.planCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.15);
+  border-color: #6366F1;
+}
+
+.planIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.planCard h3 {
+  font-size: 1.4rem;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.planCard ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.planCard li {
+  padding: 0.5rem 0;
+  color: #475569;
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.planCard li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #6366F1;
+  font-weight: bold;
+}
+
+/* 월별 계획 */
+.monthlyPlan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.monthItem {
+  display: flex;
+  align-items: flex-start;
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #6366F1;
+}
+
+.month {
+  background: #6366F1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+  min-width: 60px;
+  text-align: center;
+}
+
+.monthContent h4 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.monthContent p {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 특별 사역 */
+.specialMinistry {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.ministryItem {
+  background: linear-gradient(135deg, #fef7ff 0%, #f3e8ff 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e9d5ff;
+}
+
+.ministryItem h3 {
+  font-size: 1.3rem;
+  color: #581c87;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ministryItem p {
+  font-size: 1rem;
+  color: #7c3aed;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 기도 박스 */
+.prayerBox {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #bbf7d0;
+  margin-top: 1rem;
+}
+
+.prayerBox h3 {
+  font-size: 1.4rem;
+  color: #14532d;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.prayerList {
+  list-style: none;
+  padding: 0;
+}
+
+.prayerList li {
+  padding: 0.8rem 0;
+  color: #166534;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #bbf7d0;
+}
+
+.prayerList li:last-child {
+  border-bottom: none;
+}
+
+.prayerList li:before {
+  content: "🙏";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .header {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .header p {
+    font-size: 1.1rem;
+  }
+  
+  .section {
+    padding: 2rem;
+  }
+  
+  .section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .planGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .monthlyPlan {
+    grid-template-columns: 1fr;
+  }
+  
+  .monthItem {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .month {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .visionCard {
+    padding: 2rem;
+  }
+  
+  .visionCard h3 {
+    font-size: 1.4rem;
+  }
+  
+  .planIcon {
+    font-size: 2.5rem;
+  }
+} 

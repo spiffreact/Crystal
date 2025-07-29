@@ -19,7 +19,7 @@ function Home() {
         <section className="sections">
           <SectionCard
             title="예배 안내"
-            description="매주 일요일 오전 11시에 예배를 드립니다."
+            description="매주 주일 오전 11시에 예배를 드립니다."
             linkText="예배 안내 보기"
           />
           <SectionCard

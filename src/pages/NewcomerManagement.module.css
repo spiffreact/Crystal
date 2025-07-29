@@ -1,0 +1,520 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.header {
+  background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.headerContent p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.backButton, .logoutButton {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.backButton {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.backButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.logoutButton {
+  background: #e74c3c;
+  color: white;
+}
+
+.logoutButton:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+.content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.mainLayout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  min-height: 80vh;
+}
+
+/* 새신자 목록 */
+.newcomerList {
+  background: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  padding: 2rem;
+}
+
+.newcomerList h2 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newcomerItem {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.newcomerItem:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.15);
+}
+
+.newcomerItem.selected {
+  border-color: #4CAF50;
+  background: #f1f8e9;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+}
+
+.newcomerInfo h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.registrationDate {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 0.8rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status.양육진행중 {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status.양육완료 {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+/* 상세 정보 */
+.newcomerDetail {
+  padding: 2rem;
+}
+
+.detailContent {
+  height: 100%;
+}
+
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.detailHeader h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.editButton {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.editButton:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
+
+.detailSections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* 기본 정보 그리드 */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItem label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.infoItem span {
+  font-size: 1rem;
+  color: #2c3e50;
+  padding: 0.8rem;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+}
+
+.infoItem input, .infoItem select {
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.infoItem input:focus, .infoItem select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+/* 양육 노트 */
+.notesTextarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.notesTextarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.notesContent {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* 양육 자료 */
+.resourcesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resourceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.resourceInfo h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.resourceLink {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.resourceLink:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.deleteResourceButton {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.deleteResourceButton:hover {
+  background: #c0392b;
+}
+
+/* 자료 추가 */
+.addResourceSection {
+  margin-top: 1rem;
+}
+
+.addResourceButton {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.addResourceButton:hover {
+  background: #45a049;
+  transform: translateY(-1px);
+}
+
+.addResourceForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.addResourceForm input, .addResourceForm select {
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.addResourceButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.saveResourceButton, .cancelResourceButton {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saveResourceButton {
+  background: #4CAF50;
+  color: white;
+}
+
+.saveResourceButton:hover {
+  background: #45a049;
+}
+
+.cancelResourceButton {
+  background: #6c757d;
+  color: white;
+}
+
+.cancelResourceButton:hover {
+  background: #5a6268;
+}
+
+/* 편집 액션 */
+.editActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e9ecef;
+}
+
+.saveButton, .cancelButton {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.saveButton {
+  background: #4CAF50;
+  color: white;
+}
+
+.saveButton:hover {
+  background: #45a049;
+  transform: translateY(-1px);
+}
+
+.cancelButton {
+  background: #6c757d;
+  color: white;
+}
+
+.cancelButton:hover {
+  background: #5a6268;
+}
+
+/* 선택되지 않은 상태 */
+.noSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #6c757d;
+  text-align: center;
+}
+
+.noSelection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.noSelection p {
+  font-size: 1rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .mainLayout {
+    grid-template-columns: 1fr;
+  }
+  
+  .newcomerList {
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .headerTop {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .headerButtons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .header {
+    padding: 1.5rem;
+  }
+  
+  .headerContent h1 {
+    font-size: 1.8rem;
+  }
+  
+  .newcomerList, .newcomerDetail {
+    padding: 1.5rem;
+  }
+  
+  .infoGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .addResourceButtons {
+    flex-direction: column;
+  }
+  
+  .editActions {
+    flex-direction: column;
+  }
+} 

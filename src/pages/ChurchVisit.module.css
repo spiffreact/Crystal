@@ -1,0 +1,517 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 70vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #FF6B6B 0%, #FF5722 100%);
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.section {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  border-bottom: 3px solid #FF6B6B;
+  padding-bottom: 0.8rem;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+/* 위치 정보 */
+.locationInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.addressBox {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #feb2b2;
+}
+
+.addressBox h3 {
+  font-size: 1.4rem;
+  color: #c53030;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.addressBox p {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.contactDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactDetail span {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.contactDetail strong {
+  color: #c53030;
+}
+
+.transportInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.transportItem h4 {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.transportItem ul {
+  list-style: none;
+  padding: 0;
+}
+
+.transportItem li {
+  padding: 0.5rem 0;
+  color: #4a5568;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.transportItem li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #FF6B6B;
+  font-weight: bold;
+}
+
+/* 예배 시간 */
+.serviceSchedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.serviceCard {
+  background: #f7fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #FF6B6B;
+}
+
+.serviceCard h3 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.serviceTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.timeLabel {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.time {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FF6B6B;
+}
+
+.weekdayServices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.serviceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.serviceItem span:first-child {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.serviceItem span:last-child {
+  color: #FF6B6B;
+  font-weight: 600;
+}
+
+/* 주차 안내 */
+.parkingInfo {
+  margin-top: 2rem;
+}
+
+.parkingCard {
+  background: #f0fff4;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #9ae6b4;
+  margin-bottom: 1.5rem;
+}
+
+.parkingCard h3 {
+  font-size: 1.4rem;
+  color: #2f855a;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.parkingCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.parkingCard li {
+  padding: 0.6rem 0;
+  color: #2d3748;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.parkingCard li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #38a169;
+  font-weight: bold;
+}
+
+.parkingTips {
+  background: #e6fffa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #38a169;
+}
+
+.parkingTips h4 {
+  font-size: 1.2rem;
+  color: #2f855a;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.parkingTips p {
+  color: #2d3748;
+  margin: 0;
+}
+
+/* 첫 방문 가이드 */
+.firstVisitGuide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.guideCard {
+  background: #fefefe;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.guideCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.15);
+  border-color: #FF6B6B;
+}
+
+.guideIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.guideCard h3 {
+  font-size: 1.3rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.guideCard p {
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* 복장 안내 */
+.dressCode {
+  margin-top: 2rem;
+}
+
+.dressInfo {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #cbd5e0;
+}
+
+.dressInfo h3 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dressInfo p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.dressInfo ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.dressInfo li {
+  padding: 0.5rem 0;
+  color: #4a5568;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.dressInfo li:before {
+  content: "👕";
+  position: absolute;
+  left: 0;
+}
+
+/* 어린이 안내 */
+.childrenInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.childrenCard {
+  background: linear-gradient(135deg, #fff9e6 0%, #fef5e7 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #fed7aa;
+}
+
+.childrenCard h3 {
+  font-size: 1.3rem;
+  color: #c05621;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.childrenCard p {
+  margin-bottom: 1.5rem;
+  color: #744210;
+}
+
+.childrenCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.childrenCard li {
+  padding: 0.4rem 0;
+  color: #744210;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.childrenCard li:before {
+  content: "👶";
+  position: absolute;
+  left: 0;
+}
+
+/* FAQ */
+.faqList {
+  margin-top: 2rem;
+}
+
+.faqItem {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  border-left: 4px solid #FF6B6B;
+  margin-bottom: 1.5rem;
+}
+
+.faqItem h4 {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.faqItem p {
+  color: #4a5568;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 연락처 */
+.contactSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contactCard {
+  background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #81e6d9;
+}
+
+.contactCard h3 {
+  font-size: 1.4rem;
+  color: #234e52;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.contactDetails p {
+  color: #2d3748;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.contactDetails strong {
+  color: #234e52;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .header {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .header p {
+    font-size: 1.1rem;
+  }
+  
+  .section {
+    padding: 2rem;
+  }
+  
+  .section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .locationInfo {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .serviceSchedule {
+    grid-template-columns: 1fr;
+  }
+  
+  .firstVisitGuide {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .childrenInfo {
+    grid-template-columns: 1fr;
+  }
+  
+  .contactSection {
+    grid-template-columns: 1fr;
+  }
+  
+  .guideCard {
+    padding: 1.5rem;
+  }
+  
+  .guideIcon {
+    font-size: 2.5rem;
+  }
+} 
