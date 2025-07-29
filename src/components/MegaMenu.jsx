@@ -49,8 +49,8 @@ export default function MegaMenu({ open, closing }) {
           <ul>
             <li><Link to="/intro/pastor" onClick={handleLinkClick}>위임목사 인사말</Link></li>
             <li><Link to="/intro/pastoral-plan" onClick={handleLinkClick}>목회계획</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>교회 비전</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>교회 철학</Link></li>
+            <li><Link to="/intro/church-vision" onClick={handleLinkClick}>교회 비전</Link></li>
+            <li><Link to="/intro/church-philosophy" onClick={handleLinkClick}>교회 철학</Link></li>
           </ul>
         </div>
         
@@ -58,11 +58,11 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>예배시간</h3>
           <ul>
-            <li><Link to="#" onClick={handleLinkClick}>주일예배</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>수요예배</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>금요기도회</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>새벽기도회</Link></li>
-            <li><a href="https://thecrystalchurch.netlify.app/">영어예배</a></li>
+            <li><Link to="/worship/sunday" onClick={handleLinkClick}>주일예배</Link></li>
+            <li><Link to="/worship/wednesday" onClick={handleLinkClick}>수요예배</Link></li>
+            <li><Link to="/worship/friday" onClick={handleLinkClick}>금요기도회</Link></li>
+            <li><Link to="/worship/dawn" onClick={handleLinkClick}>새벽기도회</Link></li>
+            <li><Link to="/worship/english" onClick={handleLinkClick}>영어예배</Link></li>
           </ul>
         </div>
         
@@ -70,10 +70,10 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>섬기는 사람들</h3>
           <ul>
-            <li><Link to="#" onClick={handleLinkClick}>담임목사</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>협동목사</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>전도사</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>장로・권사</Link></li>
+            <li><Link to="/intro/staff" onClick={handleLinkClick}>담임목사</Link></li>
+            <li><Link to="/intro/staff" onClick={handleLinkClick}>협력목사</Link></li>
+            <li><Link to="/intro/staff" onClick={handleLinkClick}>전도사</Link></li>
+            <li><Link to="/intro/staff" onClick={handleLinkClick}>장로・권사</Link></li>
           </ul>
         </div>
         
@@ -81,9 +81,9 @@ export default function MegaMenu({ open, closing }) {
         <div>
           <h3>교회 시설</h3>
           <ul>
-            <li><Link to="#" onClick={handleLinkClick}>본당</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>교육관</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>주차장</Link></li>
+            <li><Link to="/intro/facilities" onClick={handleLinkClick}>본당</Link></li>
+            <li><Link to="/intro/facilities" onClick={handleLinkClick}>교육관</Link></li>
+            <li><Link to="/intro/facilities" onClick={handleLinkClick}>주차장</Link></li>
           </ul>
         </div>
       </div>

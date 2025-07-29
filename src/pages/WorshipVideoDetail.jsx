@@ -4,13 +4,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 // 샘플 데이터 (실제 서비스에서는 API 등에서 받아옴)
 const sampleVideos = [
   {
-    id: '1',
-    title: '주일 예배 - 2025년 7월 13일',
-    category: '주일',
-    preacher: '김광호',
-    date: '2025-07-13',
-    youtubeId: 'F1mw5Pe4CZA',
-    description: '2025년 7월 13일 주일 예배 영상입니다.'
+    id: '3',
+    title: '수요 예배 - 2025년 7월 23일',
+    category: '수요',
+    preacher: '김모세',
+    date: '2025-07-23',
+    youtubeId: 'MEQ3G8H8k6A',
+    description: '2025년 7월 23일 수요 예배 영상입니다.'
   },
   {
     id: '2',
@@ -22,22 +22,13 @@ const sampleVideos = [
     description: '2025년 7월 20일 주일 예배 영상입니다.'
   },
   {
-    id: '3',
-    title: '수요 예배 - 2025년 7월 23일',
-    category: '수요',
-    preacher: '김모세',
-    date: '2025-07-23',
-    youtubeId: 'MEQ3G8H8k6A',
-    description: '2025년 7월 23일 수요 예배 영상입니다.'
-  },
-  {
-    id: '4',
-    title: '주일 예배 - 2025년 1월 12일',
+    id: '1',
+    title: '주일 예배 - 2025년 7월 13일',
     category: '주일',
     preacher: '김광호',
-    date: '2025-01-12',
-    youtubeId: '',
-    description: '2025년 1월 12일 주일 예배 영상입니다.'
+    date: '2025-07-13',
+    youtubeId: 'F1mw5Pe4CZA',
+    description: '2025년 7월 13일 주일 예배 영상입니다.'
   },
   {
     id: '5',
@@ -48,12 +39,33 @@ const sampleVideos = [
     youtubeId: '',
     description: '2025년 6월 20일 영어 예배 영상입니다.'
   },
+  {
+    id: '4',
+    title: '주일 예배 - 2025년 7월 27일',
+    category: '주일',
+    preacher: '김광호',
+    date: '2025-07-27',
+    youtubeId: 'ZLbXoZB8Yqs',
+    description: '2025년 7월 27일 주일 예배 영상입니다.'
+  },
 ];
+
+// 자동 날짜순 정렬 함수 - 최신 날짜가 맨 위로
+const sortVideosByDate = (videos) => {
+  return [...videos].sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB - dateA; // 내림차순 정렬 (최신이 위로)
+  });
+};
+
+// 정렬된 비디오 목록
+const sortedVideos = sortVideosByDate(sampleVideos);
 
 export default function WorshipVideoDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const video = sampleVideos.find(v => v.id === id);
+  const video = sortedVideos.find(v => v.id === id);
 
   if (!video) return <div style={{ padding: 32 }}>영상을 찾을 수 없습니다.</div>;
 

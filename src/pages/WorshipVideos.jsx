@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet-async';
 
 const sampleVideos = [
   {
-    id: "1",
-    title: '주일 예배 - 2025년 7월 13일',
-    category: '주일',
-    preacher: '김광호',
-    date: '2025-07-13',
-    thumbnail: 'https://img.youtube.com/vi/F1mw5Pe4CZA/maxresdefault.jpg',
+    id: "3",
+    title: '수요 예배 - 2025년 7월 23일',
+    category: '수요',
+    preacher: '김모세',
+    date: '2025-07-23',
+    thumbnail: 'https://img.youtube.com/vi/MEQ3G8H8k6A/maxresdefault.jpg',
   },
   {
     id: "2",
@@ -19,20 +19,12 @@ const sampleVideos = [
     thumbnail: 'https://img.youtube.com/vi/34QobpblN20/maxresdefault.jpg',
   },
   {
-    id: "3",
-    title: '수요 예배 - 2025년 7월 23일',
-    category: '수요',
-    preacher: '김모세',
-    date: '2025-07-23',
-    thumbnail: 'https://img.youtube.com/vi/MEQ3G8H8k6A/maxresdefault.jpg',
-  },
-  {
-    id: "4",
-    title: '주일 예배 - 2025년 1월 12일',
+    id: "1",
+    title: '주일 예배 - 2025년 7월 13일',
     category: '주일',
     preacher: '김광호',
-    date: '2025-01-12',
-    thumbnail: '',
+    date: '2025-07-13',
+    thumbnail: 'https://img.youtube.com/vi/F1mw5Pe4CZA/maxresdefault.jpg',
   },
   {
     id: "5",
@@ -42,17 +34,43 @@ const sampleVideos = [
     date: '2025-06-20',
     thumbnail: '',
   },
+  {
+    id: "4",
+    title: '주일 예배 - 2025년 7월 27일',
+    category: '주일',
+    preacher: '김광호',
+    date: '2025-07-27',
+    thumbnail: 'https://img.youtube.com/vi/ZLbXoZB8Yqs/maxresdefault.jpg',
+  },
 ];
+
+// 자동 날짜순 정렬 함수 - 최신 날짜가 맨 위로
+const sortVideosByDate = (videos) => {
+  return [...videos].sort((a, b) => {
+    // 날짜를 Date 객체로 변환하여 비교
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    // 내림차순 정렬 (최신이 위로)
+    return dateB - dateA;
+  });
+};
 
 const categories = ['전체', '주일', '수요', '금요', '새벽', '영어'];
 
 export default function WorshipVideos() {
   const [search, setSearch] = useState('');
-  const [category, setCategory] = useState('전체');
+  const [selectedCategory, setSelectedCategory] = useState('전체');
 
-  const filtered = sampleVideos.filter(
-    v => (category === '전체' || v.category === category) && v.title.includes(search)
-  );
+  // 🔄 자동으로 날짜순 정렬된 영상 목록 생성
+  const sortedVideos = sortVideosByDate(sampleVideos);
+
+  // 필터링된 영상 목록
+  const filteredVideos = sortedVideos.filter(video => {
+    const matchesSearch = video.title.toLowerCase().includes(search.toLowerCase()) ||
+                         video.preacher.toLowerCase().includes(search.toLowerCase());
+    const matchesCategory = selectedCategory === '전체' || video.category === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
 
   return (
     <>
@@ -68,14 +86,14 @@ export default function WorshipVideos() {
           {categories.map(cat => (
             <button
               key={cat}
-              onClick={() => setCategory(cat)}
+              onClick={() => setSelectedCategory(cat)}
               style={{
                 padding: '8px 18px',
                 borderRadius: 20,
                 border: 'none',
-                background: category === cat ? '#1976d2' : '#eee',
-                color: category === cat ? '#fff' : '#333',
-                fontWeight: category === cat ? 700 : 400,
+                background: selectedCategory === cat ? '#1976d2' : '#eee',
+                color: selectedCategory === cat ? '#fff' : '#333',
+                fontWeight: selectedCategory === cat ? 700 : 400,
                 cursor: 'pointer',
               }}
             >
@@ -91,8 +109,8 @@ export default function WorshipVideos() {
           />
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 24 }}>
-          {filtered.length === 0 && <div>검색 결과가 없습니다.</div>}
-          {filtered.map(video => (
+          {filteredVideos.length === 0 && <div>검색 결과가 없습니다.</div>}
+          {filteredVideos.map(video => (
             <div key={video.id} style={{ background: '#fff', borderRadius: 12, boxShadow: '0 2px 8px #0001', padding: 12 }}>
               <a href={`/worship/videos/${video.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <img 

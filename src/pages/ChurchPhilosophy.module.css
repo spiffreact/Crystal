@@ -1,0 +1,484 @@
+/* 컨테이너 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* 헤더 섹션 */
+.header {
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.headerContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.headerImage img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 메인 콘텐츠 */
+.content {
+  padding: 3rem 2rem;
+}
+
+/* 목회 철학 섹션 */
+.pastoralSection {
+  margin-bottom: 4rem;
+}
+
+.pastoralSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.philosophyCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid #9b59b6;
+}
+
+.philosophyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.philosophyCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.philosophyCard p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.philosophyCard ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.philosophyCard li {
+  padding: 0.5rem 0;
+  color: #555;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.philosophyCard li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* 교육 철학 섹션 */
+.educationSection {
+  margin-bottom: 4rem;
+}
+
+.educationSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.educationContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.educationText h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #8e44ad;
+  font-weight: 600;
+}
+
+.educationAreas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.educationArea {
+  padding: 1.5rem;
+  border-left: 4px solid #e74c3c;
+  background: #fdf6f6;
+  border-radius: 8px;
+}
+
+.educationArea h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.educationArea p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.areaDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.areaDetails span {
+  background: #e74c3c;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.educationImage img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 신앙관 섹션 */
+.faithSection {
+  margin-bottom: 4rem;
+}
+
+.faithSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.faithCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.faithCard {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(52, 152, 219, 0.3);
+  transition: all 0.3s ease;
+}
+
+.faithCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(52, 152, 219, 0.4);
+}
+
+.faithCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.faithCard p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.faithCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faithCard li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+  opacity: 0.9;
+}
+
+.faithCard li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  top: 0.2rem;
+}
+
+/* 교육 방법론 섹션 */
+.methodSection {
+  margin-bottom: 4rem;
+}
+
+.methodSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.methodGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.methodCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #f39c12;
+}
+
+.methodCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.methodIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.methodCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.methodCard p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.methodItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.methodItems span {
+  background: #f39c12;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* 실천 지침 섹션 */
+.practiceSection {
+  margin-bottom: 2rem;
+}
+
+.practiceSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.practiceContent {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.practiceQuote {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 16px;
+  border-left: 4px solid #27ae60;
+}
+
+.practiceQuote blockquote {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #2c3e50;
+  font-style: italic;
+  margin: 0;
+  position: relative;
+}
+
+.practiceQuote cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.practiceList h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+}
+
+.practiceItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.practiceItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.practiceItem:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.practiceNumber {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.practiceItem h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.practiceItem p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .headerContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .headerImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .educationContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .faithCards {
+    grid-template-columns: 1fr;
+  }
+
+  .methodGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .practiceItems {
+    grid-template-columns: 1fr;
+  }
+
+  .practiceContent {
+    padding: 2rem;
+  }
+} 

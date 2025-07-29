@@ -28,17 +28,43 @@ export default function Login() {
 
   const teamName = getTeamName();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // 간단한 로그인 검증 (실제로는 서버와 통신)
-    if (username === 'admin' && password === 'crystal2024') {
-      // 로그인 성공
-      localStorage.setItem('isLoggedIn', 'true');
-      localStorage.setItem('user', JSON.stringify({ username: 'admin' }));
-      navigate(from, { replace: true });
-    } else {
-      setError('아이디 또는 비밀번호가 올바르지 않습니다.');
+    try {
+      // 서버 API로 로그인 시도
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password })
+      });
+
+      const result = await response.json();
+
+      if (result.success && result.token) {
+        // 서버 로그인 성공
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('authToken', result.token);
+        localStorage.setItem('user', JSON.stringify(result.user));
+        console.log('✅ 서버 로그인 성공:', result.user);
+        navigate(from, { replace: true });
+      } else {
+        throw new Error(result.message || '로그인 실패');
+      }
+    } catch (error) {
+      console.warn('⚠️ 서버 로그인 실패, 로컬 인증으로 폴백:', error);
+      
+      // 서버 실패 시 기존 로컬 인증으로 폴백
+      if (username === 'admin' && password === 'crystal2024') {
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('user', JSON.stringify({ username: 'admin' }));
+        console.log('📋 로컬 인증 성공 (서버 연결 없음)');
+        navigate(from, { replace: true });
+      } else {
+        setError('아이디 또는 비밀번호가 올바르지 않습니다.');
+      }
     }
   };
 

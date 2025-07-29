@@ -11,7 +11,7 @@ export default function NewcomerManagement() {
   const navigate = useNavigate();
   
   // 초기 샘플 데이터와 새가족 등록 데이터 합치기
-  const getInitialNewcomers = () => {
+  const getInitialNewcomers = async () => {
     const sampleData = [
     {
       id: 1,
@@ -79,21 +79,132 @@ export default function NewcomerManagement() {
     }
     ];
 
-    // localStorage에서 새가족 등록 데이터 가져오기
-    const registeredNewcomers = JSON.parse(localStorage.getItem('newcomerRegistrations') || '[]');
+    let registeredNewcomers = [];
+
+    try {
+      // 서버에서 새신자 데이터 먼저 시도
+      const token = localStorage.getItem('authToken');
+      if (token) {
+        try {
+          const response = await fetch('/api/newcomers', {
+            method: 'GET',
+            headers: {
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+          });
+
+          if (response.ok) {
+            const result = await response.json();
+            if (result.success && result.newcomers) {
+              registeredNewcomers = result.newcomers.map(newcomer => ({
+                ...newcomer,
+                registrationDate: newcomer.registration_date ? 
+                  newcomer.registration_date.replace(/-/g, '.') : 
+                  new Date(newcomer.created_at).toISOString().split('T')[0].replace(/-/g, '.'),
+                interests: Array.isArray(newcomer.interests) ? newcomer.interests : 
+                  (typeof newcomer.interests === 'string' ? JSON.parse(newcomer.interests || '[]') : [])
+              }));
+              console.log('🌐 서버에서 새가족 데이터 로드 성공:', registeredNewcomers.length, '명');
+              
+              // 서버 데이터를 localStorage에도 백업
+              localStorage.setItem('newcomerRegistrations', JSON.stringify(registeredNewcomers));
+              localStorage.setItem('crystal_church_newcomers', JSON.stringify(registeredNewcomers));
+            }
+          } else if (response.status === 401 || response.status === 403) {
+            console.warn('🔐 인증이 필요하거나 토큰이 만료됨, localStorage 백업 사용');
+            throw new Error('Authentication required');
+          }
+        } catch (serverError) {
+          console.warn('⚠️ 서버 연결 실패, localStorage로 폴백:', serverError.message);
+        }
+      }
+
+      // 서버에서 실패했거나 토큰이 없으면 localStorage에서 로드
+      if (registeredNewcomers.length === 0) {
+        // 메인 키에서 데이터 로드 시도
+        const mainData = localStorage.getItem('newcomerRegistrations');
+        if (mainData) {
+          const parsed = JSON.parse(mainData);
+          if (Array.isArray(parsed)) {
+            registeredNewcomers = parsed;
+            console.log('📋 메인 키에서 새가족 데이터 로드 성공:', registeredNewcomers.length, '명');
+          }
+        }
+
+        // 백업 키에서도 데이터 확인 (중복 제거 포함)
+        const backupData = localStorage.getItem('crystal_church_newcomers');
+        if (backupData && registeredNewcomers.length === 0) {
+          const parsed = JSON.parse(backupData);
+          if (Array.isArray(parsed)) {
+            registeredNewcomers = parsed;
+            console.log('🔄 백업 키에서 새가족 데이터 복원 성공:', registeredNewcomers.length, '명');
+            
+            // 메인 키로 복원
+            localStorage.setItem('newcomerRegistrations', JSON.stringify(registeredNewcomers));
+          }
+        }
+
+        // 개별 백업에서 누락된 데이터 복원
+        const existingIds = new Set(registeredNewcomers.map(item => item.id));
+        Object.keys(localStorage).forEach(key => {
+          if (key.startsWith('newcomer_backup_')) {
+            try {
+              const backupItem = JSON.parse(localStorage.getItem(key));
+              if (backupItem && !existingIds.has(backupItem.id)) {
+                registeredNewcomers.push(backupItem);
+                console.log('🔧 개별 백업에서 데이터 복원:', backupItem.name);
+              }
+            } catch (e) {
+              console.warn('개별 백업 복원 실패:', key, e);
+            }
+          }
+        });
+
+        // 중복 제거 (ID 기준)
+        const uniqueNewcomers = registeredNewcomers.filter((item, index, self) => 
+          index === self.findIndex(t => t.id === item.id)
+        );
+
+        if (uniqueNewcomers.length !== registeredNewcomers.length) {
+          console.log('🧹 중복 데이터 제거 완료');
+          localStorage.setItem('newcomerRegistrations', JSON.stringify(uniqueNewcomers));
+          registeredNewcomers = uniqueNewcomers;
+        }
+      }
+
+    } catch (error) {
+      console.error('❌ 새가족 데이터 로드 실패:', error);
+      registeredNewcomers = [];
+    }
     
     // 등록된 데이터와 샘플 데이터 합치기 (등록된 데이터가 위에 표시)
-    return [...registeredNewcomers, ...sampleData];
+    const allNewcomers = [...registeredNewcomers, ...sampleData];
+    
+    console.log('📊 전체 새가족 목록:', allNewcomers.length, '명 (등록:', registeredNewcomers.length, '명, 샘플:', sampleData.length, '명)');
+    
+    return allNewcomers;
   };
 
   // 새신자 목록 상태
-  const [newcomers, setNewcomers] = useState(getInitialNewcomers());
+  const [newcomers, setNewcomers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   // 컴포넌트가 마운트될 때와 페이지에 다시 포커스될 때 데이터 새로고침
   useEffect(() => {
-    const refreshData = () => {
-      setNewcomers(getInitialNewcomers());
+    const refreshData = async () => {
+      setIsLoading(true);
+      try {
+        const data = await getInitialNewcomers();
+        setNewcomers(data);
+      } catch (error) {
+        console.error('데이터 로드 오류:', error);
+      } finally {
+        setIsLoading(false);
+      }
     };
+
+    refreshData();
 
     // 페이지 포커스 시 데이터 새로고침 (다른 탭에서 등록 후 돌아왔을 때)
     window.addEventListener('focus', refreshData);
@@ -129,7 +240,38 @@ export default function NewcomerManagement() {
     setIsEditing(true);
   };
 
-  const handleSaveNewcomer = () => {
+  const handleSaveNewcomer = async () => {
+    try {
+      const token = localStorage.getItem('authToken');
+      if (token && selectedNewcomer.id && selectedNewcomer.id > 3) { // 샘플 데이터가 아닌 경우
+        // 서버에 저장 시도
+        const response = await fetch(`/api/newcomers/${selectedNewcomer.id}`, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: selectedNewcomer.name,
+            phone: selectedNewcomer.phone,
+            email: selectedNewcomer.email,
+            status: selectedNewcomer.status,
+            stage: selectedNewcomer.stage,
+            notes: selectedNewcomer.notes
+          })
+        });
+
+        if (response.ok) {
+          console.log('✅ 서버 저장 성공');
+        } else {
+          throw new Error('서버 저장 실패');
+        }
+      }
+    } catch (error) {
+      console.warn('⚠️ 서버 저장 실패, localStorage만 업데이트:', error);
+    }
+
+    // localStorage 업데이트 (기존 로직 유지)
     const updatedNewcomers = newcomers.map(n => 
       n.id === selectedNewcomer.id ? selectedNewcomer : n
     );
@@ -237,21 +379,32 @@ export default function NewcomerManagement() {
                 </button>
               </div>
               <div className={styles.listContainer}>
-                {newcomers.map(newcomer => (
-                  <div 
-                    key={newcomer.id}
-                    className={`${styles.newcomerItem} ${selectedNewcomer?.id === newcomer.id ? styles.selected : ''}`}
-                    onClick={() => handleSelectNewcomer(newcomer)}
-                  >
-                    <div className={styles.newcomerInfo}>
-                      <h3>{newcomer.name}</h3>
-                      <p className={styles.registrationDate}>{newcomer.registrationDate} 등록</p>
-                      <span className={`${styles.status} ${styles[newcomer.status.replace(' ', '')]}`}>
-                        {newcomer.status}
-                      </span>
-                    </div>
+                {isLoading ? (
+                  <div className={styles.loadingState}>
+                    <div className={styles.loadingSpinner}>⏳</div>
+                    <p>새신자 목록을 불러오는 중...</p>
                   </div>
-                ))}
+                ) : newcomers.length === 0 ? (
+                  <div className={styles.emptyState}>
+                    <p>등록된 새신자가 없습니다.</p>
+                  </div>
+                ) : (
+                  newcomers.map(newcomer => (
+                    <div 
+                      key={newcomer.id}
+                      className={`${styles.newcomerItem} ${selectedNewcomer?.id === newcomer.id ? styles.selected : ''}`}
+                      onClick={() => handleSelectNewcomer(newcomer)}
+                    >
+                      <div className={styles.newcomerInfo}>
+                        <h3>{newcomer.name}</h3>
+                        <p className={styles.registrationDate}>{newcomer.registrationDate} 등록</p>
+                        <span className={`${styles.status} ${styles[newcomer.status.replace(' ', '')]}`}>
+                          {newcomer.status}
+                        </span>
+                      </div>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
 

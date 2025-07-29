@@ -1,0 +1,528 @@
+/* 컨테이너 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* 헤더 섹션 */
+.header {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.headerContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.headerBadge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.timeInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.day {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.time {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 메인 콘텐츠 */
+.content {
+  padding: 3rem 2rem;
+}
+
+/* 정보 섹션 */
+.infoSection {
+  margin-bottom: 4rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.infoCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #27ae60;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.infoCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.infoCard p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.infoCard p strong {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+/* 예배 순서 섹션 */
+.orderSection {
+  margin-bottom: 4rem;
+}
+
+.orderSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.orderContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.orderList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.orderItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.orderItem:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.orderTime {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  min-width: 60px;
+  text-align: center;
+}
+
+.orderDetails h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.orderDetails p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.orderImage {
+  text-align: center;
+}
+
+.orderImage img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imageCaption {
+  margin-top: 1rem;
+}
+
+.imageCaption p {
+  color: #666;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* 특별 프로그램 섹션 */
+.specialSection {
+  margin-bottom: 4rem;
+}
+
+.specialSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.specialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.specialCard {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(243, 156, 18, 0.3);
+  transition: all 0.3s ease;
+}
+
+.specialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(243, 156, 18, 0.4);
+}
+
+.specialCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.specialCard p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.specialSchedule span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 참여 안내 섹션 */
+.participationSection {
+  margin-bottom: 4rem;
+}
+
+.participationSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.participationContent {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.participationText h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+}
+
+.guideList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.guideItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.guideIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.guideItem h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.guideItem p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+
+.participationActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.actionButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+  color: white;
+}
+
+/* 연락처 섹션 */
+.contactSection {
+  margin-bottom: 2rem;
+}
+
+.contactSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.contactCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #e74c3c;
+}
+
+.contactCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.contactCard p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.contactCard p strong {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* 수요예배 전용 스타일 */
+.header.wednesday {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.infoCard.wednesday {
+  border-top-color: #3498db;
+}
+
+.infoCard.wednesday p strong {
+  color: #3498db;
+}
+
+.contactCard.wednesday {
+  border-top-color: #3498db;
+}
+
+.contactCard.wednesday p strong {
+  color: #3498db;
+}
+
+/* 금요기도회 전용 스타일 */
+.header.friday {
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+}
+
+.infoCard.friday {
+  border-top-color: #8e44ad;
+}
+
+.infoCard.friday p strong {
+  color: #8e44ad;
+}
+
+.contactCard.friday {
+  border-top-color: #8e44ad;
+}
+
+.contactCard.friday p strong {
+  color: #8e44ad;
+}
+
+/* 새벽기도회 전용 스타일 */
+.header.dawn {
+  background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
+}
+
+.infoCard.dawn {
+  border-top-color: #e67e22;
+}
+
+.infoCard.dawn p strong {
+  color: #e67e22;
+}
+
+.contactCard.dawn {
+  border-top-color: #e67e22;
+}
+
+.contactCard.dawn p strong {
+  color: #e67e22;
+}
+
+/* 영어예배 전용 스타일 */
+.header.english {
+  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+}
+
+.infoCard.english {
+  border-top-color: #9b59b6;
+}
+
+.infoCard.english p strong {
+  color: #9b59b6;
+}
+
+.contactCard.english {
+  border-top-color: #9b59b6;
+}
+
+.contactCard.english p strong {
+  color: #9b59b6;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .headerContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .orderContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .orderItem {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .specialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .guideList {
+    grid-template-columns: 1fr;
+  }
+
+  .participationActions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .participationContent {
+    padding: 2rem;
+  }
+} 

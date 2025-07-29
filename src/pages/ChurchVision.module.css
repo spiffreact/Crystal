@@ -1,0 +1,435 @@
+/* 컨테이너 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* 헤더 섹션 */
+.header {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.headerContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.headerImage img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 메인 콘텐츠 */
+.content {
+  padding: 3rem 2rem;
+}
+
+/* 표어 섹션 */
+.mottoSection {
+  margin-bottom: 4rem;
+}
+
+.mottoCard {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(231, 76, 60, 0.3);
+}
+
+.mottoCard h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.mottoText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mottoDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 비전 섹션 */
+.visionSection {
+  margin-bottom: 4rem;
+}
+
+.visionSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.visionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.visionCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-top: 4px solid #3498db;
+}
+
+.visionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.visionIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.visionCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.visionCard p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* 사명 섹션 */
+.missionSection {
+  margin-bottom: 4rem;
+}
+
+.missionSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.missionContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.missionText h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.missionItems {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.missionItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.missionNumber {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.missionItem h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.missionItem p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.missionImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 핵심가치 섹션 */
+.valuesSection {
+  margin-bottom: 4rem;
+}
+
+.valuesSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.valuesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.valueItem {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #27ae60;
+}
+
+.valueItem:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.valueIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.valueContent h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.valueContent p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* 목표 섹션 */
+.goalsSection {
+  margin-bottom: 4rem;
+}
+
+.goalsSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.goalsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.goalCard {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(243, 156, 18, 0.3);
+}
+
+.goalCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.goalCard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goalCard li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.goalCard li:last-child {
+  border-bottom: none;
+}
+
+/* 행동지침 섹션 */
+.actionSection {
+  margin-bottom: 2rem;
+}
+
+.actionSection h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.actionCard {
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(142, 68, 173, 0.3);
+}
+
+.actionText p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.actionText strong {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.actionList {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.actionList li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.actionList li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #f1c40f;
+}
+
+.actionList li:last-child {
+  border-bottom: none;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .headerContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .headerImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .mottoCard {
+    padding: 2rem;
+  }
+
+  .mottoText {
+    font-size: 2rem;
+  }
+
+  .visionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .missionContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .valuesList {
+    grid-template-columns: 1fr;
+  }
+
+  .goalsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actionCard {
+    padding: 2rem;
+  }
+
+  .actionText p {
+    font-size: 1.1rem;
+  }
+
+  .actionList li {
+    font-size: 1rem;
+  }
+} 

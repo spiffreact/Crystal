@@ -1,0 +1,620 @@
+/* 컨테이너 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* 헤더 섹션 */
+.header {
+  background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.headerContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.headerImage img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 메인 콘텐츠 */
+.content {
+  padding: 3rem 2rem;
+}
+
+/* 공통 섹션 스타일 */
+.content section {
+  margin-bottom: 4rem;
+}
+
+.content section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* 본당 섹션 */
+.facilityCard {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.facilityImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.facilityInfo h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.detailIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.detailItem h4 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.detailItem p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.facilityDescription {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #16a085;
+}
+
+.facilityDescription h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.facilityDescription ul {
+  list-style: none;
+  padding: 0;
+}
+
+.facilityDescription li {
+  padding: 0.5rem 0;
+  color: #555;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.facilityDescription li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #16a085;
+  font-weight: bold;
+}
+
+/* 층별 개요 섹션 */
+.floorGuideSection {
+  margin-bottom: 4rem;
+}
+
+.floorGuide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.floorCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #16a085;
+  transition: all 0.3s ease;
+}
+
+.floorCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.floorCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.floorItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.floorItems span {
+  background: #16a085;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* 교육관 섹션 */
+.facilityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.roomCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.roomCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.roomHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.roomHeader h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.roomCapacity {
+  background: #16a085;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.roomFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.featureIcon {
+  font-size: 1.2rem;
+}
+
+.feature span:last-child {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.roomUsage {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #16a085;
+}
+
+.roomUsage strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.roomUsage p {
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* 주차장 섹션 */
+.parkingContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.parkingInfo h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.parkingDetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.parkingDetail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.parkingIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.parkingDetail h4 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.parkingDetail p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.parkingMap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapPlaceholder {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  width: 100%;
+  border: 2px dashed #16a085;
+}
+
+.mapPlaceholder h4 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.mapContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.mapBuilding, .mapParking, .mapEntrance {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mapParking small {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.parkingGuide {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.parkingGuide h4 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+}
+
+.guideGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.guideItem {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.guideItem h5 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.guideItem p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* 편의시설 섹션 */
+.amenitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.amenityCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.amenityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.amenityIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.amenityCard h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.amenityCard p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* 시설 이용 안내 섹션 */
+.usageContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.usageRules h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.rulesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rule {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.ruleNumber {
+  background: linear-gradient(135deg, #16a085 0%, #1abc9c 100%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.rule h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.rule p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.reservationInfo h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.contactIcon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.contactItem h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.contactItem p {
+  color: #16a085;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.contactItem small {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .headerContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .headerImage img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content {
+    padding: 2rem 1rem;
+  }
+
+  .facilityCard {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .detailGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .floorGuide {
+    grid-template-columns: 1fr;
+  }
+
+  .facilityGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .parkingContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .guideGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .amenitiesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .usageContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+} 
