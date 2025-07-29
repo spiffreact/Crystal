@@ -77,7 +77,7 @@ export default function Welcome() {
             </div>
           </section>
 
-          {/* 새가족 안내 섹션 */}
+          {/* 새가족을 위한 안내 섹션 */}
           <section className={styles.section}>
             <h2>🎯 새가족을 위한 안내</h2>
             <div className={styles.guideGrid}>
@@ -105,10 +105,50 @@ export default function Welcome() {
               </div>
               <div className={styles.guideCard}>
                 <div className={styles.stepNumber}>3</div>
-                <h3>양육 과정</h3>
+                <h3>새가족 FAQ</h3>
                 <p>
-                  새신자를 위한 체계적인 양육 프로그램을 통해<br />
-                  신앙의 기초를 든든하게 세워나가실 수 있습니다.
+                  처음 교회에 오시는 분들이 자주 묻는 질문들과<br />
+                  그에 대한 친절한 답변을 확인하실 수 있습니다.
+                </p>
+                <Link to="/welcome/faq" className={styles.guideLink}>
+                  자주 묻는 질문 →
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          {/* 교회 생활 참여 섹션 */}
+          <section className={styles.section}>
+            <h2>🌱 교회 생활 참여하기</h2>
+            <div className={styles.guideGrid}>
+              <div className={styles.guideCard}>
+                <div className={styles.stepNumber}>📚</div>
+                <h3>양육과정</h3>
+                <p>
+                  체계적인 말씀 교육을 통해 성숙한 그리스도인으로<br />
+                  성장하는 단계별 양육과정에 참여하세요.
+                </p>
+                <Link to="/community/discipleship-process" className={styles.guideLink}>
+                  양육과정 보기 →
+                </Link>
+              </div>
+              <div className={styles.guideCard}>
+                <div className={styles.stepNumber}>🤝</div>
+                <h3>봉사활동</h3>
+                <p>
+                  섬김과 나눔을 통해 하나님의 사랑을 실천하는<br />
+                  다양한 봉사활동에 참여하실 수 있습니다.
+                </p>
+                <Link to="/community/volunteer-activities" className={styles.guideLink}>
+                  봉사활동 보기 →
+                </Link>
+              </div>
+              <div className={styles.guideCard}>
+                <div className={styles.stepNumber}>💝</div>
+                <h3>새신자 양육</h3>
+                <p>
+                  새로 오신 분들을 위한 체계적인 양육 프로그램으로<br />
+                  신앙의 기초를 탄탄하게 세워나가세요.
                 </p>
                 <Link to="/community/newcomer-care" className={styles.guideLink}>
                   새신자 양육 보기 →

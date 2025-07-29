@@ -38,6 +38,9 @@ import QuickLinksGridPage from './pages/QuickLinksGridPage';
 import WorshipVideoDetail from './pages/WorshipVideoDetail';
 import WorshipVideos from './pages/WorshipVideos';
 import YouthGroup from './pages/YouthGroup';
+import VolunteerActivities from './pages/VolunteerActivities';
+import DiscipleshipProcess from './pages/DiscipleshipProcess';
+import NewcomerFAQ from './pages/NewcomerFAQ';
 
 function App() {
   return (
@@ -74,6 +77,9 @@ function App() {
             <Route path="/mission/overseas-outreach" element={<OverseasOutreach />} />
             <Route path="/login" element={<Login />} />
             <Route path="/community/newcomer-care" element={<NewcomerCare />} />
+            <Route path="/community/volunteer-activities" element={<VolunteerActivities />} />
+            <Route path="/community/discipleship-process" element={<DiscipleshipProcess />} />
+            <Route path="/welcome/faq" element={<NewcomerFAQ />} />
             <Route path="/welcome/visit" element={<ChurchVisit />} />
             <Route 
               path="/community/education-team" 

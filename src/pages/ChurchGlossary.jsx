@@ -31,7 +31,7 @@ export default function ChurchGlossary() {
     // 교회 조직 관련 용어
     { term: '당회', category: 'organization', definition: '목사와 장로들로 구성된 교회의 최고 의결기구입니다.', example: '"다음 주 당회에서 중요한 안건이 논의될 예정입니다."' },
     { term: '교구', category: 'organization', definition: '지역별로 나누어진 교회 조직 단위로, 체계적인 목양을 위해 구성됩니다.', example: '"1교구 모임이 이번 주 토요일에 있습니다."' },
-    { term: '구역', category: 'organization', definition: '교구보다 작은 단위의 조직으로, 가정 중심의 친교와 교제를 위한 모임입니다.', example: '"우리 구역 성경공부는 매주 화요일에 합니다."' },
+    { term: '셀', category: 'organization', definition: '교구보다 작은 단위의 조직으로, 가정 중심의 친교와 교제를 위한 모임입니다.', example: '"우리 셀 성경공부는 매주 화요일에 합니다."' },
     { term: '소그룹', category: 'organization', definition: '작은 규모의 모임으로, 깊이 있는 교제와 성경공부를 위한 그룹입니다.', example: '"소그룹 모임에서 서로의 기도제목을 나누었습니다."' },
     { term: '공동체', category: 'organization', definition: '같은 믿음을 가진 성도들이 함께 모여 이루는 신앙 공동체입니다.', example: '"우리는 하나님 안에서 하나 된 공동체입니다."' },
 
@@ -48,7 +48,7 @@ export default function ChurchGlossary() {
     { term: '신앙', category: 'faith', definition: '하나님을 믿고 의지하는 마음과 삶의 자세입니다.', example: '"신앙생활을 통해 하나님과 더 가까워집시다."' },
     { term: '구원', category: 'faith', definition: '예수 그리스도를 믿음으로 죄에서 구원받아 영생을 얻는 것입니다.', example: '"구원은 오직 예수 그리스도를 통해서만 가능합니다."' },
     { term: '회개', category: 'faith', definition: '자신의 죄를 인정하고 하나님께 돌아오는 것입니다.', example: '"진정한 회개는 삶의 변화를 가져옵니다."' },
-    { term: '세례', category: 'faith', definition: '예수 그리스도를 구주로 믿는다는 신앙고백의 의식입니다.', example: '"다음 달에 세례식이 예정되어 있습니다."' },
+    { term: '침례', category: 'faith', definition: '예수 그리스도를 구주로 믿는다는 신앙고백의 의식입니다.', example: '"다음 달에 침례식이 예정되어 있습니다."' },
     { term: '입교', category: 'faith', definition: '유아세례를 받은 사람이 성인이 되어 신앙을 확인하는 의식입니다.', example: '"입교를 통해 교회의 정식 회원이 됩니다."' },
     { term: '은혜', category: 'faith', definition: '하나님께서 값없이 주시는 사랑과 축복입니다.', example: '"하나님의 은혜로 오늘도 평안합니다."' },
     { term: '성령', category: 'faith', definition: '삼위일체 하나님의 한 위격으로, 성도들과 함께 하시는 하나님의 영입니다.', example: '"성령님께서 우리를 인도해 주십니다."' },

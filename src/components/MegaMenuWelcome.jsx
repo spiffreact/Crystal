@@ -60,8 +60,8 @@ export default function MegaMenuWelcome({ open, closing }) {
           <h3>사역 참여</h3>
           <ul>
             <li><Link to="/welcome/ministry" onClick={handleLinkClick}>사역 참여하기</Link></li>
-            <li><Link to="/welcome/volunteer" onClick={handleLinkClick}>봉사 활동</Link></li>
-            <li><Link to="/welcome/training" onClick={handleLinkClick}>양육 과정</Link></li>
+            <li><Link to="/community/volunteer-activities" onClick={handleLinkClick}>봉사 활동</Link></li>
+            <li><Link to="/community/discipleship-process" onClick={handleLinkClick}>양육 과정</Link></li>
           </ul>
         </div>
         
