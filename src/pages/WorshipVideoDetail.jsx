@@ -4,6 +4,15 @@ import { useParams, useNavigate } from 'react-router-dom';
 // 샘플 데이터 (실제 서비스에서는 API 등에서 받아옴)
 const sampleVideos = [
   {
+    id: '6',
+    title: '수요 예배 - 2025년 7월 30일',
+    category: '수요',
+    preacher: '김모세',
+    date: '2025-07-30',
+    youtubeId: 'iMzzxgLi6BI',
+    description: '2025년 7월 30일 수요 예배 영상입니다.'
+  },
+  {
     id: '3',
     title: '수요 예배 - 2025년 7월 23일',
     category: '수요',

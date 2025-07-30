@@ -47,11 +47,11 @@ export default function MegaMenuWorship({ open, closing }) {
           <div>
             <h3>예배 영상</h3>
             <ul>
-              <li><Link to="/worship/videos" onClick={handleLinkClick}>주일 예배</Link></li>
-              <li><Link to="/worship/wednesday" onClick={handleLinkClick}>수요 예배</Link></li>
+              <li><Link to="/worship/videos" onClick={handleLinkClick}>예배 영상</Link></li>
+              {/* <li><Link to="/worship/wednesday" onClick={handleLinkClick}>수요 예배</Link></li>
               <li><Link to="/worship/friday" onClick={handleLinkClick}>금요 예배</Link></li>
               <li><Link to="/worship/dawn" onClick={handleLinkClick}>새벽기도회</Link></li>
-              <li><Link to="/worship/english" onClick={handleLinkClick}>영어 예배</Link></li>
+              <li><Link to="/worship/english" onClick={handleLinkClick}>영어 예배</Link></li> */}
             </ul>
           </div>
         {/* 설교 */}
@@ -59,8 +59,8 @@ export default function MegaMenuWorship({ open, closing }) {
             <h3>설교</h3>
             <ul>
             <li><Link to="#" onClick={handleLinkClick}>책별 설교</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>인물별 설교</Link></li>
-            <li><Link to="#" onClick={handleLinkClick}>주제별 설교</Link></li>
+            {/* <li><Link to="#" onClick={handleLinkClick}>인물별 설교</Link></li>
+            <li><Link to="#" onClick={handleLinkClick}>주제별 설교</Link></li> */}
           </ul>
         </div>
         {/* 특별 집회 */}

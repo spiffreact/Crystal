@@ -1,20 +1,299 @@
-.pastor-greeting-image {
-  width: 110vw;
-  height: 110vh;
-  object-fit: contain;
-  object-position: center;
-  max-width: 1200px;
-  max-height: 1100px;
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-/* 모바일 화면 (768px 이하) */
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerContent h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.headerImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.greetingSection {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.pastorInfo {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+}
+
+.pastorPhoto {
+  width: 200px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.pastorPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pastorDetails {
+  flex: 1;
+}
+
+.pastorDetails h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.pastorCredentials {
+  margin-bottom: 1rem;
+}
+
+.pastorCredentials p {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  margin: 0.3rem 0;
+  font-style: italic;
+}
+
+.pastorMinistry p {
+  font-size: 1rem;
+  color: #27ae60;
+  font-weight: 600;
+  margin: 0;
+}
+
+.greetingMessage h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.messageText {
+  line-height: 1.8;
+  color: #34495e;
+  font-size: 1.05rem;
+}
+
+.messageText p {
+  margin-bottom: 1.5rem;
+}
+
+.messageText strong {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.visionList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.visionItem {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #3498db;
+}
+
+.visionItem h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.visionItem p {
+  font-size: 0.95rem;
+  color: #5a6c7d;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.signature {
+  text-align: right;
+  font-style: italic;
+  color: #7f8c8d;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #ecf0f1;
+}
+
+.signature strong {
+  color: #2c3e50;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.connectSection {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.connectSection h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.connectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.connectCard {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.connectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.connectIcon {
+  width: 100px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.connectIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.connectCard h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.connectCard p {
+  color: #5a6c7d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.connectInfo {
+  background: white;
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: left;
+}
+
+.connectInfo p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  color: #34495e;
+}
+
+.connectInfo strong {
+  color: #3498db;
+}
+
+/* 모바일 대응 */
 @media (max-width: 768px) {
-  .pastor-greeting-image {
-    width: 70vw;
-    height: 70vh;
-    object-fit: contain;
-    object-position: center;
-    max-width: 600px;
-    max-height: 600px;
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  
+  .headerContent h1 {
+    font-size: 2rem;
+  }
+  
+  .content {
+    padding: 2rem 1rem;
+  }
+  
+  .greetingSection {
+    padding: 2rem 1.5rem;
+  }
+  
+  .pastorInfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .pastorPhoto {
+    width: 150px;
+    height: 180px;
+  }
+  
+  .visionList {
+    grid-template-columns: 1fr;
+  }
+  
+  .connectSection {
+    padding: 2rem 1.5rem;
+  }
+  
+  .connectGrid {
+    grid-template-columns: 1fr;
   }
 } 

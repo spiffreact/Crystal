@@ -3,6 +3,14 @@ import { Helmet } from 'react-helmet-async';
 
 const sampleVideos = [
   {
+    id: "6",
+    title: '수요 예배 - 2025년 7월 30일',
+    category: '수요',
+    preacher: '김모세',
+    date: '2025-07-30',
+    thumbnail: 'https://img.youtube.com/vi/iMzzxgLi6BI/maxresdefault.jpg',
+  },
+  {
     id: "3",
     title: '수요 예배 - 2025년 7월 23일',
     category: '수요',
