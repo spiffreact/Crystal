@@ -30,7 +30,7 @@ export default function DiscipleshipProcess() {
             <div className={styles.visionBox}>
               <h3>양육 비전</h3>
               <blockquote>
-                "그러므로 너희는 가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이름으로 세례를 베풀고 
+                "그러므로 너희는 가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이름으로 침례를 베풀고 
                 내가 너희에게 분부한 모든 것을 가르쳐 지키게 하라" (마 28:19-20)
               </blockquote>
             </div>
@@ -225,63 +225,6 @@ export default function DiscipleshipProcess() {
                   </ul>
                   <h4>시간</h4>
                   <p>주일 오후 2:00 - 3:30</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.section}>
-            <h2>특별 양육프로그램</h2>
-            <div className={styles.specialPrograms}>
-              <div className={styles.specialCard}>
-                <div className={styles.specialIcon}>
-                  <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop&crop=center" alt="성경통독반" />
-                </div>
-                <h3>성경통독반</h3>
-                <p>1년 동안 성경 66권을 체계적으로 통독하는 프로그램</p>
-                <div className={styles.programInfo}>
-                  <span><strong>기간:</strong> 1년 과정</span>
-                  <span><strong>모임:</strong> 매주 수요일 오후 7:30</span>
-                  <span><strong>대상:</strong> 성경통독을 원하는 모든 성도</span>
-                </div>
-              </div>
-              
-              <div className={styles.specialCard}>
-                <div className={styles.specialIcon}>
-                  <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop&crop=center" alt="신학 아카데미" />
-                </div>
-                <h3>신학 아카데미</h3>
-                <p>기독교 교리와 신학을 깊이 있게 배우는 심화 과정</p>
-                <div className={styles.programInfo}>
-                  <span><strong>기간:</strong> 6개월 과정</span>
-                  <span><strong>모임:</strong> 매주 금요일 오후 7:00</span>
-                  <span><strong>대상:</strong> 리더과정 수료자</span>
-                </div>
-              </div>
-              
-              <div className={styles.specialCard}>
-                <div className={styles.specialIcon}>
-                  <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop&crop=center" alt="부부 성경공부" />
-                </div>
-                <h3>부부 성경공부</h3>
-                <p>부부가 함께 하나님의 말씀으로 가정을 세워가는 과정</p>
-                <div className={styles.programInfo}>
-                  <span><strong>기간:</strong> 8주 과정</span>
-                  <span><strong>모임:</strong> 매월 셋째 토요일 오후 3:00</span>
-                  <span><strong>대상:</strong> 기혼 부부</span>
-                </div>
-              </div>
-              
-              <div className={styles.specialCard}>
-                <div className={styles.specialIcon}>
-                  <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop&crop=center" alt="전도훈련반" />
-                </div>
-                <h3>전도훈련반</h3>
-                <p>복음을 효과적으로 전하는 방법을 배우는 실제적 훈련</p>
-                <div className={styles.programInfo}>
-                  <span><strong>기간:</strong> 10주 과정</span>
-                  <span><strong>모임:</strong> 매주 토요일 오후 2:00</span>
-                  <span><strong>대상:</strong> 전도에 관심 있는 성도</span>
                 </div>
               </div>
             </div>

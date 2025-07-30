@@ -49,7 +49,6 @@ export default function ChurchGlossary() {
     { term: '구원', category: 'faith', definition: '예수 그리스도를 믿음으로 죄에서 구원받아 영생을 얻는 것입니다.', example: '"구원은 오직 예수 그리스도를 통해서만 가능합니다."' },
     { term: '회개', category: 'faith', definition: '자신의 죄를 인정하고 하나님께 돌아오는 것입니다.', example: '"진정한 회개는 삶의 변화를 가져옵니다."' },
     { term: '침례', category: 'faith', definition: '예수 그리스도를 구주로 믿는다는 신앙고백의 의식입니다.', example: '"다음 달에 침례식이 예정되어 있습니다."' },
-    { term: '입교', category: 'faith', definition: '유아세례를 받은 사람이 성인이 되어 신앙을 확인하는 의식입니다.', example: '"입교를 통해 교회의 정식 회원이 됩니다."' },
     { term: '은혜', category: 'faith', definition: '하나님께서 값없이 주시는 사랑과 축복입니다.', example: '"하나님의 은혜로 오늘도 평안합니다."' },
     { term: '성령', category: 'faith', definition: '삼위일체 하나님의 한 위격으로, 성도들과 함께 하시는 하나님의 영입니다.', example: '"성령님께서 우리를 인도해 주십니다."' },
     { term: '기도제목', category: 'faith', definition: '기도할 내용이나 간구할 사항을 의미합니다.', example: '"오늘의 기도제목을 함께 나누겠습니다."' },
