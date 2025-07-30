@@ -36,7 +36,7 @@ export default function ChurchVisit() {
                 <div className={styles.transportItem}>
                   <h4>🚗 자가용으로 오시는 경우</h4>
                   <ul>
-                    <li>월드 메디앙 건너편 입니다.</li>
+                    <li>월드 메르디앙 건너편 입니다.</li>
                     <li>동수원병원 ・ 월드컵경기장 방향에서 접근 가능합니다</li>
                     <li>교회 전용 주차장을 이용해 주세요</li>
                   </ul>

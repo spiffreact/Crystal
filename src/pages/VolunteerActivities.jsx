@@ -34,7 +34,7 @@ export default function VolunteerActivities() {
             <div className={styles.serviceGrid}>
               <div className={styles.serviceCard}>
                 <div className={styles.serviceIcon}>
-                  <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop&crop=center" alt="찬양대" />
+                  <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29yc2hpcHxlbnwwfHwwfHx8MA%3D%3D" alt="찬양대" />
                 </div>
                 <h3>찬양대</h3>
                 <p>하나님께 드리는 아름다운 찬양 사역</p>
@@ -66,7 +66,7 @@ export default function VolunteerActivities() {
               
               <div className={styles.serviceCard}>
                 <div className={styles.serviceIcon}>
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center" alt="중보기도팀" />
+                  <img src="https://images.unsplash.com/photo-1457139621581-298d1801c832?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByYXllcnxlbnwwfHwwfHx8MA%3D%3D" alt="중보기도팀" />
                 </div>
                 <h3>중보기도팀</h3>
                 <p>교회와 성도들을 위한 기도 사역</p>
@@ -82,7 +82,7 @@ export default function VolunteerActivities() {
               
               <div className={styles.serviceCard}>
                 <div className={styles.serviceIcon}>
-                  <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&h=300&fit=crop&crop=center" alt="미디어팀" />
+                  <img src="https://images.unsplash.com/photo-1497015289639-54688650d173?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWF8ZW58MHx8MHx8fDA%3D" alt="미디어팀" />
                 </div>
                 <h3>미디어팀</h3>
                 <p>예배와 교육을 돕는 기술 사역</p>
@@ -135,7 +135,7 @@ export default function VolunteerActivities() {
             <div className={styles.communityService}>
               <div className={styles.communityCard}>
                 <div className={styles.communityIcon}>
-                  <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center" alt="독거어르신 방문" />
+                  <img src="https://plus.unsplash.com/premium_photo-1681996653334-9e16a2b598aa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bnVyc2luZyUyMGhvbWV8ZW58MHx8MHx8fDA%3D" alt="독거어르신 방문" />
                 </div>
                 <h3>독거어르신 방문</h3>
                 <p>지역 독거어르신들을 정기적으로 방문하여 안부를 확인하고 생활에 필요한 도움을 제공합니다.</p>
@@ -171,7 +171,7 @@ export default function VolunteerActivities() {
               
               <div className={styles.communityCard}>
                 <div className={styles.communityIcon}>
-                  <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=400&h=300&fit=crop&crop=center" alt="해외 선교지 지원" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgyAC9nf7JOCmlAOr-jqb3e3n8z6EnSz-o6A&s" alt="해외 선교지 지원" />
                 </div>
                 <h3>해외 선교지 지원</h3>
                 <p>탄자니아 등 해외 선교지를 위한 물품 후원과 기도 지원 활동입니다.</p>
