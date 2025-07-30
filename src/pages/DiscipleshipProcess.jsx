@@ -128,7 +128,7 @@ export default function DiscipleshipProcess() {
             <div className={styles.ageGroupGrid}>
               <div className={styles.ageGroupCard}>
                 <div className={styles.ageIcon}>
-                  <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&fit=crop&crop=center" alt="영유아부" />
+                  <img src="https://plus.unsplash.com/premium_photo-1682003644019-d1d7757b7f3e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVDJTk4JTgxJUVDJTlDJUEwJUVDJTk1JTg0fGVufDB8fDB8fHww" alt="영유아부" />
                 </div>
                 <h3>영유아부 (0-5세)</h3>
                 <div className={styles.ageContent}>
@@ -145,7 +145,7 @@ export default function DiscipleshipProcess() {
               
               <div className={styles.ageGroupCard}>
                 <div className={styles.ageIcon}>
-                  <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop&crop=center" alt="유초등부" />
+                  <img src="https://thecrystalchurch.netlify.app/img2/en5.jpg" alt="유초등부" />
                 </div>
                 <h3>유초등부 (6-12세)</h3>
                 <div className={styles.ageContent}>
@@ -162,7 +162,7 @@ export default function DiscipleshipProcess() {
               
               <div className={styles.ageGroupCard}>
                 <div className={styles.ageIcon}>
-                  <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop&crop=center" alt="중고등부" />
+                  <img src="/youth.jpeg" alt="중고등부" />
                 </div>
                 <h3>중고등부 (13-18세)</h3>
                 <div className={styles.ageContent}>
@@ -173,13 +173,13 @@ export default function DiscipleshipProcess() {
                     <li>진로 상담</li>
                   </ul>
                   <h4>시간</h4>
-                  <p>주일 오전 11:00 - 12:30</p>
+                  <p>주일 오전 11:00 - 12:00</p>
                 </div>
               </div>
               
               <div className={styles.ageGroupCard}>
                 <div className={styles.ageIcon}>
-                  <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=300&fit=crop&crop=center" alt="청년부" />
+                  <img src="/college.png" alt="청년부" />
                 </div>
                 <h3>청년부 (19-35세)</h3>
                 <div className={styles.ageContent}>
@@ -213,9 +213,9 @@ export default function DiscipleshipProcess() {
               
               <div className={styles.ageGroupCard}>
                 <div className={styles.ageIcon}>
-                  <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop&crop=center" alt="어르신부" />
+                  <img src="https://images.unsplash.com/photo-1568337339884-18892057f7cf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fCVFQyU4QiU5QyVFQiU4QiU4OCVFQyU5NiVCNHxlbnwwfHwwfHx8MA%3D%3D" alt="어르신부" />
                 </div>
-                <h3>어르신부 (65세 이상)</h3>
+                <h3>시니어 (70세 이상)</h3>
                 <div className={styles.ageContent}>
                   <h4>프로그램</h4>
                   <ul>
@@ -224,7 +224,7 @@ export default function DiscipleshipProcess() {
                     <li>건강 관리 교육</li>
                   </ul>
                   <h4>시간</h4>
-                  <p>매주 목요일 오전 10:00</p>
+                  <p>주일 오후 2:00 - 3:30</p>
                 </div>
               </div>
             </div>
