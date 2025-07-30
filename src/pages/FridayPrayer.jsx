@@ -105,7 +105,7 @@ export default function FridayPrayer() {
                 </div>
               </div>
               <div className={styles.orderImage}>
-                <img src="/thekingofkings.jpg" alt="기도하는 모습" />
+                <img src="https://plus.unsplash.com/premium_photo-1681825182140-52a339be2b0a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JUVBJUI4JUIwJUVCJThGJTg0fGVufDB8fDB8fHww" alt="기도하는 모습" />
                 <div className={styles.imageCaption}>
                   <p>하나님과 깊이 교제하는 기도</p>
                 </div>
