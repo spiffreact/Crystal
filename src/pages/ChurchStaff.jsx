@@ -28,12 +28,12 @@ export default function ChurchStaff() {
         </div>
 
         <div className={styles.content}>
-          {/* 담임목사 섹션 */}
+          {/* 담임목사 섹션 */} 
           <section className={styles.pastorSection}>
             <h2>👨‍💼 담임목사</h2>
             <div className={styles.pastorCard}>
               <div className={styles.pastorImage}>
-                <img src="/greeting.png" alt="담임목사" />
+                <img src="/pastor.profile.png" alt="담임목사" />
               </div>
               <div className={styles.pastorInfo}>
                 <h3>김광호 목사</h3>
@@ -41,11 +41,12 @@ export default function ChurchStaff() {
                 <div className={styles.pastorDetails}>
                   <div className={styles.detailItem}>
                     <strong>학력:</strong>
-                    <span>장로회신학대학교 신학과 (B.A.)</span>
+                    <span>한국침례신학대학교 신학과 (B.A.)</span>
+                    <span>한국침례신학대학원 신학과 (M.Div.)</span>
                   </div>
                   <div className={styles.detailItem}>
                     <strong>경력:</strong>
-                    <span>수정침례교회 담임목사 (2015년~현재)</span>
+                    <span>수정침례교회 담임목사 (1991년~현재)</span>
                   </div>
                   <div className={styles.detailItem}>
                     <strong>사역:</strong>
@@ -64,33 +65,48 @@ export default function ChurchStaff() {
                 </div>
               </div>
             </div>
-          </section>
+                   </section>
 
           {/* 협력목사 섹션 */}
-          <section className={styles.associateSection}>
+          <section className={styles.pastorSection}>
             <h2>👥 협력목사</h2>
-            <div className={styles.staffGrid}>
-              <div className={styles.staffCard}>
-                <div className={styles.staffImage}>
-                  <div className={styles.placeholder}>👨‍💼</div>
+            <div className={styles.pastorCard}>
+              <div className={styles.pastorImage}>
+                <img src="/pastor.cha.png" alt="협력목사" />
+              </div>
+              <div className={styles.pastorInfo}>
+                <h3>차보용 목사</h3>
+                <p className={styles.pastorTitle}>협력목사</p>
+                <div className={styles.pastorDetails}>
+                  <div className={styles.detailItem}>
+                    <strong>경력:</strong>
+                    <span>현 보영테크 대표</span>
+               
+                    <span>월드베스트프렌드 대표</span>
+           
+                    <span>수정교회 협력목사</span>
+                  </div>
+                  <div className={styles.detailItem}>
+                    <strong>사역:</strong>
+                    <span>선교, 양육, 제자훈련, 교육</span>
+                  </div>
+                  <div className={styles.detailItem}>
+                    <strong>신조:</strong>
+                    <span>"함께 성장하는 공동체"</span>
+                  </div>
                 </div>
-                <div className={styles.staffInfo}>
-                  <h3>차보용 목사</h3>
-                  <p className={styles.staffRole}>협력목사 (교육 담당)</p>
-                  <div className={styles.staffDescription}>
-                    <p>교회교육과 양육사역을 담당하며, 체계적인 제자훈련을 통해 성도들의 영적 성장을 돕고 있습니다.</p>
-                  </div>
-                  <div className={styles.staffMinistry}>
-                    <span>교육부</span>
-                    <span>양육부</span>
-                    <span>제자훈련</span>
-                  </div>
+                <div className={styles.pastorMessage}>
+                  <p>
+                    "체계적인 제자훈련을 통해 성도들의 영적 성장을 돕고, 
+                    선교 사역을 통해 하나님 나라 확장에 힘쓰고 있습니다."
+                  </p>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* 전도사 섹션 */}
+          {/* 임시 주석 처리 - 나머지 섬기는 사람들 섹션들
+
           <section className={styles.evangelistSection}>
             <h2>👩‍💼 전도사</h2>
             <div className={styles.staffGrid}>
@@ -131,7 +147,6 @@ export default function ChurchStaff() {
             </div>
           </section>
 
-          {/* 장로・권사 섹션 */}
           <section className={styles.elderSection}>
             <h2>🤵 장로・권사</h2>
             <div className={styles.elderGrid}>
@@ -179,7 +194,6 @@ export default function ChurchStaff() {
             </div>
           </section>
 
-          {/* 사역 조직도 섹션 */}
           <section className={styles.organizationSection}>
             <h2>🏛️ 사역 조직도</h2>
             <div className={styles.orgChart}>
@@ -234,7 +248,6 @@ export default function ChurchStaff() {
             </div>
           </section>
 
-          {/* 섬김의 정신 섹션 */}
           <section className={styles.serviceSection}>
             <h2>❤️ 섬김의 정신</h2>
             <div className={styles.serviceContent}>
@@ -265,6 +278,7 @@ export default function ChurchStaff() {
               </div>
             </div>
           </section>
+          */}
         </div>
       </div>
     </>

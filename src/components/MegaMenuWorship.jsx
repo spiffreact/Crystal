@@ -68,9 +68,9 @@ export default function MegaMenuWorship({ open, closing }) {
           <h3>특별집회 영상</h3>
           <ul>
             <li><Link to="/worship/videos" onClick={handleLinkClick}>신년 예배</Link></li>
-            <li><Link to="/worship/wednesday" onClick={handleLinkClick}>맥추감사 예배</Link></li>
+            {/* <li><Link to="/worship/wednesday" onClick={handleLinkClick}>맥추감사 예배</Link></li>
             <li><Link to="/worship/friday" onClick={handleLinkClick}>성탄절 예배</Link></li>
-            <li><Link to="/worship/dawn" onClick={handleLinkClick}>특밤기도회</Link></li>
+            <li><Link to="/worship/dawn" onClick={handleLinkClick}>특밤기도회</Link></li> */}
             {/* <li><Link to="/worship/english" onClick={handleLinkClick}>영어 예배</Link></li> */}
           </ul>
         </div>

@@ -41,6 +41,7 @@ import YouthGroup from './pages/YouthGroup';
 import VolunteerActivities from './pages/VolunteerActivities';
 import DiscipleshipProcess from './pages/DiscipleshipProcess';
 import NewcomerFAQ from './pages/NewcomerFAQ';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
             <Route path="/community/volunteer-activities" element={<VolunteerActivities />} />
             <Route path="/community/discipleship-process" element={<DiscipleshipProcess />} />
             <Route path="/welcome/faq" element={<NewcomerFAQ />} />
+            <Route path="/welcome/contact" element={<Contact />} />
             <Route path="/welcome/visit" element={<ChurchVisit />} />
             <Route 
               path="/community/education-team" 
