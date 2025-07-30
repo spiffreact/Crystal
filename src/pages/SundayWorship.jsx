@@ -39,7 +39,7 @@ export default function SundayWorship() {
                 <div className={styles.cardIcon}>🕐</div>
                 <h3>예배 시간</h3>
                 <p><strong>매주 주일 오전 11:00</strong></p>
-                <p>약 1시간 30분 진행</p>
+                <p>약 1시간 진행</p>
               </div>
               <div className={styles.infoCard}>
                 <div className={styles.cardIcon}>📍</div>
@@ -89,21 +89,21 @@ export default function SundayWorship() {
                   </div>
                 </div>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>11:30</span>
+                  <span className={styles.orderTime}>11:25</span>
                   <div className={styles.orderDetails}>
                     <h4>말씀 선포</h4>
                     <p>담임목사님의 강해설교를 통해 하나님의 뜻을 배웁니다</p>
                   </div>
                 </div>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>12:10</span>
+                  <span className={styles.orderTime}>11:50</span>
                   <div className={styles.orderDetails}>
                     <h4>헌금 및 기도</h4>
                     <p>감사의 마음으로 헌금을 드리고 함께 기도합니다</p>
                   </div>
                 </div>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>12:20</span>
+                  <span className={styles.orderTime}>12:00</span>
                   <div className={styles.orderDetails}>
                     <h4>광고 및 축도</h4>
                     <p>교회 소식을 나누고 하나님의 축복으로 마칩니다</p>

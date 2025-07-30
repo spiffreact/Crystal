@@ -22,7 +22,7 @@ export default function FridayPrayer() {
           <div className={styles.headerBadge}>
             <div className={styles.timeInfo}>
               <span className={styles.day}>금요일</span>
-              <span className={styles.time}>저녁 8:00</span>
+              <span className={styles.time}>저녁 8:30</span>
             </div>
           </div>
         </div>
@@ -33,8 +33,8 @@ export default function FridayPrayer() {
               <div className={`${styles.infoCard} ${styles.friday}`}>
                 <div className={styles.cardIcon}>🕗</div>
                 <h3>기도회 시간</h3>
-                <p><strong>매주 금요일 저녁 8:00</strong></p>
-                <p>약 1시간 30분 진행</p>
+                <p><strong>매주 금요일 저녁 8:30</strong></p>
+                <p>약 1시간 진행</p>
               </div>
               <div className={`${styles.infoCard} ${styles.friday}`}>
                 <div className={styles.cardIcon}>🙏</div>
@@ -62,35 +62,35 @@ export default function FridayPrayer() {
             <div className={styles.orderContent}>
               <div className={styles.orderList}>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>8:00</span>
+                  <span className={styles.orderTime}>8:30</span>
                   <div className={styles.orderDetails}>
                     <h4>경배와 찬양</h4>
                     <p>마음을 하나님께 향하며 찬양으로 시작합니다</p>
                   </div>
                 </div>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>8:15</span>
+                  <span className={styles.orderTime}>8:45</span>
                   <div className={styles.orderDetails}>
                     <h4>말씀 묵상</h4>
                     <p>짧은 말씀으로 기도의 방향을 정합니다</p>
                   </div>
                 </div>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>8:25</span>
+                  <span className={styles.orderTime}>8:55</span>
                   <div className={styles.orderDetails}>
                     <h4>개인 기도</h4>
                     <p>각자의 필요를 하나님께 아뢰는 시간</p>
                   </div>
                 </div>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>8:45</span>
+                  <span className={styles.orderTime}>9:10</span>
                   <div className={styles.orderDetails}>
                     <h4>중보 기도</h4>
                     <p>교회와 나라를 위한 중보기도</p>
                   </div>
                 </div>
                 <div className={styles.orderItem}>
-                  <span className={styles.orderTime}>9:15</span>
+                  <span className={styles.orderTime}>9:20</span>
                   <div className={styles.orderDetails}>
                     <h4>감사와 찬양</h4>
                     <p>하나님의 응답에 감사하며 찬양으로 마무리</p>
