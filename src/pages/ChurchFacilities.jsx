@@ -30,7 +30,7 @@ export default function ChurchFacilities() {
         <div className={styles.content}>
           {/* 본당 섹션 */}
           <section className={styles.sanctuarySection}>
-            <h2>⛪ 본당</h2>
+            <h2>본당</h2>
             <div className={styles.facilityCard}>
               <div className={styles.facilityImage}>
                 <img src="/church.png" alt="본당 내부" />
@@ -40,14 +40,14 @@ export default function ChurchFacilities() {
                 <div className={styles.facilityDetails}>
                   <div className={styles.detailGrid}>
                     <div className={styles.detailItem}>
-                      <span className={styles.detailIcon}>👥</span>
+                      <span className={styles.detailIcon}></span>
                       <div>
                         <h4>수용 인원</h4>
                         <p>약 200석</p>
                       </div>
                     </div>
                     <div className={styles.detailItem}>
-                      <span className={styles.detailIcon}>🎵</span>
+                      <span className={styles.detailIcon}></span>
                       <div>
                         <h4>음향 시설</h4>
                         <p>최신 디지털 음향 시스템</p>
@@ -84,10 +84,10 @@ export default function ChurchFacilities() {
 
           {/* 층별 시설 개요 */}
           <section className={styles.floorGuideSection}>
-            <h2>🏢 층별 시설 개요</h2>
+            <h2>층별 시설 개요</h2>
             <div className={styles.floorGuide}>
               <div className={styles.floorCard}>
-                <h3>🔺 2층</h3>
+                <h3>2층</h3>
                 <div className={styles.floorItems}>
                   <span>본당 (예배실)</span>
                   <span>소그룹실</span>
@@ -95,7 +95,7 @@ export default function ChurchFacilities() {
                 </div>
               </div>
               <div className={styles.floorCard}>
-                <h3>🟦 1층</h3>
+                <h3>1층</h3>
                 <div className={styles.floorItems}>
                   <span>수정카페</span>
                   <span>사무실</span>
@@ -103,7 +103,7 @@ export default function ChurchFacilities() {
                 </div>
               </div>
               <div className={styles.floorCard}>
-                <h3>🔻 지하1층</h3>
+                <h3>지하1층</h3>
                 <div className={styles.floorItems}>
                   <span>소예배실</span>
                   <span>영유아실</span>
@@ -115,11 +115,11 @@ export default function ChurchFacilities() {
 
           {/* 상세 시설 안내 섹션 */}
           <section className={styles.educationSection}>
-            <h2>🏫 상세 시설 안내</h2>
+            <h2>상세 시설 안내</h2>
             <div className={styles.facilityGrid}>
               <div className={styles.roomCard}>
                 <div className={styles.roomHeader}>
-                  <h3>📚 소그룹실 (2층)</h3>
+                  <h3>소그룹실 (2층)</h3>
                   <span className={styles.roomCapacity}>15-20명</span>
                 </div>
                 <div className={styles.roomFeatures}>
@@ -128,11 +128,11 @@ export default function ChurchFacilities() {
                     <span>편안한 좌석</span>
                   </div>
                   <div className={styles.feature}>
-                    <span className={styles.featureIcon}>📱</span>
+                    <span className={styles.featureIcon}></span>
                     <span>프로젝터 설치</span>
                   </div>
                   <div className={styles.feature}>
-                    <span className={styles.featureIcon}>📖</span>
+                    <span className={styles.featureIcon}></span>
                     <span>성경공부 최적화</span>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export default function ChurchFacilities() {
                     <span>간단한 간식</span>
                   </div>
                   <div className={styles.feature}>
-                    <span className={styles.featureIcon}>💬</span>
+                    <span className={styles.featureIcon}></span>
                     <span>교제 공간</span>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function ChurchFacilities() {
 
               <div className={styles.roomCard}>
                 <div className={styles.roomHeader}>
-                  <h3>🏢 사무실 (1층)</h3>
+                  <h3>사무실 (1층)</h3>
                   <span className={styles.roomCapacity}>5-8명</span>
                 </div>
                 <div className={styles.roomFeatures}>
@@ -178,11 +178,11 @@ export default function ChurchFacilities() {
                     <span>컴퓨터・프린터</span>
                   </div>
                   <div className={styles.feature}>
-                    <span className={styles.featureIcon}>📞</span>
+                    <span className={styles.featureIcon}></span>
                     <span>전화・팩스</span>
                   </div>
                   <div className={styles.feature}>
-                    <span className={styles.featureIcon}>📋</span>
+                    <span className={styles.featureIcon}></span>
                     <span>교회 업무</span>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ export default function ChurchFacilities() {
 
               <div className={styles.roomCard}>
                 <div className={styles.roomHeader}>
-                  <h3>⛪ 소예배실 (지하1층)</h3>
+                  <h3>소예배실 (지하1층)</h3>
                   <span className={styles.roomCapacity}>50-60명</span>
                 </div>
                 <div className={styles.roomFeatures}>
@@ -219,7 +219,7 @@ export default function ChurchFacilities() {
 
               <div className={styles.roomCard}>
                 <div className={styles.roomHeader}>
-                  <h3>👶 영유아실 (지하1층)</h3>
+                  <h3>영유아실 (지하1층)</h3>
                   <span className={styles.roomCapacity}>10-15명</span>
                 </div>
                 <div className={styles.roomFeatures}>
@@ -244,7 +244,7 @@ export default function ChurchFacilities() {
 
               <div className={styles.roomCard}>
                 <div className={styles.roomHeader}>
-                  <h3>🎵 찬양 연습실 (2층)</h3>
+                  <h3>찬양 연습실 (2층)</h3>
                   <span className={styles.roomCapacity}>10-12명</span>
                 </div>
                 <div className={styles.roomFeatures}>
@@ -269,7 +269,7 @@ export default function ChurchFacilities() {
 
               <div className={styles.roomCard}>
                 <div className={styles.roomHeader}>
-                  <h3>☕ 교제실 (지하1층)</h3>
+                  <h3>교제실 (지하1층)</h3>
                   <span className={styles.roomCapacity}>30-40명</span>
                 </div>
                 <div className={styles.roomFeatures}>
@@ -296,7 +296,7 @@ export default function ChurchFacilities() {
 
           {/* 주차장 섹션 */}
           <section className={styles.parkingSection}>
-            <h2>🚗 주차장</h2>
+            <h2>주차장</h2>
             <div className={styles.parkingContent}>
               <div className={styles.parkingInfo}>
                 <h3>교회 전용 주차장</h3>
@@ -323,7 +323,7 @@ export default function ChurchFacilities() {
                     </div>
                   </div>
                   <div className={styles.parkingDetail}>
-                    <span className={styles.parkingIcon}>💡</span>
+                    <span className={styles.parkingIcon}></span>
                     <div>
                       <h4>야간 조명</h4>
                       <p>안전한 야간 주차</p>
@@ -333,17 +333,17 @@ export default function ChurchFacilities() {
               </div>
               <div className={styles.parkingMap}>
                 <div className={styles.mapPlaceholder}>
-                  <h4>🗺️ 주차장 위치도</h4>
+                  <h4>주차장 위치도</h4>
                   <div className={styles.mapContent}>
                     <div className={styles.mapBuilding}>
-                      <span>🏛️ 교회 본관</span>
+                      <span>교회 본관</span>
                     </div>
                     <div className={styles.mapParking}>
-                      <span>🅿️ 주차장</span>
+                      <span>🅿주차장</span>
                       <small>25대</small>
                     </div>
                     <div className={styles.mapEntrance}>
-                      <span>🚪 정문</span>
+                      <span>정문</span>
                     </div>
                   </div>
                 </div>
@@ -351,7 +351,7 @@ export default function ChurchFacilities() {
             </div>
             
             <div className={styles.parkingGuide}>
-              <h4>🚗 주차 안내</h4>
+              <h4>주차 안내</h4>
               <div className={styles.guideGrid}>
                 <div className={styles.guideItem}>
                   <h5>예배 시간 주차</h5>
@@ -374,7 +374,7 @@ export default function ChurchFacilities() {
 
           {/* 편의시설 섹션 */}
           <section className={styles.amenitiesSection}>
-            <h2>🏢 편의시설</h2>
+            <h2>편의시설</h2>
             <div className={styles.amenitiesGrid}>
               <div className={styles.amenityCard}>
                 <div className={styles.amenityIcon}>🚻</div>
@@ -395,7 +395,7 @@ export default function ChurchFacilities() {
                 <p>구급약품 상시 비치</p>
               </div>
               <div className={styles.amenityCard}>
-                <div className={styles.amenityIcon}>📚</div>
+                                  <div className={styles.amenityIcon}></div>
                 <h3>도서코너</h3>
                 <p>기독교 서적, 성경</p>
                 <p>자유롭게 열람 가능</p>
@@ -417,7 +417,7 @@ export default function ChurchFacilities() {
 
           {/* 시설 이용 안내 섹션 */}
           <section className={styles.usageSection}>
-            <h2>📋 시설 이용 안내</h2>
+            <h2>시설 이용 안내</h2>
             <div className={styles.usageContent}>
               <div className={styles.usageRules}>
                 <h3>이용 수칙</h3>
@@ -456,7 +456,7 @@ export default function ChurchFacilities() {
                 <h3>예약 문의</h3>
                 <div className={styles.contactInfo}>
                   <div className={styles.contactItem}>
-                    <span className={styles.contactIcon}>📞</span>
+                    <span className={styles.contactIcon}></span>
                     <div>
                       <h4>전화 예약</h4>
                       <p>031-212-0091</p>

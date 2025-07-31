@@ -41,7 +41,7 @@ export default function PastorGreeting() {
             </div>
 
             <div className={styles.greetingMessage}>
-              <h3>🙏 목사님의 인사말</h3>
+              <h3>목사님의 인사말</h3>
               <div className={styles.messageText}>
                 <p>
                   수정침례교회 홈페이지를 방문해 주신 모든 분들께 주님의 은혜와 평강이 함께 하시기를 기원합니다.
@@ -64,11 +64,11 @@ export default function PastorGreeting() {
 
                 <div className={styles.visionList}>
                   <div className={styles.visionItem}>
-                    <h4>📖 말씀 중심</h4>
+                    <h4>말씀 중심</h4>
                     <p>성경 말씀을 삶의 기준으로 삼아 매일의 삶 속에서 하나님의 뜻을 실천합니다.</p>
                   </div>
                   <div className={styles.visionItem}>
-                    <h4>🙏 기도 생활</h4>
+                    <h4>기도 생활</h4>
                     <p>개인과 공동체의 기도를 통해 하나님과의 깊은 교제를 나눕니다.</p>
                   </div>
                   <div className={styles.visionItem}>
@@ -76,7 +76,7 @@ export default function PastorGreeting() {
                     <p>하나님께 드리는 예배를 통해 영적 갈증을 해소하고 새 힘을 얻습니다.</p>
                   </div>
                   <div className={styles.visionItem}>
-                    <h4>🤝 교제와 섬김</h4>
+                    <h4>교제와 섬김</h4>
                     <p>성도간의 따뜻한 교제와 이웃을 향한 섬김으로 하나님의 사랑을 실천합니다.</p>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function PastorGreeting() {
           </section>
 
           <section className={styles.connectSection}>
-            <h2>📞 담임목사와의 상담</h2>
+            <h2>담임목사와의 상담</h2>
             <div className={styles.connectGrid}>
               <div className={styles.connectCard}>
                 <div className={styles.connectIcon}>

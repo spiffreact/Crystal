@@ -74,7 +74,7 @@ export default function EducationTeam() {
             <div className={styles.newcomerManagement}>
               <div className={styles.managementGrid}>
                 <div className={styles.managementCard}>
-                  <h3>📋 새신자 현황</h3>
+                  <h3>새신자 현황</h3>
                   <div className={styles.statusList}>
                     <div className={styles.statusItem}>
                       <span className={styles.statusLabel}>이번 달 새신자</span>
@@ -92,7 +92,7 @@ export default function EducationTeam() {
                 </div>
 
                 <div className={styles.managementCard}>
-                  <h3>📅 양육 일정</h3>
+                  <h3>양육 일정</h3>
                   <div className={styles.scheduleList}>
                     <div className={styles.scheduleItem}>
                       <span className={styles.scheduleDate}>2024.01.21</span>
@@ -117,12 +117,12 @@ export default function EducationTeam() {
                     onClick={() => navigate('/community/education-team/newcomer-management')}
                     className={styles.managementPageButton}
                   >
-                    📋 새신자 양육 관리 페이지로 이동
+                    새신자 양육 관리 페이지로 이동
                   </button>
                 </div>
                 <div className={styles.toolsGrid}>
                   <div className={styles.toolCard}>
-                    <h4>👥 새신자 명단</h4>
+                    <h4>새신자 명단</h4>
                     <p>새신자 등록 현황과 개인별 양육 진행 상태를 확인할 수 있습니다.</p>
                     <button 
                     onClick={() => navigate('/community/education-team/newcomer-management')}
@@ -133,25 +133,25 @@ export default function EducationTeam() {
                   </div>
 
                   <div className={styles.toolCard}>
-                    <h4>📚 양육 교재</h4>
+                    <h4>양육 교재</h4>
                     <p>새신자 양육에 사용되는 교재와 자료를 관리합니다.</p>
                     <button className={styles.toolButton}>교재 관리</button>
                   </div>
 
                   <div className={styles.toolCard}>
-                    <h4>✅ 출석 체크</h4>
+                    <h4>출석 체크</h4>
                     <p>새신자별 양육 과정 출석 현황을 체크하고 관리합니다.</p>
                     <button className={styles.toolButton}>출석 관리</button>
                   </div>
 
                   <div className={styles.toolCard}>
-                    <h4>📧 연락망</h4>
+                    <h4>연락망</h4>
                     <p>새신자들과의 소통을 위한 연락망을 관리합니다.</p>
                     <button className={styles.toolButton}>연락망 관리</button>
                   </div>
 
                   <div className={styles.toolCard}>
-                    <h4>📊 양육 리포트</h4>
+                    <h4>양육 리포트</h4>
                     <p>새신자 양육 현황과 통계를 확인할 수 있습니다.</p>
                     <button className={styles.toolButton}>리포트 보기</button>
                   </div>

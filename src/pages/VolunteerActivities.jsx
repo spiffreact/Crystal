@@ -140,8 +140,8 @@ export default function VolunteerActivities() {
                 <h3>독거어르신 방문</h3>
                 <p>지역 독거어르신들을 정기적으로 방문하여 안부를 확인하고 생활에 필요한 도움을 제공합니다.</p>
                 <div className={styles.serviceDetails}>
-                  <span>📅 매월 둘째, 넷째 토요일</span>
-                  <span>⏰ 오후 2:00 - 5:00</span>
+                  <span>매월 둘째, 넷째 토요일</span>
+                  <span>오후 2:00 - 5:00</span>
                 </div>
               </div>
               
@@ -152,8 +152,8 @@ export default function VolunteerActivities() {
                 <h3>무료급식 봉사</h3>
                 <p>지역 복지센터와 연계하여 어려운 이웃들에게 따뜻한 식사를 제공하는 봉사활동입니다.</p>
                 <div className={styles.serviceDetails}>
-                  <span>📅 매주 목요일</span>
-                  <span>⏰ 오전 10:00 - 오후 2:00</span>
+                  <span>매주 목요일</span>
+                  <span>오전 10:00 - 오후 2:00</span>
                 </div>
               </div>
               
@@ -164,8 +164,8 @@ export default function VolunteerActivities() {
                 <h3>지역아동센터 학습지도</h3>
                 <p>지역 아동센터 아이들의 학습을 도와주고 함께 놀아주는 교육 봉사활동입니다.</p>
                 <div className={styles.serviceDetails}>
-                  <span>📅 매주 화, 목요일</span>
-                  <span>⏰ 오후 3:00 - 6:00</span>
+                  <span>매주 화, 목요일</span>
+                  <span>오후 3:00 - 6:00</span>
                 </div>
               </div>
               
@@ -176,8 +176,8 @@ export default function VolunteerActivities() {
                 <h3>해외 선교지 지원</h3>
                 <p>탄자니아 등 해외 선교지를 위한 물품 후원과 기도 지원 활동입니다.</p>
                 <div className={styles.serviceDetails}>
-                  <span>📅 연 2회 (6월, 12월)</span>
-                  <span>⏰ 특별 모금 및 후원</span>
+                  <span>연 2회 (6월, 12월)</span>
+                  <span>특별 모금 및 후원</span>
                 </div>
               </div>
             </div>

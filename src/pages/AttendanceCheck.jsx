@@ -91,7 +91,7 @@ export default function AttendanceCheck() {
               borderRadius: '8px',
               marginBottom: '2rem'
             }}>
-              ✅ <strong>출석체크 페이지가 정상적으로 로드되었습니다!</strong>
+              <strong>출석체크 페이지가 정상적으로 로드되었습니다!</strong>
             </div>
             
             <h2 style={{ color: '#2c3e50', marginBottom: '1rem' }}>
@@ -112,10 +112,10 @@ export default function AttendanceCheck() {
             }}>
               <h3 style={{ color: '#495057', marginBottom: '1rem' }}>🚀 다음 기능들이 준비되어 있습니다:</h3>
               <ul style={{ color: '#6c757d', lineHeight: '1.8' }}>
-                <li>📅 날짜별 출석체크 관리</li>
+                <li>날짜별 출석체크 관리</li>
                 <li>👥 새신자별 출석/결석 기록</li>
                 <li>📊 실시간 출석 통계 확인</li>
-                <li>💾 자동 데이터 저장 기능</li>
+                <li>자동 데이터 저장 기능</li>
                 <li>📈 출석률 계산 및 표시</li>
               </ul>
             </div>

@@ -38,19 +38,19 @@ export default function WednesdayWorship() {
                 <p>약 1시간 진행</p>
               </div>
               <div className={`${styles.infoCard} ${styles.wednesday}`}>
-                <div className={styles.cardIcon}>📖</div>
+                <div className={styles.cardIcon}></div>
                 <h3>예배 특징</h3>
                 <p><strong>성경공부 중심</strong></p>
                 <p>깊이 있는 말씀 나눔</p>
               </div>
               <div className={`${styles.infoCard} ${styles.wednesday}`}>
-                <div className={styles.cardIcon}>👥</div>
+                <div className={styles.cardIcon}></div>
                 <h3>참석 대상</h3>
                 <p><strong>청년부터 장년까지</strong></p>
                 <p>말씀을 사모하는 모든 분</p>
               </div>
               <div className={`${styles.infoCard} ${styles.wednesday}`}>
-                <div className={styles.cardIcon}>🙏</div>
+                <div className={styles.cardIcon}></div>
                 <h3>예배 분위기</h3>
                 <p><strong>경건하고 은혜로운</strong></p>
                 <p>깊은 묵상과 기도</p>
@@ -59,7 +59,7 @@ export default function WednesdayWorship() {
           </section>
 
           <section className={styles.orderSection}>
-            <h2>📋 예배 순서</h2>
+            <h2>예배 순서</h2>
             <div className={styles.orderContent}>
               <div className={styles.orderList}>
                 <div className={styles.orderItem}>
@@ -108,24 +108,24 @@ export default function WednesdayWorship() {
           </section>
 
           <section className={styles.specialSection}>
-            <h2>✨ 수요예배의 특별함</h2>
+            <h2>수요예배의 특별함</h2>
             <div className={styles.specialGrid}>
               <div className={styles.specialCard}>
-                <h3>📚 체계적 성경공부</h3>
+                <h3>체계적 성경공부</h3>
                 <p>성경 각 권을 차례로 공부하며 하나님의 뜻을 깊이 묵상합니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>연속 강해</span>
                 </div>
               </div>
               <div className={styles.specialCard}>
-                <h3>🤝 소그룹 나눔</h3>
+                <h3>소그룹 나눔</h3>
                 <p>말씀을 듣고 삶에 적용하는 나눔의 시간을 갖습니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>매주 진행</span>
                 </div>
               </div>
               <div className={styles.specialCard}>
-                <h3>🙏 중보기도</h3>
+                <h3>중보기도</h3>
                 <p>교회와 성도들을 위한 깊은 중보기도 시간이 있습니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>매주 진행</span>

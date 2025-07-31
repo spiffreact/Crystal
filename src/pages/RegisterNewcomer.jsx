@@ -195,7 +195,7 @@ export default function RegisterNewcomer() {
         
         <div className={styles.container}>
           <div className={styles.successPage}>
-            <div className={styles.successIcon}>✅</div>
+                            <div className={styles.successIcon}></div>
             <h1>새가족 등록이 완료되었습니다!</h1>
             <p>
               {formData.name}님의 소중한 등록을 진심으로 환영합니다.<br />
@@ -204,10 +204,10 @@ export default function RegisterNewcomer() {
             <div className={styles.nextSteps}>
               <h3>다음 단계 안내</h3>
               <ul>
-                <li>📞 담당자가 2-3일 내에 연락드립니다</li>
-                <li>📚 새가족 환영 패키지를 준비해드립니다</li>
-                <li>🤝 새신자 양육 프로그램 안내를 받으실 수 있습니다</li>
-                <li>⛪ 다음 주일에 새가족 소개 시간이 있습니다</li>
+                <li>담당자가 2-3일 내에 연락드립니다</li>
+                <li>새가족 환영 패키지를 준비해드립니다</li>
+                <li>새신자 양육 프로그램 안내를 받으실 수 있습니다</li>
+                <li>다음 주일에 새가족 소개 시간이 있습니다</li>
               </ul>
             </div>
                          <div className={styles.actionButtons}>
@@ -234,15 +234,15 @@ export default function RegisterNewcomer() {
                  }}
                  className={styles.checkDataButton}
                >
-                 📋 등록 정보 확인
+                                   등록 정보 확인
                </button>
              </div>
              
              <div className={styles.adminNote}>
-               <p><small>📋 등록된 정보는 교육팀에서 확인 및 관리됩니다.</small></p>
-               <p><small>💾 등록 정보는 브라우저에 저장되어 새로고침해도 유지됩니다.</small></p>
+                               <p><small>등록된 정보는 교육팀에서 확인 및 관리됩니다.</small></p>
+                               <p><small>등록 정보는 브라우저에 저장되어 새로고침해도 유지됩니다.</small></p>
                <details className={styles.technicalInfo}>
-                 <summary><small>🔧 기술 정보</small></summary>
+                                   <summary><small>기술 정보</small></summary>
                  <p><small>
                    • 데이터는 localStorage에 안전하게 저장됩니다.<br/>
                    • 같은 브라우저에서는 계속 유지됩니다.<br/>
@@ -282,22 +282,22 @@ export default function RegisterNewcomer() {
             <h2>🎁 새가족 혜택</h2>
             <div className={styles.benefitsGrid}>
               <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>📖</div>
+                <div className={styles.benefitIcon}></div>
                 <h3>환영 패키지</h3>
                 <p>교회 소개서, 성경, 찬송가 등 새가족을 위한 특별한 선물을 드립니다.</p>
               </div>
               <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>👥</div>
+                <div className={styles.benefitIcon}></div>
                 <h3>멘토 배정</h3>
                 <p>신앙생활에 도움을 드릴 수 있는 따뜻한 멘토를 연결해드립니다.</p>
               </div>
               <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>📚</div>
+                <div className={styles.benefitIcon}></div>
                 <h3>양육 프로그램</h3>
                 <p>체계적인 새신자 양육 과정을 통해 신앙의 기초를 세워드립니다.</p>
               </div>
               <div className={styles.benefitCard}>
-                <div className={styles.benefitIcon}>🤝</div>
+                <div className={styles.benefitIcon}></div>
                 <h3>소그룹 연결</h3>
                 <p>나이와 관심사가 비슷한 소그룹에 참여하여 깊은 교제를 나누실 수 있습니다.</p>
               </div>
@@ -479,7 +479,7 @@ export default function RegisterNewcomer() {
 
           {/* 연락처 정보 */}
           <section className={styles.contactSection}>
-            <h2>📞 문의사항</h2>
+            <h2>문의사항</h2>
             <div className={styles.contactInfo}>
               <div className={styles.contactItem}>
                 <strong>전화:</strong> 031-212-0091

@@ -89,7 +89,7 @@ export default function NewcomerCare() {
             <h2>참여 혜택</h2>
             <div className={styles.benefitsList}>
               <div className={styles.benefitItem}>
-                <div className={styles.benefitIcon}>📖</div>
+                <div className={styles.benefitIcon}></div>
                 <div>
                   <h3>체계적인 신앙교육</h3>
                   <p>기독교 신앙의 기초부터 체계적으로 배울 수 있습니다.</p>
@@ -97,7 +97,7 @@ export default function NewcomerCare() {
               </div>
               
               <div className={styles.benefitItem}>
-                <div className={styles.benefitIcon}>👥</div>
+                <div className={styles.benefitIcon}></div>
                 <div>
                   <h3>교제와 친교</h3>
                   <p>같은 시기에 교회에 온 분들과 깊은 교제를 나눌 수 있습니다.</p>
@@ -105,7 +105,7 @@ export default function NewcomerCare() {
               </div>
               
               <div className={styles.benefitItem}>
-                <div className={styles.benefitIcon}>🎯</div>
+                <div className={styles.benefitIcon}></div>
                 <div>
                   <h3>개인별 맞춤 케어</h3>
                   <p>개인의 신앙 상태에 맞는 맞춤형 양육을 받을 수 있습니다.</p>
@@ -113,7 +113,7 @@ export default function NewcomerCare() {
               </div>
               
               <div className={styles.benefitItem}>
-                <div className={styles.benefitIcon}>🏠</div>
+                <div className={styles.benefitIcon}></div>
                 <div>
                   <h3>교회 정착 도움</h3>
                   <p>교회 생활에 자연스럽게 적응할 수 있도록 도움을 받습니다.</p>

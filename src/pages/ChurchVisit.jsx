@@ -21,7 +21,7 @@ export default function ChurchVisit() {
 
         <div className={styles.content}>
           <section className={styles.section}>
-            <h2>📍 교회 위치 & 오시는 길</h2>
+            <h2>교회 위치 & 오시는 길</h2>
             <div className={styles.locationInfo}>
               <div className={styles.addressBox}>
                 <h3>주소</h3>
@@ -34,7 +34,7 @@ export default function ChurchVisit() {
               
               <div className={styles.transportInfo}>
                 <div className={styles.transportItem}>
-                  <h4>🚗 자가용으로 오시는 경우</h4>
+                  <h4> 자가용으로 오시는 경우</h4>
                   <ul>
                     <li>월드 메르디앙 건너편 입니다.</li>
                     <li>동수원병원 ・ 월드컵경기장 방향에서 접근 가능합니다</li>
@@ -43,7 +43,7 @@ export default function ChurchVisit() {
                 </div>
                 
                 <div className={styles.transportItem}>
-                  <h4>🚌 대중교통으로 오시는 경우</h4>
+                  <h4> 대중교통으로 오시는 경우</h4>
                   <ul>
                     <li>지하철 1호선 수원역에서 버스 이용</li>
                     <li>우만동우체국앞 정류장 하차 (도보 약 2-3분)</li>
@@ -56,7 +56,7 @@ export default function ChurchVisit() {
           </section>
 
           <section className={styles.section}>
-            <h2>⏰ 예배 시간 안내</h2>
+            <h2>예배 시간 안내</h2>
             <div className={styles.serviceSchedule}>
               <div className={styles.serviceCard}>
                 <h3>주일 예배</h3>
@@ -112,10 +112,10 @@ export default function ChurchVisit() {
           </section>
 
           <section className={styles.section}>
-            <h2>👥 처음 오시는 분들을 위한 안내</h2>
+            <h2>처음 오시는 분들을 위한 안내</h2>
             <div className={styles.firstVisitGuide}>
               <div className={styles.guideCard}>
-                <div className={styles.guideIcon}>🤝</div>
+                                  <div className={styles.guideIcon}></div>
                 <h3>환영 데스크</h3>
                 <p>
                   1층 카페 에서 처음 오신 분들을 
@@ -124,7 +124,7 @@ export default function ChurchVisit() {
               </div>
 
               <div className={styles.guideCard}>
-                <div className={styles.guideIcon}>📖</div>
+                                  <div className={styles.guideIcon}></div>
                 <h3>예배 순서</h3>
                 <p>
                   예배 순서지를 받으시면 찬송가 번호와 성경 구절이 
@@ -153,7 +153,7 @@ export default function ChurchVisit() {
           </section>
 
           <section className={styles.section}>
-            <h2>👔 복장 안내</h2>
+            <h2> 복장 안내</h2>
             <div className={styles.dressCode}>
               <div className={styles.dressInfo}>
                 <h3>편안한 복장으로 오세요</h3>
@@ -171,7 +171,7 @@ export default function ChurchVisit() {
           </section>
 
           <section className={styles.section}>
-            <h2>👶 어린이 & 영유아 안내</h2>
+            <h2>어린이 & 영유아 안내</h2>
             <div className={styles.childrenInfo}>
               <div className={styles.childrenCard}>
                 <h3>영아부 (0-3세)</h3>
@@ -206,7 +206,7 @@ export default function ChurchVisit() {
           </section>
 
           <section className={styles.section}>
-            <h2>💬 자주 묻는 질문</h2>
+            <h2>자주 묻는 질문</h2>
             <div className={styles.faqList}>
               <div className={styles.faqItem}>
                 <h4>Q. 처음 방문할 때 미리 연락해야 하나요?</h4>
@@ -231,7 +231,7 @@ export default function ChurchVisit() {
           </section>
 
           <section className={styles.section}>
-            <h2>📞 문의 및 연락처</h2>
+            <h2>문의 및 연락처</h2>
             <div className={styles.contactSection}>
               <div className={styles.contactCard}>
                 <h3>교회 사무실</h3>

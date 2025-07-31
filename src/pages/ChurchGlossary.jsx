@@ -200,7 +200,7 @@ export default function ChurchGlossary() {
                     <p className={styles.definition}>{item.definition}</p>
                     {item.example && (
                       <div className={styles.example}>
-                        <h4>💬 예시</h4>
+                        <h4>예시</h4>
                         <p>{item.example}</p>
                       </div>
                     )}
@@ -235,7 +235,7 @@ export default function ChurchGlossary() {
                 </ul>
               </div>
               <div className={styles.helpCard}>
-                <div className={styles.helpIcon}>💡</div>
+                <div className={styles.helpIcon}></div>
                 <h3>이해하기</h3>
                 <p>각 용어마다 쉬운 설명과 실제 사용 예시를 제공하여 이해를 돕습니다.</p>
                 <ul>
@@ -248,7 +248,7 @@ export default function ChurchGlossary() {
           </section>
 
           <section className={styles.suggestionSection}>
-            <h2>💬 용어 추가 요청</h2>
+            <h2>용어 추가 요청</h2>
             <div className={styles.suggestionContent}>
               <div className={styles.suggestionText}>
                 <p>

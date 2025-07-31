@@ -8,9 +8,14 @@
 /* 헤더 섹션 */
 .header {
   background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+  position: relative;
 }
 
 .headerContent {
@@ -36,6 +41,7 @@
 }
 
 .welcomeText h1 {
+  color:black;
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -43,10 +49,23 @@
 }
 
 .subtitle {
+  color:black;
   font-size: 1.2rem;
   line-height: 1.6;
   opacity: 0.9;
   margin: 0;
+}
+
+/* 투명 박스 */
+.transparentBox {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+
+  padding: 2rem;
+  margin: 2rem auto 0;
+  max-width: 600px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* 메인 콘텐츠 */
@@ -353,6 +372,13 @@
   
   .content {
     padding: 2rem 1rem;
+  }
+  
+  .transparentBox {
+    margin: 1.5rem 1rem 0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: none;
   }
   
   .section h2 {

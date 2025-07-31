@@ -30,7 +30,7 @@ export default function ChurchStaff() {
         <div className={styles.content}>
           {/* 담임목사 섹션 */} 
           <section className={styles.pastorSection}>
-            <h2>👨‍💼 담임목사</h2>
+            <h2>담임목사</h2>
             <div className={styles.pastorCard}>
               <div className={styles.pastorImage}>
                 <img src="/pastor.profile.png" alt="담임목사" />
@@ -69,7 +69,7 @@ export default function ChurchStaff() {
 
           {/* 협력목사 섹션 */}
           <section className={styles.pastorSection}>
-            <h2>👥 협력목사</h2>
+            <h2>협력목사</h2>
             <div className={styles.pastorCard}>
               <div className={styles.pastorImage}>
                 <img src="/pastor.cha.png" alt="협력목사" />
@@ -249,7 +249,7 @@ export default function ChurchStaff() {
           </section>
 
           <section className={styles.serviceSection}>
-            <h2>❤️ 섬김의 정신</h2>
+            <h2>섬김의 정신</h2>
             <div className={styles.serviceContent}>
               <div className={styles.serviceQuote}>
                 <blockquote>
@@ -264,7 +264,7 @@ export default function ChurchStaff() {
                   <p>예수님의 본을 따라 겸손한 마음으로 성도들을 섬깁니다.</p>
                 </div>
                 <div className={styles.serviceValue}>
-                  <h3>❤️ 사랑의 목회</h3>
+                  <h3>사랑의 목회</h3>
                   <p>하나님의 사랑을 받아 사랑으로 성도들을 돌봅니다.</p>
                 </div>
                 <div className={styles.serviceValue}>
@@ -272,7 +272,7 @@ export default function ChurchStaff() {
                   <p>하나님께서 맡겨주신 사명을 충실히 감당합니다.</p>
                 </div>
                 <div className={styles.serviceValue}>
-                  <h3>🤝 동역</h3>
+                  <h3>동역</h3>
                   <p>성도들과 함께 하나님 나라 확장을 위해 동역합니다.</p>
                 </div>
               </div>

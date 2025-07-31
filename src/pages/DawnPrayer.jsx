@@ -37,19 +37,19 @@ export default function DawnPrayer() {
                 <p>약 1시간 진행</p>
               </div>
               <div className={`${styles.infoCard} ${styles.dawn}`}>
-                <div className={styles.cardIcon}>📅</div>
+                <div className={styles.cardIcon}></div>
                 <h3>진행 일정</h3>
-                <p><strong>월~토 (주일 제외)</strong></p>
+                <p><strong>월~금 (토요일,주일 제외)</strong></p>
                 <p>365일 지속적인 기도</p>
               </div>
               <div className={`${styles.infoCard} ${styles.dawn}`}>
-                <div className={styles.cardIcon}>⏰</div>
+                <div className={styles.cardIcon}></div>
                 <h3>하루의 시작</h3>
                 <p><strong>하나님과 함께 시작</strong></p>
                 <p>복된 하루의 출발</p>
               </div>
               <div className={`${styles.infoCard} ${styles.dawn}`}>
-                <div className={styles.cardIcon}>💪</div>
+                <div className={styles.cardIcon}></div>
                 <h3>영적 훈련</h3>
                 <p><strong>깊은 영성 훈련</strong></p>
                 <p>신앙의 뿌리 내림</p>
@@ -58,7 +58,7 @@ export default function DawnPrayer() {
           </section>
 
           <section className={styles.orderSection}>
-            <h2>📋 새벽기도회 순서</h2>
+            <h2>새벽기도회 순서</h2>
             <div className={styles.orderContent}>
               <div className={styles.orderList}>
                 <div className={styles.orderItem}>
@@ -107,24 +107,24 @@ export default function DawnPrayer() {
           </section>
 
           <section className={styles.specialSection}>
-            <h2>✨ 새벽기도회의 축복</h2>
+            <h2>새벽기도회의 축복</h2>
             <div className={styles.specialGrid}>
               <div className={styles.specialCard}>
-                <h3>🌅 새로운 시작</h3>
+                <h3>새로운 시작</h3>
                 <p>매일 하나님과 함께 새로운 하루를 시작하는 축복을 누립니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>Daily Fresh Start</span>
                 </div>
               </div>
               <div className={styles.specialCard}>
-                <h3>💫 영적 성숙</h3>
+                <h3>영적 성숙</h3>
                 <p>꾸준한 새벽 기도를 통해 깊은 영성과 성숙함을 얻습니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>Spiritual Growth</span>
                 </div>
               </div>
               <div className={styles.specialCard}>
-                <h3>🛡️ 하루 보호</h3>
+                <h3>하루 보호</h3>
                 <p>하나님의 보호하심 속에서 평안하고 승리하는 하루를 보냅니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>Daily Protection</span>

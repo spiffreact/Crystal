@@ -149,8 +149,8 @@ export default function NewcomerFAQ() {
                 편안한 마음으로 교회 생활을 시작하시기 바랍니다.
               </p>
               <div className={styles.quickContact}>
-                <p><strong>💬 더 궁금한 점이 있으시면:</strong></p>
-                <p>📞 전화: 031-212-0091 | ✉️ 이메일: suwoncrystalchurch@gmail.com</p>
+                <p><strong>더 궁금한 점이 있으시면:</strong></p>
+                <p>전화: 031-212-0091 | 이메일: suwoncrystalchurch@gmail.com</p>
               </div>
             </div>
           </section>
@@ -202,7 +202,7 @@ export default function NewcomerFAQ() {
                   </div>
                   <h3>새신자 환영실 방문</h3>
                   <p>주일 예배 후 새신자 환영실에서 직접 상담받으실 수 있습니다.</p>
-                  <span className={styles.helpLocation}>📍 교육관 1층</span>
+                  <span className={styles.helpLocation}>교육관 1층</span>
                 </div>
                 
                 <div className={styles.helpCard}>
@@ -211,7 +211,7 @@ export default function NewcomerFAQ() {
                   </div>
                   <h3>전화 상담</h3>
                   <p>궁금한 점이 있으시면 언제든지 전화로 문의해 주세요.</p>
-                  <span className={styles.helpContact}>📞 031-212-0091</span>
+                  <span className={styles.helpContact}>031-212-0091</span>
                 </div>
                 
                 <div className={styles.helpCard}>

@@ -13,7 +13,7 @@ export default function MinistryParticipation() {
     {
       id: 'worship',
       title: '예배 사역팀',
-      icon: '🎵',
+      icon: '',
       description: '찬양과 경배로 하나님께 영광을 돌리는 사역',
       roles: ['찬양팀', '악기팀', '음향팀', '영상팀'],
       requirements: '신앙 경력 1년 이상, 정기 연습 참여 가능',
@@ -33,7 +33,7 @@ export default function MinistryParticipation() {
     {
       id: 'service',
       title: '봉사 사역팀',
-      icon: '🤝',
+      icon: '',
       description: '교회와 지역사회를 섬기는 실천적 사역',
       roles: ['안내팀', '주차팀', '청소팀', '카페 봉사팀'],
       requirements: '섬김의 마음, 시간 투자 가능',
@@ -53,7 +53,7 @@ export default function MinistryParticipation() {
     {
       id: 'care',
       title: '돌봄 사역팀',
-      icon: '💝',
+      icon: '',
       description: '교우들의 필요를 채우고 사랑으로 돌보는 사역',
       roles: ['새가족 돌봄팀', '병원 심방팀', '경조사 도움팀', '기도팀'],
       requirements: '따뜻한 마음, 남을 돌보는 마음',
@@ -123,7 +123,7 @@ export default function MinistryParticipation() {
                 <h3>🎁 사역 참여의 유익</h3>
                 <ul>
                   <li>💪 영적 성장과 신앙 성숙</li>
-                  <li>🤝 교우들과의 깊은 교제</li>
+                  <li>교우들과의 깊은 교제</li>
                   <li>🎯 삶의 목적과 방향성 발견</li>
                   <li>😊 섬김을 통한 기쁨과 보람</li>
                   <li>🌱 은사 개발과 실력 향상</li>
@@ -162,7 +162,7 @@ export default function MinistryParticipation() {
                         <p>{ministry.requirements}</p>
                       </div>
                       <div className={styles.detailItem}>
-                        <h4>⏰ 활동 시간</h4>
+                        <h4>활동 시간</h4>
                         <p>{ministry.time}</p>
                       </div>
                       <div className={styles.detailItem}>

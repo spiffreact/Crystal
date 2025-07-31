@@ -64,7 +64,7 @@ export default function SundayWorship() {
 
           {/* 예배 순서 섹션 */}
           <section className={styles.orderSection}>
-            <h2>📋 예배 순서</h2>
+            <h2>예배 순서</h2>
             <div className={styles.orderContent}>
               <div className={styles.orderList}>
                 <div className={styles.orderItem}>
@@ -124,19 +124,19 @@ export default function SundayWorship() {
             <h2>✨ 특별 프로그램</h2>
             <div className={styles.specialGrid}>
               <div className={styles.specialCard}>
-                <h3>🎵 특별찬양</h3>
+                <h3>특별찬양</h3>
                 <p>매월 마지막 주일에는 찬양팀의 특별찬양이 있습니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>매월 마지막 주일</span>
                 </div>
               </div>
-              <div className={styles.specialCard}>
-                <h3>🍞 성찬식</h3>
+              {/* <div className={styles.specialCard}>
+                <h3>성찬식</h3>
                 <p>매월 첫째 주일에는 주님의 몸과 피를 기념하는 성찬식을 거행합니다.</p>
                 <div className={styles.specialSchedule}>
                   <span>매월 첫째 주일</span>
                 </div>
-              </div>
+              </div> */}
               <div className={styles.specialCard}>
                 <h3>👥 새가족 소개</h3>
                 <p>새로 오신 분들을 소개하고 환영하는 시간을 갖습니다.</p>
@@ -149,13 +149,13 @@ export default function SundayWorship() {
 
           {/* 참여 안내 섹션 */}
           <section className={styles.participationSection}>
-            <h2>🤝 참여 안내</h2>
+            <h2>참여 안내</h2>
             <div className={styles.participationContent}>
               <div className={styles.participationText}>
                 <h3>처음 오시는 분들을 위한 안내</h3>
                 <div className={styles.guideList}>
                   <div className={styles.guideItem}>
-                    <span className={styles.guideIcon}>🚗</span>
+                    <span className={styles.guideIcon}></span>
                     <div>
                       <h4>주차 안내</h4>
                       <p>교회 앞 주차장 이용 가능 (무료)</p>
@@ -163,7 +163,7 @@ export default function SundayWorship() {
                     </div>
                   </div>
                                      <div className={styles.guideItem}>
-                     <span className={styles.guideIcon}>👶</span>
+                     <span className={styles.guideIcon}></span>
                      <div>
                        <h4>영유아 돌봄</h4>
                        <p>예배 중 영유아실(지하1층)에서 돌봄 서비스 제공</p>
@@ -171,7 +171,7 @@ export default function SundayWorship() {
                      </div>
                    </div>
                   <div className={styles.guideItem}>
-                    <span className={styles.guideIcon}>📱</span>
+                    <span className={styles.guideIcon}></span>
                     <div>
                       <h4>온라인 참여</h4>
                       <p>YouTube 실시간 방송으로도 참여 가능</p>
@@ -196,15 +196,15 @@ export default function SundayWorship() {
 
           {/* 연락처 섹션 */}
           <section className={styles.contactSection}>
-            <h2>📞 문의사항</h2>
+            <h2>문의사항</h2>
             <div className={styles.contactGrid}>
               <div className={styles.contactCard}>
-                <h3>📞 전화 문의</h3>
+                <h3>전화 문의</h3>
                 <p><strong>031-212-0091</strong></p>
                 <p>월~금 오전 9시~오후 6시</p>
               </div>
               <div className={styles.contactCard}>
-                <h3>📧 이메일 문의</h3>
+                <h3>이메일 문의</h3>
                 <p><strong>suwoncrystalchurch@gmail.com</strong></p>
                 <p>언제든지 문의해 주세요</p>
               </div>

@@ -37,7 +37,7 @@ export default function PastoralPlan() {
             <h2>2024년 주요 목회 계획</h2>
             <div className={styles.planGrid}>
               <div className={styles.planCard}>
-                <div className={styles.planIcon}>📖</div>
+                <div className={styles.planIcon}></div>
                 <h3>말씀 중심의 사역</h3>
                 <ul>
                   <li>체계적인 성경 교육 강화</li>
@@ -48,7 +48,7 @@ export default function PastoralPlan() {
               </div>
 
               <div className={styles.planCard}>
-                <div className={styles.planIcon}>🙏</div>
+                <div className={styles.planIcon}></div>
                 <h3>기도와 예배 부흥</h3>
                 <ul>
                   <li>새벽기도회 참여 증진</li>
@@ -59,7 +59,7 @@ export default function PastoralPlan() {
               </div>
 
               <div className={styles.planCard}>
-                <div className={styles.planIcon}>👥</div>
+                <div className={styles.planIcon}></div>
                 <h3>공동체 양육</h3>
                 <ul>
                   <li>새신자 양육 체계화</li>
@@ -123,7 +123,7 @@ export default function PastoralPlan() {
             <h2>특별 사역 계획</h2>
             <div className={styles.specialMinistry}>
               <div className={styles.ministryItem}>
-                <h3>🎯 차세대 사역 강화</h3>
+                <h3>차세대 사역 강화</h3>
                 <p>
                   어린이부터 청년까지 각 연령대에 맞는 체계적인 교육과 양육을 통해 
                   신앙의 다음 세대를 든든히 세워나갑니다.
@@ -139,7 +139,7 @@ export default function PastoralPlan() {
               </div>
 
               <div className={styles.ministryItem}>
-                <h3>🤝 지역사회 섬김</h3>
+                <h3>지역사회 섬김</h3>
                 <p>
                   지역 내 소외계층을 위한 봉사활동과 복지사업을 통해 
                   그리스도의 사랑을 실천합니다.

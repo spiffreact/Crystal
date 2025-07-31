@@ -357,7 +357,7 @@ export default function WorshipTeam() {
                 setIsAddingNew(false);
               }}
             >
-              🎵 악보 관리
+                              악보 관리
             </button>
             <button 
               className={`${styles.tabButton} ${activeTab === 'sunday' ? styles.active : ''}`}
@@ -596,7 +596,7 @@ export default function WorshipTeam() {
                               />
                             ) : (
                               <a href={selectedSong.audioLink} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                                🎵 음원 듣기
+                                음원 듣기
                               </a>
                             )}
                           </div>
@@ -617,7 +617,7 @@ export default function WorshipTeam() {
                       </div>
 
                       <div className={styles.section}>
-                        <h3>💡 특이사항</h3>
+                        <h3>특이사항</h3>
                         {isEditing ? (
                           <textarea 
                             value={selectedSong.notes}

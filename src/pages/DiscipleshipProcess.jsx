@@ -234,7 +234,7 @@ export default function DiscipleshipProcess() {
             <h2>양육과정 일정 및 신청</h2>
             <div className={styles.scheduleBox}>
               <div className={styles.scheduleInfo}>
-                <h3>📅 2025년 양육과정 일정</h3>
+                <h3>2025년 양육과정 일정</h3>
                 <div className={styles.scheduleTable}>
                   <div className={styles.scheduleRow}>
                     <div className={styles.scheduleLabel}>상반기</div>

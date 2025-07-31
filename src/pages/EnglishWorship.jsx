@@ -137,7 +137,7 @@ export default function EnglishWorship() {
                 </div>
               </div>
               <div className={styles.specialCard}>
-                <h3>🤝 Cultural Exchange</h3>
+                <h3>Cultural Exchange</h3>
                 <h4>문화 교류</h4>
                 <p>다양한 문화적 배경을 가진 성도들과의 만남을 통해 하나님 나라의 다양성을 경험합니다.</p>
                 <p>Experience God's kingdom diversity through cultural meetings.</p>
@@ -149,7 +149,7 @@ export default function EnglishWorship() {
           </section>
 
           <section className={styles.participationSection}>
-            <h2>🤝 참여 안내 / How to Join</h2>
+            <h2>참여 안내 / How to Join</h2>
             <div className={styles.participationContent}>
               <div className={styles.participationText}>
                 <h3>처음 오시는 분들을 위한 안내 / Guide for First-time Visitors</h3>

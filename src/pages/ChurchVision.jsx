@@ -31,7 +31,7 @@ export default function ChurchVision() {
           {/* 교회 표어 섹션 */}
           <section className={styles.mottoSection}>
             <div className={styles.mottoCard}>
-              <h2>🎯 교회 표어</h2>
+              <h2>교회 표어</h2>
               <div className={styles.motto}>
                 <span className={styles.mottoText}>"한 영혼을 주님께로"</span>
                 <p className={styles.mottoDescription}>
@@ -44,7 +44,7 @@ export default function ChurchVision() {
 
           {/* 비전 섹션 */}
           <section className={styles.visionSection}>
-            <h2>🔮 우리의 비전</h2>
+            <h2>우리의 비전</h2>
             <div className={styles.visionGrid}>
               <div className={styles.visionCard}>
                 <div className={styles.visionIcon}>📖</div>
@@ -52,7 +52,7 @@ export default function ChurchVision() {
                 <p>하나님의 말씀을 삶의 중심에 두고, 성경적 가치관으로 살아가는 교회</p>
               </div>
               <div className={styles.visionCard}>
-                <div className={styles.visionIcon}>❤️</div>
+                <div className={styles.visionIcon}></div>
                 <h3>사랑 실천</h3>
                 <p>예수님의 사랑을 실천하며, 이웃과 공동체를 섬기는 교회</p>
               </div>
@@ -72,7 +72,7 @@ export default function ChurchVision() {
                 <p>기도로 시작하고 기도로 마치는, 기도하는 교회</p>
               </div>
               <div className={styles.visionCard}>
-                <div className={styles.visionIcon}>🤝</div>
+                <div className={styles.visionIcon}></div>
                 <h3>공동체</h3>
                 <p>서로 사랑하고 돌보며 함께 성장하는 건강한 공동체</p>
               </div>
@@ -81,7 +81,7 @@ export default function ChurchVision() {
 
           {/* 사명 섹션 */}
           <section className={styles.missionSection}>
-            <h2>🎯 우리의 사명</h2>
+            <h2>우리의 사명</h2>
             <div className={styles.missionContent}>
               <div className={styles.missionText}>
                 <h3>예수님의 3대 사역 실천</h3>
@@ -117,7 +117,7 @@ export default function ChurchVision() {
 
           {/* 핵심 가치 섹션 */}
           <section className={styles.valuesSection}>
-            <h2>💎 핵심 가치</h2>
+            <h2>핵심 가치</h2>
             <div className={styles.valuesList}>
               <div className={styles.valueItem}>
                 <div className={styles.valueIcon}>🔥</div>
@@ -152,30 +152,30 @@ export default function ChurchVision() {
 
           {/* 목표 섹션 */}
           <section className={styles.goalsSection}>
-            <h2>🏆 2025년 목표</h2>
+            <h2>2025년 목표</h2>
             <div className={styles.goalsGrid}>
               <div className={styles.goalCard}>
                 <h3>영적 성장</h3>
                 <ul>
-                  <li>📖 전 교인 성경 1독 완주</li>
-                  <li>🙏 새벽기도회 참석률 증가</li>
-                  <li>📚 소그룹 성경공부 활성화</li>
+                  <li> 전 교인 성경 1독 완주</li>
+                  <li> 새벽기도회 참석률 증가</li>
+                  <li> 소그룹 성경공부 활성화</li>
                 </ul>
               </div>
               <div className={styles.goalCard}>
                 <h3>전도와 선교</h3>
                 <ul>
-                  <li>👥 새가족 100명 등록</li>
-                  <li>🌍 해외선교 지원 확대</li>
-                  <li>🏢 직장선교 프로그램 런칭</li>
+                  <li>새가족 100명 등록</li>
+                  <li> 해외선교 지원 확대</li>
+                  <li> 직장선교 프로그램 런칭</li>
                 </ul>
               </div>
               <div className={styles.goalCard}>
                 <h3>공동체 성숙</h3>
                 <ul>
-                  <li>❤️ 섬김과 나눔의 문화 확산</li>
-                  <li>🤝 세대 간 소통 프로그램</li>
-                  <li>🎵 문화사역 활성화</li>
+                  <li>섬김과 나눔의 문화 확산</li>
+                                      <li>세대 간 소통 프로그램</li>
+                  <li>문화사역 활성화</li>
                 </ul>
               </div>
             </div>

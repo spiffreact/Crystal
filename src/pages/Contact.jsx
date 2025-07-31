@@ -22,7 +22,7 @@ export default function Contact() {
         <div className={styles.content}>
           {/* 연락처 정보 섹션 */}
           <section className={styles.section}>
-            <h2>📞 연락처 정보</h2>
+            <h2>연락처 정보</h2>
             <div className={styles.contactGrid}>
               <div className={styles.contactCard}>
                 <div className={styles.contactIcon}>
@@ -105,7 +105,7 @@ export default function Contact() {
 
           {/* 담당자 정보 섹션 */}
           <section className={styles.section}>
-            <h2>👥 담당자 안내</h2>
+            <h2>담당자 안내</h2>
             <div className={styles.staffGrid}>
               <div className={styles.staffCard}>
                 <h3>담임목사님</h3>

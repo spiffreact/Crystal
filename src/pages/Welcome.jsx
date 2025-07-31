@@ -17,17 +17,21 @@ export default function Welcome() {
       
       <div className={styles.container}>
         {/* 환영 헤더 */}
-        <div className={styles.header}>
+        <div className={styles.header} style={{
+          backgroundImage: 'url(https://plus.unsplash.com/premium_photo-1687203673190-d39c3719123a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VsY29tZXxlbnwwfHwwfHx8MA%3D%3D)'
+        }}>
           <div className={styles.headerContent}>
             <div className={styles.logoSection}>
               <img src="/crystal-logo.png" alt="수정교회 로고" className={styles.logo} />
             </div>
-            <div className={styles.welcomeText}>
-              <h1>수정교회에 오신 것을 환영합니다!</h1>
-              <p className={styles.subtitle}>
-                하나님의 사랑과 은혜가 가득한 이곳에서<br />
-                새로운 신앙의 여정을 시작하세요.
-              </p>
+            <div className={styles.transparentBox}>
+              <div className={styles.welcomeText}>
+                <h1>수정교회에 오신 것을 환영합니다!</h1>
+                <p className={styles.subtitle}>
+                  하나님의 사랑과 은혜가 가득한 이곳에서<br />
+                  새로운 신앙의 여정을 시작하세요.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -36,7 +40,7 @@ export default function Welcome() {
         <div className={styles.content}>
           {/* 환영 메시지 섹션 */}
           <section className={styles.section}>
-            <h2>🤝 환영 인사</h2>
+            <h2>환영 인사</h2>
             <div className={styles.welcomeMessage}>
               <p>
                 수정교회 가족 여러분, 안녕하세요!<br />
@@ -52,25 +56,25 @@ export default function Welcome() {
 
           {/* 교회 비전 섹션 */}
           <section className={styles.section}>
-            <h2>✨ 우리의 비전</h2>
+            <h2>우리의 비전</h2>
             <div className={styles.visionGrid}>
               <div className={styles.visionCard}>
-                <div className={styles.visionIcon}>📖</div>
+                <div className={styles.visionIcon}></div>
                 <h3>말씀 중심</h3>
                 <p>성경 말씀을 기반으로 한 건전한 신앙 교육과 성장을 추구합니다.</p>
               </div>
               <div className={styles.visionCard}>
-                <div className={styles.visionIcon}>❤️</div>
+                <div className={styles.visionIcon}></div>
                 <h3>사랑의 공동체</h3>
                 <p>서로 사랑하고 돌보는 따뜻한 교회 공동체를 만들어갑니다.</p>
               </div>
               <div className={styles.visionCard}>
-                <div className={styles.visionIcon}>🌟</div>
+                <div className={styles.visionIcon}></div>
                 <h3>선교와 섬김</h3>
                 <p>지역사회와 세계를 향한 복음 전파와 사회적 책임을 다합니다.</p>
               </div>
               <div className={styles.visionCard}>
-                <div className={styles.visionIcon}>🙏</div>
+                <div className={styles.visionIcon}></div>
                 <h3>예배와 기도</h3>
                 <p>하나님께 드리는 참된 예배와 기도로 하나님과의 관계를 깊게 합니다.</p>
               </div>
@@ -79,7 +83,7 @@ export default function Welcome() {
 
           {/* 새가족을 위한 안내 섹션 */}
           <section className={styles.section}>
-            <h2>🎯 새가족을 위한 안내</h2>
+            <h2>새가족을 위한 안내</h2>
             <div className={styles.guideGrid}>
               <div className={styles.guideCard}>
                 <div className={styles.stepNumber}>1</div>
@@ -119,10 +123,10 @@ export default function Welcome() {
 
           {/* 교회 생활 참여 섹션 */}
           <section className={styles.section}>
-            <h2>🌱 교회 생활 참여하기</h2>
+            <h2>교회 생활 참여하기</h2>
             <div className={styles.guideGrid}>
               <div className={styles.guideCard}>
-                <div className={styles.stepNumber}>📚</div>
+                <div className={styles.stepNumber}>1</div>
                 <h3>양육과정</h3>
                 <p>
                   체계적인 말씀 교육을 통해 성숙한 그리스도인으로<br />
@@ -133,7 +137,7 @@ export default function Welcome() {
                 </Link>
               </div>
               <div className={styles.guideCard}>
-                <div className={styles.stepNumber}>🤝</div>
+                <div className={styles.stepNumber}>2</div>
                 <h3>봉사활동</h3>
                 <p>
                   섬김과 나눔을 통해 하나님의 사랑을 실천하는<br />
@@ -144,7 +148,7 @@ export default function Welcome() {
                 </Link>
               </div>
               <div className={styles.guideCard}>
-                <div className={styles.stepNumber}>💝</div>
+                <div className={styles.stepNumber}>3</div>
                 <h3>새신자 양육</h3>
                 <p>
                   새로 오신 분들을 위한 체계적인 양육 프로그램으로<br />
@@ -159,7 +163,7 @@ export default function Welcome() {
 
           {/* 예배 안내 섹션 */}
           <section className={styles.section}>
-            <h2>⛪ 예배 시간 안내</h2>
+            <h2>예배 시간 안내</h2>
             <div className={styles.scheduleGrid}>
               <div className={styles.scheduleCard}>
                 <h3>주일 예배</h3>
@@ -196,18 +200,18 @@ export default function Welcome() {
 
           {/* 연락처 섹션 */}
           <section className={styles.section}>
-            <h2>📞 연락처 및 위치</h2>
+            <h2> 연락처 및 위치</h2>
             <div className={styles.contactInfo}>
               <div className={styles.contactCard}>
-                <h3>📍 교회 주소</h3>
+                <h3>교회 주소</h3>
                 <p>경기 수원시 팔달구 팔달문로150번길 13 수정교회</p>
               </div>
               <div className={styles.contactCard}>
-                <h3>📞 연락처</h3>
+                <h3>연락처</h3>
                 <p>031-212-0091</p>
               </div>
               <div className={styles.contactCard}>
-                <h3>📧 이메일</h3>
+                <h3>이메일</h3>
                 <p>suwoncrystalchurch@gmail.com</p>
               </div>
             </div>

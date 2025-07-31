@@ -30,10 +30,10 @@ export default function ChurchPhilosophy() {
         <div className={styles.content}>
           {/* 목회 철학 섹션 */}
           <section className={styles.pastoralSection}>
-            <h2>📖 목회 철학</h2>
+            <h2>목회 철학</h2>
             <div className={styles.philosophyGrid}>
               <div className={styles.philosophyCard}>
-                <div className={styles.cardIcon}>🎯</div>
+                <div className={styles.cardIcon}></div>
                 <h3>목적 중심 목회</h3>
                 <p>하나님의 목적과 계획에 따라 교회를 세워가며, 영혼 구원과 제자 양육에 집중합니다.</p>
                 <ul>
@@ -45,7 +45,7 @@ export default function ChurchPhilosophy() {
                 </ul>
               </div>
               <div className={styles.philosophyCard}>
-                <div className={styles.cardIcon}>📚</div>
+                <div className={styles.cardIcon}></div>
                 <h3>말씀 중심 목회</h3>
                 <p>성경을 유일한 권위로 인정하며, 하나님의 말씀에 기초한 목회를 실천합니다.</p>
                 <ul>
@@ -57,7 +57,7 @@ export default function ChurchPhilosophy() {
                 </ul>
               </div>
               <div className={styles.philosophyCard}>
-                <div className={styles.cardIcon}>🤝</div>
+                <div className={styles.cardIcon}></div>
                 <h3>관계 중심 목회</h3>
                 <p>하나님과의 관계, 성도 간의 관계, 이웃과의 관계를 중시하는 공동체를 만듭니다.</p>
                 <ul>
@@ -73,13 +73,13 @@ export default function ChurchPhilosophy() {
 
           {/* 교육 철학 섹션 */}
           <section className={styles.educationSection}>
-            <h2>🎓 교육 철학</h2>
+            <h2>교육 철학</h2>
             <div className={styles.educationContent}>
               <div className={styles.educationText}>
                 <h3>전인적 기독교 교육</h3>
                 <div className={styles.educationAreas}>
                   <div className={styles.educationArea}>
-                    <h4>🧠 지적 영역 (Knowledge)</h4>
+                    <h4>지적 영역 (Knowledge)</h4>
                     <p>성경의 진리를 체계적으로 학습하고, 기독교 세계관을 형성합니다.</p>
                     <div className={styles.areaDetails}>
                       <span>성경 지식</span>
@@ -89,7 +89,7 @@ export default function ChurchPhilosophy() {
                     </div>
                   </div>
                   <div className={styles.educationArea}>
-                    <h4>❤️ 정서적 영역 (Affection)</h4>
+                    <h4>정서적 영역 (Affection)</h4>
                     <p>하나님에 대한 사랑과 이웃에 대한 사랑을 키워갑니다.</p>
                     <div className={styles.areaDetails}>
                       <span>예배의 기쁨</span>
@@ -99,7 +99,7 @@ export default function ChurchPhilosophy() {
                     </div>
                   </div>
                   <div className={styles.educationArea}>
-                    <h4>✋ 행동적 영역 (Behavior)</h4>
+                    <h4>행동적 영역 (Behavior)</h4>
                     <p>믿음을 삶으로 실천하며, 그리스도의 제자로 살아갑니다.</p>
                     <div className={styles.areaDetails}>
                       <span>말씀 순종</span>
@@ -118,10 +118,10 @@ export default function ChurchPhilosophy() {
 
           {/* 신앙관 섹션 */}
           <section className={styles.faithSection}>
-            <h2>⛪ 우리의 신앙관</h2>
+            <h2>우리의 신앙관</h2>
             <div className={styles.faithCards}>
               <div className={styles.faithCard}>
-                <h3>📖 성경관</h3>
+                <h3>성경관</h3>
                 <p><strong>성경은 하나님의 말씀</strong></p>
                 <ul>
                   <li>성경의 무오성과 절대 권위 인정</li>
@@ -131,7 +131,7 @@ export default function ChurchPhilosophy() {
                 </ul>
               </div>
               <div className={styles.faithCard}>
-                <h3>✝️ 구원관</h3>
+                <h3>구원관</h3>
                 <p><strong>오직 예수 그리스도로 인한 구원</strong></p>
                 <ul>
                   <li>예수 그리스도의 십자가 대속</li>
@@ -141,7 +141,7 @@ export default function ChurchPhilosophy() {
                 </ul>
               </div>
               <div className={styles.faithCard}>
-                <h3>🕊️ 성령관</h3>
+                <h3>성령관</h3>
                 <p><strong>성령님의 인도하심과 능력</strong></p>
                 <ul>
                   <li>성령님의 인격성과 신성 인정</li>
@@ -151,7 +151,7 @@ export default function ChurchPhilosophy() {
                 </ul>
               </div>
               <div className={styles.faithCard}>
-                <h3>⛪ 교회관</h3>
+                <h3>교회관</h3>
                 <p><strong>그리스도의 몸 된 교회</strong></p>
                 <ul>
                   <li>성도의 교제와 연합</li>
@@ -165,7 +165,7 @@ export default function ChurchPhilosophy() {
 
           {/* 교육 방법론 섹션 */}
           <section className={styles.methodSection}>
-            <h2>🛠️ 교육 방법론</h2>
+            <h2>교육 방법론</h2>
             <div className={styles.methodGrid}>
               <div className={styles.methodCard}>
                 <div className={styles.methodIcon}>👨‍🏫</div>
@@ -178,7 +178,7 @@ export default function ChurchPhilosophy() {
                 </div>
               </div>
               <div className={styles.methodCard}>
-                <div className={styles.methodIcon}>👥</div>
+                <div className={styles.methodIcon}></div>
                 <h3>관계적 학습</h3>
                 <p>멘토와 멘티, 동료들과의 관계 속에서 성장합니다.</p>
                 <div className={styles.methodItems}>
@@ -202,7 +202,7 @@ export default function ChurchPhilosophy() {
 
           {/* 실천 지침 섹션 */}
           <section className={styles.practiceSection}>
-            <h2>🎯 실천 지침</h2>
+            <h2>실천 지침</h2>
             <div className={styles.practiceContent}>
               <div className={styles.practiceQuote}>
                 <blockquote>
