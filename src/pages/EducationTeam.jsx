@@ -157,7 +157,7 @@ export default function EducationTeam() {
                   </div>
 
                   <div className={styles.toolCard}>
-                    <h4>🎁 선물 관리</h4>
+                    <h4>선물 관리</h4>
                     <p>새신자에게 제공되는 선물과 교재 재고를 관리합니다.</p>
                     <button className={styles.toolButton}>선물 관리</button>
                   </div>

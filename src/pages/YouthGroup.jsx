@@ -19,7 +19,7 @@ const cards = [
   {
     title: '유튜브 채널',
     image: '/youtube.png',
-    link: 'https://www.youtube.com/',
+    link: 'https://www.youtube.com/@%EC%88%98%EC%A0%95%EC%B9%A8%EB%A1%80%EA%B5%90%ED%9A%8C-m1o',
     description: '청년부 공식 유튜브 채널',
     external: true,
   },
