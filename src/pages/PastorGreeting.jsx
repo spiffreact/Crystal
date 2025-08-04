@@ -72,7 +72,7 @@ export default function PastorGreeting() {
                     <p>개인과 공동체의 기도를 통해 하나님과의 깊은 교제를 나눕니다.</p>
                   </div>
                   <div className={styles.visionItem}>
-                    <h4>💒 예배 중심</h4>
+                    <h4>예배 중심</h4>
                     <p>하나님께 드리는 예배를 통해 영적 갈증을 해소하고 새 힘을 얻습니다.</p>
                   </div>
                   <div className={styles.visionItem}>

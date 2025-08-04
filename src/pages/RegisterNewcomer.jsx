@@ -279,7 +279,7 @@ export default function RegisterNewcomer() {
         <div className={styles.content}>
           {/* 안내 섹션 */}
           <section className={styles.infoSection}>
-            <h2>🎁 새가족 혜택</h2>
+            <h2>새가족 혜택</h2>
             <div className={styles.benefitsGrid}>
               <div className={styles.benefitCard}>
                 <div className={styles.benefitIcon}></div>
@@ -306,7 +306,7 @@ export default function RegisterNewcomer() {
 
           {/* 등록 양식 */}
           <section className={styles.formSection}>
-            <h2>📝 등록 정보</h2>
+            <h2>등록 정보</h2>
             <form onSubmit={handleSubmit} className={styles.registrationForm}>
               {/* 기본 정보 */}
               <div className={styles.formGroup}>

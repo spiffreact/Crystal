@@ -133,7 +133,7 @@ export default function ChurchVisit() {
               </div>
 
               <div className={styles.guideCard}>
-                <div className={styles.guideIcon}>🎁</div>
+                <div className={styles.guideIcon}></div>
                 <h3>새가족 선물</h3>
                 <p>
                   처음 오신 분들에게는 소정의 선물을 준비해 드립니다. 
@@ -142,7 +142,7 @@ export default function ChurchVisit() {
               </div>
 
               <div className={styles.guideCard}>
-                <div className={styles.guideIcon}>☕</div>
+                <div className={styles.guideIcon}></div>
                 <h3>애찬(식사)</h3>
                 <p>
                   주일 예배 후에는 함께 식사하는 시간이 있습니다. 

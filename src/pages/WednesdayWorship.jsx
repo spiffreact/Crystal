@@ -32,7 +32,7 @@ export default function WednesdayWorship() {
           <section className={styles.infoSection}>
             <div className={styles.infoGrid}>
               <div className={`${styles.infoCard} ${styles.wednesday}`}>
-                <div className={styles.cardIcon}>🕢</div>
+                <div className={styles.cardIcon}></div>
                 <h3>예배 시간</h3>
                 <p><strong>매주 수요일 저녁 7:30</strong></p>
                 <p>약 1시간 진행</p>

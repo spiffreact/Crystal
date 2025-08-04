@@ -98,6 +98,10 @@
   justify-content: center;
 }
 
+.contactIcon:empty {
+  display: none;
+}
+
 .contactIcon img {
   width: 100%;
   height: 100%;

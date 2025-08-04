@@ -34,3 +34,31 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
+
+/* 빈 아이콘 요소들 숨기기 */
+[class*="Icon"]:empty,
+[class*="icon"]:empty {
+  display: none !important;
+}
+
+.cardIcon:empty,
+.visionIcon:empty,
+.serviceIcon:empty,
+.communityIcon:empty,
+.ageIcon:empty,
+.specialIcon:empty,
+.benefitIcon:empty,
+.helpIcon:empty,
+.planIcon:empty,
+.methodIcon:empty,
+.valueIcon:empty,
+.featureIcon:empty,
+.amenityIcon:empty,
+.parkingIcon:empty,
+.contactIcon:empty,
+.detailIcon:empty,
+.guideIcon:empty,
+.stepNumber:empty,
+.successIcon:empty {
+  display: none !important;
+}
