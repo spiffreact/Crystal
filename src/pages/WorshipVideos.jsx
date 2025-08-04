@@ -3,6 +3,22 @@ import { Helmet } from 'react-helmet-async';
 
 const sampleVideos = [
   {
+    id: "7",
+    title: '주일 예배 - 2025년 8월 3일',
+    category: '주일',
+    preacher: '김광호',
+    date: '2025-08-03',
+    thumbnail: 'https://img.youtube.com/vi/8SJpiGdQb1E/maxresdefault.jpg',
+  },
+  {
+    id: "8",
+    title: '금요 예배 - 2025년 8월 1일',
+    category: '금요',
+    preacher: '바링고차',
+    date: '2025-08-01',
+    thumbnail: 'https://img.youtube.com/vi/JKHv_2czmCc/maxresdefault.jpg',
+  },
+  {
     id: "6",
     title: '수요 예배 - 2025년 7월 30일',
     category: '수요',
