@@ -1,9 +1,9 @@
-/* 메가메뉴 컨테이너 - 드롭다운 메뉴의 기본 스타일 (화면 중앙, 100vw) */
+/* 환영합니다 메가메뉴 컨테이너 - 드롭다운 메뉴의 기본 스타일 (화면 중앙, 100vw) */
 .megaMenu {
-  position: absolute;
-  top: calc(100% + 20px); /* 헤더 아래 20px 간격 */
-  left: 220%; /* 화면 중앙 정렬 */
-  transform: translateX(-50%); /* 중앙 정렬 */
+  position: fixed; /* absolute에서 fixed로 변경 */
+  top: 70px; /* 헤더 높이에 맞춰 고정 */
+  left: 0; /* 왼쪽 끝에서 시작 */
+  right: 0; /* 오른쪽 끝까지 */
   width: 100vw; /* 전체 뷰포트 너비 */
   margin: 0 auto;
   background: #e7d9d9; /* 베이지색 배경 */
@@ -16,6 +16,9 @@
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); /* 강한 그림자 */
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  max-width: 1200px; /* 최대 너비 제한 */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 메가메뉴 닫힐 때 애니메이션 */
@@ -33,11 +36,11 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(-16px); /* 위에서 아래로 슬라이드 */
+    transform: translateY(-16px); /* 위에서 아래로 슬라이드 */
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -45,11 +48,11 @@
 @keyframes fadeOut {
   from {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
   to {
     opacity: 0;
-    transform: translateX(-50%) translateY(-16px); /* 위로 사라짐 */
+    transform: translateY(-16px); /* 위로 사라짐 */
   }
 }
 
@@ -150,7 +153,11 @@
     flex-direction: column; /* 세로 배치로 변경 */
     padding: 32px 4vw;
     gap: 32px;
-    top: calc(100% + 10px);
+    top: 60px; /* 태블릿에서 헤더 높이 조정 */
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-width: none;
   }
   .cols {
     gap: 24px; /* 간격 줄임 */
@@ -196,6 +203,10 @@
     animation: none;
     border-top: 1px solid #e9ecef;
     border-bottom: 1px solid #e9ecef;
+    top: auto;
+    left: auto;
+    right: auto;
+    max-width: none;
   }
   
   /* 모바일에서는 왼쪽 영역 숨김 */
