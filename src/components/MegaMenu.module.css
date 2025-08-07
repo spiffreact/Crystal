@@ -177,14 +177,15 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 16px 0 12px 0;
-    background: #fff;
-    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-bottom: 1px solid #e1e5e9;
   }
   .mobileLogo img {
-    height: 40px; /* 더 작은 로고 */
+    height: 45px; /* 로고 크기 조정 */
     width: auto;
     display: block;
+    filter: brightness(0) invert(1); /* 로고를 흰색으로 변경 */
   }
   
   /* 모바일에서 인라인 메뉴로 변경 */
@@ -194,7 +195,7 @@
     height: auto;
     margin: 0;
     transform: none;
-    background: #f8f9fa;
+    background: #ffffff;
     z-index: auto;
     overflow: visible;
     padding: 0;
@@ -241,48 +242,67 @@
   
   /* 모바일 메뉴 항목 스타일 */
   .cols li {
-    border-bottom: 1px solid #f8f9fa;
-  }
-  
-  .cols li a {
-    font-size: 0.9rem;
-    color: #6b7280;
-    padding: 12px 24px 12px 40px;
-    display: block;
-    text-decoration: none;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    border-left: 3px solid transparent;
-    position: relative;
-    font-weight: 400;
-  }
-  
-  .cols li a:hover {
-    background: #e9ecef;
-    color: #1e40af;
-    border-left-color: #3b82f6;
-    padding-left: 44px;
-  }
-  
-  .cols li a::before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #d1d5db;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .cols li a:hover::before {
-    background: #3b82f6;
-    transform: translateY(-50%) scale(1.2);
+    border-bottom: 1px solid #f1f3f4;
+    background: #ffffff;
+    transition: all 0.2s ease;
   }
   
   .cols li:last-child {
     border-bottom: none;
+  }
+  
+  .cols li a {
+    font-size: 1rem;
+    color: #374151;
+    padding: 16px 24px 16px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  .cols li a:hover {
+    background: linear-gradient(90deg, #f8fafc 0%, #f1f5f9 100%);
+    color: #1e40af;
+    padding-left: 28px;
+  }
+  
+  .cols li a::before {
+    content: '›';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #9ca3af;
+    transition: all 0.2s ease;
+    font-weight: 300;
+  }
+  
+  .cols li a:hover::before {
+    color: #3b82f6;
+    transform: translateY(-50%) translateX(4px);
+  }
+  
+  /* 모바일 메뉴 섹션별 구분선 */
+  .cols > div:not(:last-child) {
+    border-bottom: 2px solid #f3f4f6;
+  }
+  
+  /* 모바일 메뉴 섹션 제목 (선택적) */
+  .cols > div::before {
+    content: attr(data-section);
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6b7280;
+    padding: 12px 20px 8px 20px;
+    background: #f9fafb;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -290,8 +310,10 @@
 @keyframes fadeInMobile {
   from {
     opacity: 0;
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
