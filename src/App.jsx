@@ -42,6 +42,7 @@ import VolunteerActivities from './pages/VolunteerActivities';
 import DiscipleshipProcess from './pages/DiscipleshipProcess';
 import NewcomerFAQ from './pages/NewcomerFAQ';
 import Contact from './pages/Contact';
+import BaristaRotation from './pages/BaristaRotation';
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
               element={<WorshipVideoDetail />}
             />
             <Route path="/community/youth" element={<YouthGroup />} />
+            <Route path="/youth/barista-rotation" element={<BaristaRotation />} />
             <Route path="/community/elementary" element={<ElementaryGroup />} />
             <Route path="/elementary-bible-study" element={<ElementaryBibleStudy />} />
             <Route path="/notice" element={<Notice />} />

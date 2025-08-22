@@ -29,6 +29,13 @@ const cards = [
     link: '/community/bible',
     description: '공동체 성경 읽기',
     external: false,
+  },
+  {
+    title: '바리스타 봉사',
+    image: '/barista.jpg',
+    link: '/youth/barista-rotation',
+    description: '주일 바리스타 봉사 로테이션',
+    external: false,
   }
 ];
 
